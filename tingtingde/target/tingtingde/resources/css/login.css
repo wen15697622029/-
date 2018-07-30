@@ -1,0 +1,52 @@
+body{
+    background-color: lightgoldenrodyellow;
+}
+#d{
+    margin: 0px auto;
+    width: 1000px;
+    height: 700px;
+}
+#d1{
+    width: 1000px;
+    height: 71px;
+    float: left;
+    background-color: white;
+}
+#d2{
+    width: 1000px;
+    height: 629px;
+    float: left;
+    background-color: #2e1691;
+}
+#d21{
+    width: 700px;
+    height: 629px;
+    float: left;
+}
+#d21 img{
+    margin-left: 10px;
+    margin-top: 70px;
+}
+#d22{
+    width: 300px;
+    height: 629px;
+    float: right;
+}
+#d221{
+    padding-top: 15px;
+    margin-top: 150px;
+    width: 300px;
+    background-color: white;
+}
+#d221 div{
+    margin-left: 30px;
+    margin-top: 10px;
+    height: 52px;
+}
+#d221 img{
+    position: relative;
+    top: 14.5px;
+}
+#d2211{
+    margin-bottom: -25px;
+}

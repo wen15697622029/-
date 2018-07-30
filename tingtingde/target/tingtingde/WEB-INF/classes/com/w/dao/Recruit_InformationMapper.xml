@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.w.dao.Recruit_InformationMapper" >
+
+    <select id="getRecruit_InformationByRiState" resultType="java.lang.Integer">
+        SELECT count(*) FROM BUG_RECRUIT_INFORMATION WHERE RISTATE=#{0}
+    </select>
+    <select id="queryCurrentPageRecruit_InformationByRiState" resultMap="recruit_InformationMap1">
+        SELECT * FROM (SELECT BUG_RECRUIT_INFORMATION.*,rownum rn FROM BUG_RECRUIT_INFORMATION
+        WHERE BUG_RECRUIT_INFORMATION.RISTATE=#{0}) RI,BUG_DEPARTMENT,BUG_JOB
+        WHERE RI.DID=BUG_DEPARTMENT.DID
+        AND RI.JID=BUG_JOB.JID
+        and rn between #{1} and #{2}
+    </select>
+    <resultMap id="recruit_InformationMap" type="com.w.model.Recruit_Information">
+        <id property="riid" column="RIID"/>
+        <result property="rinum" column="RINUM"/>
+        <result property="riintro" column="RIINTRO"/>
+        <result property="ristate" column="RISTATE"/>
+        <result property="riday" column="RIDAY"/>
+    </resultMap>
+    <resultMap id="recruit_InformationMap1" type="com.w.model.Recruit_Information" extends="recruit_InformationMap">
+        <association property="department" javaType="com.w.model.Department" column="DID">
+            <id property="did" column="DID"/>
+            <result property="dname" column="DNAME"/>
+            <result property="ddate" column="DDATE"/>
+        </association>
+        <association property="job" javaType="com.w.model.Job" column="JID">
+            <id property="jid" column="JID"/>
+            <result property="jname" column="JNAME"/>
+            <result property="jsalary" column="JSALARY"/>
+        </association>
+    </resultMap>
+</mapper>

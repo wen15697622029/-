@@ -1,0 +1,67 @@
+#d{
+    margin: 0px auto;
+    width: 1000px;
+    height: 700px;
+    background-color: white;
+}
+*{
+    font-family: 幼圆;
+}
+#d1{
+    width: 1000px;
+    height: 25px;
+    background-color: rgba(0, 0, 0, 0.06);
+}
+#d1 #d11{
+    float: left;
+}
+#d1 #d12{
+    float: right;
+}
+* a{
+    text-decoration: none;
+}
+#d2{
+    width: 1000px;
+    height: 80px;
+    background-color: orangered;
+}
+#d4{
+    width: 1000px;
+    height: 50px;
+    font-size: 30px;
+}
+#d4 a{
+    margin-left: 50px;
+}
+#d21{
+    width: 206px;
+    height: 80px;
+    float: left;
+}
+#d22{
+    width: 600px;
+    height: 80px;
+    float: left;
+}
+#d3{
+    width: 1000px;
+    height: 540px;
+    text-align: left;
+    float: left;
+    background-color: rgba(0, 0, 0, 0.06);
+}
+#d31{
+    height: 440px;
+}
+#t1{
+    text-align: center;
+    margin: 0px auto;
+}
+#t1 tr{
+    line-height: 35px;
+}
+#d32{
+    margin-top: 20px;
+    text-align: center;
+}

@@ -1,0 +1,58 @@
+#d{
+    margin: 0px auto;
+    width: 1000px;
+    height: 700px;
+    background-color: white;
+}
+*{
+    font-family: 幼圆;
+}
+#d1{
+    width: 1000px;
+    height: 25px;
+    background-color: rgba(0, 0, 0, 0.06);
+}
+#d1 #d11{
+    float: left;
+}
+#d1 #d12{
+    float: right;
+}
+* a{
+    text-decoration: none;
+}
+#d2{
+    width: 1000px;
+    height: 115px;
+}
+#d21{
+    width: 206px;
+    height: 115px;
+    float: left;
+}
+#d22{
+    width: 600px;
+    height: 115px;
+    float: left;
+}
+#d3{
+    padding-top: 30px;
+    width: 1000px;
+    height: 540px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.06);
+}
+#d31{
+    height: 440px;
+}
+#t1{
+    text-align: center;
+    margin: 0px auto;
+}
+#t1 tr{
+    line-height: 35px;
+}
+#d32{
+    text-align: center;
+    padding-top: 30px;
+}

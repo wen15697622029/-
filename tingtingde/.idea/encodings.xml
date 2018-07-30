@@ -2,6 +2,33 @@
 <project version="4">
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="GBK">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/w/dao/Recruit_InformationMapper.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/w/dao/Recruit_InformationMapper.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/w/dao/UserMapper.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/db.properties" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/dispatcher-servlet.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/log4j.properties" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/user.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/resources/css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/resources/css/admin.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/resources/css/index.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/resources/css/login.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/resources/css/myOrders.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/resources/css/myUserDetail.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/resources/css/register.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/resources/css/user.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/resources/images" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/resources/images/1.jpg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/resources/images/2.jpg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/resources/images/3.jpg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/resources/images/4.jpg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/resources/images/5.jpg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/resources/images/6.jpg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/resources/images/7.jpg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/resources/images/8.jpg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/resources/images/9.jpg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/resources/js/jquery.js" charset="GBK" />
     <file url="PROJECT" charset="GBK" />
   </component>
 </project>

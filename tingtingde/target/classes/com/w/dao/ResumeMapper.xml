@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.w.dao.ResumeMapper" >
+    <insert id="addResume">
+        INSERT INTO BUG_RESUME VALUES(RESUME_SEQ.nextval,#{user.uid},#{rename},
+        #{resex},#{rebirthday},#{rephone},#{reemail},#{reidcardno},#{readdress},#{repost},
+        #{recollege},#{remajor},#{regraduate},#{reintro},#{reeducation},#{resumename})
+    </insert>
+    <update id="updateResume">
+        UPDATE BUG.BUG_RESUME
+        <set>
+            <if test="resumename!=null">
+                RESUMENAME=#{resumename},
+            </if>
+            <if test="rename!=null">
+                "RENAME"=#{rename},
+            </if>
+            <if test="resex!=null">
+                RESEX=#{resex},
+            </if>
+            <if test="reidcardno!=null">
+                REIDCARDNO=#{reidcardno},
+            </if>
+            <if test="rebirthday!=null">
+                REBIRTHDAY=#{rebirthday},
+            </if>
+            <if test="rephone!=null">
+                REPHONE=#{rephone},
+            </if>
+            <if test="reemail!=null">
+                REEMAIL=#{reemail},
+            </if>
+            <if test="readdress!=null">
+                READDRESS=#{readdress},
+            </if>
+            <if test="repost!=null">
+                REPOST=#{repost},
+            </if>
+            <if test="reeducation!=null">
+                REEDUCATION=#{reeducation},
+            </if>
+            <if test="recollege!=null">
+                RECOLLEGE=#{recollege},
+            </if>
+            <if test="remajor!=null">
+                REMAJOR=#{remajor},
+            </if>
+            <if test="regraduate!=null">
+                REGRADUATE=#{regraduate},
+            </if>
+            <if test="reintro!=null">
+                REINTRO=#{reintro}
+            </if>
+        </set>
+        where REID=#{reid}
+    </update>
+    <delete id="deleteResume">
+        DELETE FROM BUG_RESUME WHERE REID=#{reid}
+    </delete>
+
+    <select id="getResumeByUser" resultType="java.lang.Integer">
+        SELECT  COUNT (*) FROM BUG_RESUME WHERE  "UID"=#{uid}
+    </select>
+
+    <select id="queryCurrentResumeByUser" resultType="com.w.model.Resume">
+       SELECT * FROM (SELECT BUG_RESUME.*,rownum rn FROM BUG_RESUME
+        WHERE BUG_RESUME."UID"=#{0}) RE,BUG_USER
+        WHERE RE."UID"=BUG_USER."UID"
+        and rn between #{1} and #{2}
+    </select>
+    <select id="getResumesByUser" resultType="com.w.model.Resume">
+        SELECT * FROM BUG_RESUME WHERE "UID"=#{uid}
+    </select>
+    <select id="getResumeByReid" resultType="com.w.model.Resume">
+        SELECT * from BUG_RESUME where REID=#{reid}
+    </select>
+    <resultMap id="resumeMap" type="com.w.model.Resume">
+        <id property="reid" column="REID"/>
+        <result property="resumename" column="RESUMENAME"/>
+        <result property="rename" column="RENAME"/>
+        <result property="resex" column="RESEX"/>
+        <result property="reidcardno" column="REIDCARDNO"/>
+        <result property="rebirthday" column="REBIRTHDAY"/>
+        <result property="rephone" column="REPHONE"/>
+        <result property="reemail" column="REEMAIL"/>
+        <result property="readdress" column="READDRESS"/>
+        <result property="repost" column="REPOST"/>
+        <result property="reeducation" column="REEDUCATION"/>
+        <result property="recollege" column="RECOLLEGE"/>
+        <result property="remajor" column="REMAJOR"/>
+        <result property="regraduate" column="REGRADUATE"/>
+        <result property="reintro" column="REINTRO"/>
+    </resultMap>
+    <resultMap id="resumeMap1" type="com.w.model.Resume" extends="resumeMap">
+        <association property="user" javaType="com.w.model.User">
+            <id property="uid" column="UID"/>
+            <result property="uname" column="UNAME"/>
+            <result property="upass" column="UPASS"/>
+
+        </association>
+    </resultMap>
+</mapper>

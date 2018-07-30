@@ -4,6 +4,8 @@
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/com/w/dao/Recruit_InformationMapper.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/java/com/w/dao/Recruit_InformationMapper.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/w/dao/ResumeMapper.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/w/dao/ResumeMapper.xml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/java/com/w/dao/UserMapper.xml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/resources/db.properties" charset="GBK" />

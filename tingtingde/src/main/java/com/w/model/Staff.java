@@ -1,5 +1,7 @@
 package com.w.model;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.io.Serializable;
 import java.util.Date;
 
@@ -16,6 +18,7 @@ public class Staff implements Serializable {
     private String sname;//姓名
     private String ssex;//性别
     private int sidcardno;//身份证号码
+    @DateTimeFormat(pattern="yyyy-MM-dd")
     private Date sbirrhday;//出生日期
     private String sphone;//手机号
     private String semall;//邮箱地址
@@ -24,8 +27,10 @@ public class Staff implements Serializable {
     private String seducation;//学历
     private String scollege;//大学
     private String smajor;//专业
+    @DateTimeFormat(pattern="yyyy-MM-dd")
     private Date sgraduta;//毕业时间
     private String sintro;//简介
+    @DateTimeFormat(pattern="yyyy-MM-dd")
     private Date sentrdate;//入职时间
 
     public Staff() {

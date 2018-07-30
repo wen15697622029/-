@@ -27,7 +27,7 @@
             <a href="login.jsp">&emsp;${user.uname}</a>
         </div>
         <div id="d12">
-            <a href="staffLogin.jsp" >我的简历&emsp;</a>
+            <a href="myResume" >我的简历&emsp;</a>
             <a href="adminLogin.jsp">面试管理&emsp;</a>
         </div>
     </div>

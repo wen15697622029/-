@@ -1,8 +1,10 @@
 package com.w.controller;
 
 import com.w.model.Recruit_Information;
+import com.w.model.Resume;
 import com.w.model.User;
 import com.w.service.Recruit_InformationService;
+import com.w.service.ResumeService;
 import com.w.service.UserService;
 import com.w.util.DoPage;
 import org.springframework.stereotype.Controller;
@@ -21,6 +23,8 @@ import java.util.List;
  */
 @Controller
 public class UserController {
+    @Resource
+    private ResumeService resumeService;
     @Resource
     private UserService userService;
     @Resource
@@ -97,5 +101,59 @@ public class UserController {
         request.setAttribute("currentPage",currentPage);
         request.setAttribute("totalPages",totalPages);
         return "user";
+    }
+
+
+
+    @RequestMapping("/myResume")
+    public String myResume(@RequestParam(value = "currentPage",defaultValue = "1")int currentPage, HttpServletRequest request,HttpSession session) throws Exception{
+        User user = (User) session.getAttribute("user");
+        int pageSize = 1;
+        int totalRows=resumeService.getResumeByUser(user);
+        int totalPages = DoPage.getTotalPages(totalRows,pageSize);
+        int begin = (currentPage-1)*pageSize+1;
+        int end = (currentPage-1)*pageSize+pageSize;
+        List<Resume> resumes = resumeService.queryCurrentResumeByUser(user.getUid(),begin,end);
+        request.setAttribute("resumes",resumes);
+        request.setAttribute("currentPage",currentPage);
+        request.setAttribute("totalPages",totalPages);
+        return "myResume";
+    }
+    @RequestMapping("/addresume")
+    public String addresume() throws Exception{
+        return "addResume";
+    }
+    @RequestMapping("/addResume1")
+    public String addResume(Resume resume,HttpSession session) throws Exception{
+        User user = (User) session.getAttribute("user");
+        resume.setUser(user);
+        resumeService.addResume(resume);
+        return "redirect:myResume";
+    }
+    @RequestMapping("/updateresume")
+    public String updateresume(int reid,HttpSession session,HttpServletRequest request) throws Exception{
+        Resume resume=resumeService.getResumeByReid(reid);
+        request.setAttribute("resume",resume);
+        return "updateResume";
+    }
+    @RequestMapping("/updateResume")
+    public String updateResume(Resume resume) throws Exception{
+        resumeService.updateResume(resume);
+        return "redirect:myResume";
+    }
+    @RequestMapping("/deleteResume")
+    public String deleteResume(Resume resume) throws Exception{
+        resumeService.deleteResume(resume);
+        return "redirect:myResume";
+    }
+    @RequestMapping("/checkResume")
+    public String checkResume(Resume resume) throws Exception{
+        resumeService.deleteResume(resume);
+        return "redirect:myResume";
+    }
+    @RequestMapping("/sendResume")
+    public void sendResume(int riid,int reid,HttpSession session) throws Exception{
+        User user = (User) session.getAttribute("user");
+
     }
 }

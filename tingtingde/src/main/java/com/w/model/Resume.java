@@ -1,5 +1,7 @@
 package com.w.model;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.io.Serializable;
 import java.util.Date;
 
@@ -11,14 +13,16 @@ public class Resume implements Serializable {
     private User user;//用户id；
     private String rename;//姓名
     private String resex;//性别
+    @DateTimeFormat(pattern="yyyy-MM-dd")
     private Date rebirthday;//出生日期
     private String rephone;//手机号
-    private String reemall;//邮箱地址
-    private int reidcardno;//身份证号
+    private String reemail;//邮箱地址
+    private long reidcardno;//身份证号
     private String readdress;//地址
-    private int repost;//邮政编码
-    private String recillege;//大学
+    private long repost;//邮政编码
+    private String recollege;//大学
     private String remajor;//专业
+    @DateTimeFormat(pattern="yyyy-MM-dd")
     private Date regraduate;//毕业时间
     private String reintro;//简介
     private String reeducation;//学历
@@ -75,19 +79,13 @@ public class Resume implements Serializable {
         this.rephone = rephone;
     }
 
-    public String getReemall() {
-        return reemall;
-    }
 
-    public void setReemall(String reemall) {
-        this.reemall = reemall;
-    }
 
-    public int getReidcardno() {
+    public long getReidcardno() {
         return reidcardno;
     }
 
-    public void setReidcardno(int reidcardno) {
+    public void setReidcardno(long reidcardno) {
         this.reidcardno = reidcardno;
     }
 
@@ -99,22 +97,13 @@ public class Resume implements Serializable {
         this.readdress = readdress;
     }
 
-    public int getRepost() {
+    public long getRepost() {
         return repost;
     }
 
-    public void setRepost(int repost) {
+    public void setRepost(long repost) {
         this.repost = repost;
     }
-
-    public String getRecillege() {
-        return recillege;
-    }
-
-    public void setRecillege(String recillege) {
-        this.recillege = recillege;
-    }
-
     public String getRemajor() {
         return remajor;
     }
@@ -155,8 +144,24 @@ public class Resume implements Serializable {
         this.resumename = resumename;
     }
 
+    public String getReemail() {
+        return reemail;
+    }
+
+    public void setReemail(String reemail) {
+        this.reemail = reemail;
+    }
+
+    public String getRecollege() {
+        return recollege;
+    }
+
+    public void setRecollege(String recollege) {
+        this.recollege = recollege;
+    }
+
     @Override
     public String toString() {
-        return "Resume{" + "reid=" + reid + ", user=" + user + ", rename='" + rename + '\'' + ", resex='" + resex + '\'' + ", rebirthday=" + rebirthday + ", rephone='" + rephone + '\'' + ", reemall='" + reemall + '\'' + ", reidcardno=" + reidcardno + ", readdress='" + readdress + '\'' + ", repost=" + repost + ", recillege='" + recillege + '\'' + ", remajor='" + remajor + '\'' + ", regraduate=" + regraduate + ", reintro='" + reintro + '\'' + ", reeducation='" + reeducation + '\'' + ", resumename='" + resumename + '\'' + '}';
+        return "Resume{" + "reid=" + reid + ", user=" + user + ", rename='" + rename + '\'' + ", resex='" + resex + '\'' + ", rebirthday=" + rebirthday + ", rephone='" + rephone + '\'' + ", reemail='" + reemail + '\'' + ", reidcardno=" + reidcardno + ", readdress='" + readdress + '\'' + ", repost=" + repost + ", recollege='" + recollege + '\'' + ", remajor='" + remajor + '\'' + ", regraduate=" + regraduate + ", reintro='" + reintro + '\'' + ", reeducation='" + reeducation + '\'' + ", resumename='" + resumename + '\'' + '}';
     }
 }

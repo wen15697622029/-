@@ -23,7 +23,7 @@
 </head>
 <body>
 <div id="d666">
-    <form action="login" method="post">
+    <form action="login " method="post">
         账号:<input name="uname"><br/>
         密码:<input name="upass"><br/>
         <input type="submit" value="登陆">

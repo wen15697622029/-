@@ -4,9 +4,9 @@
     <root id="1"/>
     <schema id="2" parent="1" name="BUG">
       <ObjectId>52</ObjectId>
-      <IntrospectionTimestamp>2018-07-30.10:23:40</IntrospectionTimestamp>
+      <IntrospectionTimestamp>2018-07-30.18:25:31</IntrospectionTimestamp>
       <CreatedTimestamp>2018-07-25.15:42:33</CreatedTimestamp>
-      <ModifiedTimestamp>2018-07-30.10:23:40</ModifiedTimestamp>
+      <ModifiedTimestamp>2018-07-30.18:25:31</ModifiedTimestamp>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -214,7 +214,7 @@
     <table id="47" parent="2" name="BUG_RESUME">
       <ObjectId>20667</ObjectId>
       <CreatedTimestamp>2018-07-25.17:39:38</CreatedTimestamp>
-      <ModifiedTimestamp>2018-07-30.10:19:22</ModifiedTimestamp>
+      <ModifiedTimestamp>2018-07-30.18:25:31</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
     <table id="48" parent="2" name="BUG_STAFF">
@@ -742,8 +742,9 @@
     </column>
     <column id="136" parent="47" name="REEMAIL">
       <Position>7</Position>
-      <DataType>VARCHAR2(20 byte)|0</DataType>
+      <DataType>VARCHAR2(100 byte)|0</DataType>
       <NotNull>1</NotNull>
+      <DefaultExpression>NULL</DefaultExpression>
     </column>
     <column id="137" parent="47" name="REIDCARDNO">
       <Position>8</Position>
@@ -761,10 +762,11 @@
       <DataType>NUMBER(8)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="140" parent="47" name="RECILLEGE">
+    <column id="140" parent="47" name="RECOLLEGE">
       <Position>11</Position>
-      <DataType>VARCHAR2(20 byte)|0</DataType>
+      <DataType>VARCHAR2(100 byte)|0</DataType>
       <NotNull>1</NotNull>
+      <DefaultExpression>NULL</DefaultExpression>
     </column>
     <column id="141" parent="47" name="REMAJOR">
       <Position>12</Position>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.w.dao.AttendanceMapper" >
+    <insert id="addAttendance">
+        INSERT INTO BUG_ATTENDANCE
+        VALUES (ATTENDANCE_SEQ.nextval,#{staff.sid},sysdate,sysdate,null,0)
+
+    </insert>
+
+    <update id="updateAttendance">
+        UPDATE BUG_ATTENDANCE
+        <set>
+            <if test="offtime!=null">
+                OFFTIME=#{offtime},
+            </if>
+            <if test="astate>=0">
+                ASTATE=#{astate}
+            </if>
+        </set>
+        where AID=#{aid}
+    </update>
+    <update id="off">
+        UPDATE BUG_ATTENDANCE SET OFFTIME=sysdate where AID=#{aid}
+    </update>
+
+    <select id="getCountDayBySid" resultType="java.lang.Integer">
+        SELECT COUNT(*) FROM BUG_ATTENDANCE WHERE to_char(sysdate,'yyyy-mm-dd')=to_char(ADATE,'yyyy-mm-dd')
+    </select>
+    <select id="getOnMinutes" resultType="java.lang.Double">
+           SELECT  ROUND(TO_NUMBER(TO_DATE('09-00-00','HH24-MI-SS')-to_date(to_char(ONTIME,'hh24:mi:ss'),'hh24:mi:ss'))*24*60)
+        AS minutes FROM BUG_ATTENDANCE WHERE to_char(sysdate,'yyyy-mm-dd')=to_char(ADATE,'yyyy-mm-dd')
+        AND SID=#{sid}
+    </select>
+    <select id="getAttendanceBySid" resultMap="attendanceMap1">
+           SELECT * FROM BUG_ATTENDANCE WHERE to_char(sysdate,'yyyy-mm-dd')=to_char(ADATE,'yyyy-mm-dd')
+        AND SID=#{sid}
+
+    </select>
+    <select id="getOffMinutes" resultType="java.lang.Double">
+         SELECT  ROUND(TO_NUMBER(to_date(to_char(OFFTIME,'hh24:mi:ss'),'hh24:mi:ss')-TO_DATE('18:00:00','hh24:mi:ss'))*24*60)
+        AS minutes FROM BUG_ATTENDANCE WHERE to_char(sysdate,'yyyy-mm-dd')=to_char(ADATE,'yyyy-mm-dd')
+        AND SID=#{sid}
+    </select>
+    <select id="getCountMonthBySid"  resultType="java.lang.Integer">
+        SELECT count(*) FROM BUG_ATTENDANCE WHERE to_char(
+        <if test="adate==null">
+            sysdate
+        </if>
+        <if test="adate!=null">
+            #{adate}
+        </if>
+        ,'yyyy-mm')=to_char(ADATE,'yyyy-mm') and SID=#{sid}
+    </select>
+
+    <select id="queryCountMonthBySid" resultMap="attendanceMap1">
+        SELECT * FROM (SELECT BUG_ATTENDANCE.*,rownum rn FROM BUG_ATTENDANCE
+        WHERE to_char(
+        <if test="adate==null">
+            sysdate
+        </if>
+        <if test="adate!=null">
+            #{adate}
+        </if>
+        ,'yyyy-mm')=to_char(ADATE,'yyyy-mm') AND SID=#{sid})
+        WHERE rn between #{begin} and #{end}
+    </select>
+    <select id="getCountDayByDidJid" resultType="java.lang.Integer">
+        SELECT count(*) FROM BUG_ATTENDANCE,BUG_STAFF
+        <where>
+            <if test="jid!=0">
+                BUG_STAFF.JID=#{jid}
+            </if>
+            <if test="did!=0">
+                and BUG_STAFF.DID=#{did}
+            </if>
+            and BUG_STAFF.SID=BUG_ATTENDANCE.SID
+            and to_char(
+            <if test="adate==null">
+                sysdate
+            </if>
+            <if test="adate!=null">
+                #{adate}
+            </if>,'yyyy-mm-dd')=to_char(BUG_ATTENDANCE.ADATE,'yyyy-mm-dd')
+        </where>
+    </select>
+    <select id="queryCurrentPageStaffDayByDidJid" resultMap="attendanceMap1">
+        SELECT * FROM (SELECT BUG_ATTENDANCE.*,rownum rn FROM BUG_ATTENDANCE,BUG_STAFF,BUG_DEPARTMENT,BUG_JOB
+        <where>
+            <if test="jid!=0">
+                BUG_STAFF.JID=#{jid}
+            </if>
+            <if test="did!=0">
+                and BUG_STAFF.DID=#{did}
+            </if>
+            and BUG_STAFF.SID=BUG_ATTENDANCE.SID
+            and BUG_STAFF.DID=BUG_DEPARTMENT.DID
+            and BUG_STAFF.JID=BUG_JOB.JID
+            and to_char(
+            <if test="adate==null">
+                sysdate
+            </if>
+            <if test="adate!=null">
+                #{adate}
+            </if>,'yyyy-mm-dd')=to_char(BUG_ATTENDANCE.ADATE,'yyyy-mm-dd')
+        </where> ) s
+        WHERE rn between #{begin} and #{end}
+    </select>
+    <select id="getCountLastMonthBySid" resultType="java.lang.Integer">
+         SELECT count(*) FROM BUG_ATTENDANCE WHERE SID=#{sid}
+        and ASTATE in (1,2,3,4,5,6)
+        and to_char(add_months(sysdate,-1),'yyyy-mm')=to_char(ADATE,'yyyy-mm')
+    </select>
+    <select id="getAttendanceLastMonthBySid" resultMap="attendanceMap1">
+         SELECT * FROM BUG_ATTENDANCE WHERE SID=#{sid}
+        and ASTATE in (2,5,8)
+        and to_char(add_months(sysdate,-1),'yyyy-mm')=to_char(ADATE,'yyyy-mm')
+    </select>
+    <select id="getOffMinutesByAid" resultType="java.lang.Double">
+         SELECT  ROUND(TO_NUMBER(to_date(to_char(OFFTIME,'hh24:mi:ss'),'hh24:mi:ss')-TO_DATE('18:00:00','hh24:mi:ss'))*24*60)
+        AS minutes FROM BUG_ATTENDANCE WHERE AID=#{aid}
+    </select>
+
+    <resultMap id="attendanceMap" type="com.w.model.Attendance">
+        <id property="aid" column="AID"/>
+        <result property="adate" column="ADATE"/>
+        <result property="ontime" column="ONTIME"/>
+        <result property="offtime" column="OFFTIME"/>
+        <result property="astate" column="ASTATE"/>
+    </resultMap>
+    <resultMap id="attendanceMap1" type="com.w.model.Attendance" extends="attendanceMap">
+        <association property="staff" resultMap="com.w.dao.StaffMapper.staffMap1"/>
+    </resultMap>
+</mapper>

@@ -1,11 +1,7 @@
 package com.w.controller;
 
-import com.w.model.Recruit_Information;
-import com.w.model.Resume;
-import com.w.model.User;
-import com.w.service.Recruit_InformationService;
-import com.w.service.ResumeService;
-import com.w.service.UserService;
+import com.w.model.*;
+import com.w.service.*;
 import com.w.util.DoPage;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -24,20 +20,24 @@ import java.util.List;
 @Controller
 public class UserController {
     @Resource
-    private ResumeService resumeService;
-    @Resource
     private UserService userService;
     @Resource
-     private Recruit_InformationService recruit_informationService;
+    private ResumeService resumeService;
+    @Resource
+    private Recruit_InformationService recruit_informationService;
+    @Resource
+    private RecruitService recruitService;
+    @Resource
+    private InterviewService interviewService;
     @RequestMapping("/checkName")
     public void checkName(User user, HttpServletRequest request, HttpServletResponse response) throws Exception{
         System.out.println(user.getUname());
         response.setContentType("text/html;charset=utf-8");
         User user1 = userService.getUserByName(user);
         if (user1==null){
-            request.setAttribute("error","ÂèØ‰ª•Ê≥®ÂÜå");
+            request.setAttribute("error","ø…“‘◊¢≤·");
         }else{
-            response.getWriter().print("ËØ•Áî®Êà∑Â∑≤Â≠òÂú®");
+            response.getWriter().print("∏√”√ªß“—¥Ê‘⁄");
         }
     }
     @RequestMapping("/register")
@@ -47,7 +47,7 @@ public class UserController {
             userService.addUser(user);
             return "../../login";
         }
-        model.addAttribute("str","ËØ•Áî®Êà∑ÂêçÂ∑≤Â≠òÂú®");
+        model.addAttribute("str","∏√”√ªß√˚“—¥Ê‘⁄");
         return "../../register";
     }
     @RequestMapping("/login")
@@ -57,7 +57,7 @@ public class UserController {
             session.setAttribute("user",user1);
            return "redirect:user";
         }
-        model.addAttribute("str","Áî®Êà∑ÂêçÊàñÂØÜÁ†ÅÈîôËØØ");
+        model.addAttribute("str","”√ªß√˚ªÚ√‹¬Î¥ÌŒÛ");
         return "../../login";
     }
     @RequestMapping("/")
@@ -89,14 +89,17 @@ public class UserController {
         return "../../start ";
     }
     @RequestMapping("/user")
-    public String user(@RequestParam(value = "currentPage",defaultValue = "1")int currentPage, HttpServletRequest request) throws Exception{
+    public String user(HttpSession session,@RequestParam(value = "currentPage",defaultValue = "1")int currentPage, HttpServletRequest request) throws Exception{
         int state = 1;
         int pageSize = 10;
+        User user = (User) session.getAttribute("user");
         int totalRows=recruit_informationService.getRecruit_InformationByRiState(state);
         int totalPages = DoPage.getTotalPages(totalRows,pageSize);
         int begin = (currentPage-1)*pageSize+1;
         int end = (currentPage-1)*pageSize+pageSize;
         List<Recruit_Information> recruitInformations = recruit_informationService.queryCurrentPageRecruit_InformationByRiState(state,begin,end);
+        List<Resume> resumes = resumeService.getResumesByUser(user);
+        request.setAttribute("resumes",resumes);
         request.setAttribute("recruitInformations",recruitInformations);
         request.setAttribute("currentPage",currentPage);
         request.setAttribute("totalPages",totalPages);
@@ -121,14 +124,7 @@ public class UserController {
     }
     @RequestMapping("/addresume")
     public String addresume() throws Exception{
-        return "addResume";
-    }
-    @RequestMapping("/addResume1")
-    public String addResume(Resume resume,HttpSession session) throws Exception{
-        User user = (User) session.getAttribute("user");
-        resume.setUser(user);
-        resumeService.addResume(resume);
-        return "redirect:myResume";
+        return "updateResume";
     }
     @RequestMapping("/updateresume")
     public String updateresume(int reid,HttpSession session,HttpServletRequest request) throws Exception{
@@ -137,8 +133,14 @@ public class UserController {
         return "updateResume";
     }
     @RequestMapping("/updateResume")
-    public String updateResume(Resume resume) throws Exception{
-        resumeService.updateResume(resume);
+    public String updateResume(Resume resume,HttpSession session) throws Exception{
+        if (resume.getReid()==0){
+            User user = (User) session.getAttribute("user");
+            resume.setUser(user);
+            resumeService.addResume(resume);
+        }else{
+            resumeService.updateResume(resume);
+        }
         return "redirect:myResume";
     }
     @RequestMapping("/deleteResume")
@@ -152,8 +154,49 @@ public class UserController {
         return "redirect:myResume";
     }
     @RequestMapping("/sendResume")
-    public void sendResume(int riid,int reid,HttpSession session) throws Exception{
+    public void sendResume(int riid,int reid,HttpSession session,HttpServletResponse response) throws Exception{
+        response.setContentType("text/html;charset=utf-8");
         User user = (User) session.getAttribute("user");
-
+        Recruit recruit=recruitService.getRecruitByUserRe(user.getUid(),riid);//≤Èø¥µ±«∞”√ªß∂‘∏√Ãı’–∆∏–≈œ¢ «∑ÒÕ∂µ›π˝ºÚ¿˙
+        if (recruit!=null){
+            response.getWriter().print("∏√÷∞Œªƒ„“—æ≠Õ∂µ›ºÚ¿˙");
+        }else {
+            recruit=new Recruit(new Recruit_Information(riid),new Resume(reid),0);
+            recruitService.addRecruit(recruit);
+            response.getWriter().print("Õ∂µ›ºÚ¿˙≥…π¶");
+        }
     }
+    @RequestMapping("/myInterview")
+    public String myInterview(@RequestParam(value = "istate",defaultValue = "0")int istate,@RequestParam(value = "currentPage",defaultValue = "1")int currentPage,HttpSession session,HttpServletRequest request) throws Exception{
+        User user = (User) session.getAttribute("user");
+        int pageSize = 10;
+        int totalRows=interviewService.getInterviewByUidIstate(user.getUid(),istate);
+        int totalPages = DoPage.getTotalPages(totalRows,pageSize);
+        int begin = (currentPage-1)*pageSize+1;
+        int end = (currentPage-1)*pageSize+pageSize;
+        List<Interview> interviews = interviewService.queryCurrentInterviewByUidIstate(user.getUid(),istate,begin,end);
+        request.setAttribute("interviews",interviews);
+        request.setAttribute("istate",istate);
+        request.setAttribute("currentPage",currentPage);
+        request.setAttribute("totalPages",totalPages);
+        return "myInterview";
+    }
+    @RequestMapping("/jion")
+    public void jion(int iid,HttpServletResponse response) throws Exception{
+        response.setContentType("text/html;charset=utf-8");
+        Interview interview = interviewService.getInterviewByIid(iid);
+        interview.setIstate(1);
+        interviewService.updateInterview(interview);
+        response.getWriter().print("“—≤Œº”¥À¥Œ√Ê ‘£¨«Î◊ˆ∫√◊º±∏");
+    }
+    @RequestMapping("/refuseInterview")
+    public void refuseInterview(int iid,HttpServletResponse response) throws Exception{
+        response.setContentType("text/html;charset=utf-8");
+        Interview interview = interviewService.getInterviewByIid(iid);
+        interview.setIstate(2);
+        interviewService.updateInterview(interview);
+        response.getWriter().print("“—æ‹æ¯¥À¥Œ√Ê ‘£¨«Î’‰œß√ø“ª¥Œ√Ê ‘ª˙ª·");
+    }
+
+
 }

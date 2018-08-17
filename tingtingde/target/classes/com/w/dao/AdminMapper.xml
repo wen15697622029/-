@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.w.dao.AdminMapper" >
+
+    <select id="getAdminByNamePass" resultMap="adminMap">
+        SELECT * FROM BUG_ADMIN
+        WHERE ADNAME=#{adname} AND ADPASS=#{adpass}
+    </select>
+    <resultMap id="adminMap" type="com.w.model.Admin">
+        <id property="adid" column="ADID"/>
+        <result property="adname" column="ADNAME"/>
+        <result property="adpass" column="ADPASS"/>
+    </resultMap>
+    <resultMap id="adminMap1" type="com.w.model.Admin" extends="adminMap">
+        <association property="staff" resultMap="com.w.dao.StaffMapper.staffMap" />
+    </resultMap>
+</mapper>

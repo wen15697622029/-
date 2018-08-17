@@ -11,7 +11,7 @@ public class Attendance implements Serializable {
     private Staff staff;//员工id
     private Date adate;//日期
     private Date ontime;//上班时间
-    private Date uptime;//下班时间
+    private Date offtime;//下班时间
     private int astate;//状态
 
     public Attendance() {
@@ -49,14 +49,6 @@ public class Attendance implements Serializable {
         this.ontime = ontime;
     }
 
-    public Date getUptime() {
-        return uptime;
-    }
-
-    public void setUptime(Date uptime) {
-        this.uptime = uptime;
-    }
-
     public int getAstate() {
         return astate;
     }
@@ -65,8 +57,16 @@ public class Attendance implements Serializable {
         this.astate = astate;
     }
 
+    public Date getOfftime() {
+        return offtime;
+    }
+
+    public void setOfftime(Date offtime) {
+        this.offtime = offtime;
+    }
+
     @Override
     public String toString() {
-        return "Attendance{" + "aid=" + aid + ", staff=" + staff + ", adate=" + adate + ", ontime=" + ontime + ", uptime=" + uptime + ", astate=" + astate + '}';
+        return "Attendance{" + "aid=" + aid + ", staff=" + staff + ", adate=" + adate + ", ontime=" + ontime + ", offtime=" + offtime + ", astate=" + astate + '}';
     }
 }

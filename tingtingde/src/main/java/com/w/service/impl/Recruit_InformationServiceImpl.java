@@ -25,4 +25,24 @@ public class Recruit_InformationServiceImpl implements Recruit_InformationServic
     public List<Recruit_Information> queryCurrentPageRecruit_InformationByRiState(int state, int begin, int end) {
         return recruit_informationMapper.queryCurrentPageRecruit_InformationByRiState(state,begin,end);
     }
+
+    @Override
+    public Recruit_Information getRecruit_InformationByRiid(int riid) {
+        return recruit_informationMapper.getRecruit_InformationByRiid(riid);
+    }
+
+    @Override
+    public int updateRecruit_Information(Recruit_Information recruitInformation) {
+        return recruit_informationMapper.updateRecruit_Information(recruitInformation);
+    }
+
+    @Override
+    public int deleteRecruit_Information(int riid) {
+        return recruit_informationMapper.deleteRecruit_Information(riid);
+    }
+
+    @Override
+    public int addRecruit_Information(Recruit_Information recruit_information) {
+        return recruit_informationMapper.addRecruit_Information(recruit_information);
+    }
 }

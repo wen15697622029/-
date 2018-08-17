@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.w.dao.PayMapper" >
+    <insert id="addPay">
+          INSERT INTO BUG_PAY
+        VALUES(PAY_SEQ.nextval,sysdate,#{staff.sid},#{pbase},#{pperformance},
+        #{povertime},#{prap},#{pss},#{ppay},#{pstate},null)
+    </insert>
+    <update id="updatePayPstate">
+         UPDATE BUG_PAY SET PSTATE=#{1} where PID=#{0}
+    </update>
+
+    <select id="getCountMonthPay" resultType="java.lang.Integer">
+        SELECT COUNT(*) FROM BUG_PAY WHERE to_char(sysdate,'yyyy-mm')=to_char(PDATE,'yyyy-mm')
+    </select>
+    <select id="getPayByDidJid" resultType="java.lang.Integer">
+        SELECT count(*) FROM BUG_PAY,BUG_STAFF
+        <where>
+            <if test="jid!=0">
+                BUG_STAFF.JID=#{jid}
+            </if>
+            <if test="did!=0">
+                and BUG_STAFF.DID=#{did}
+            </if>
+            and BUG_STAFF.SID=BUG_PAY.SID
+            and to_char(
+            <if test="pdate==null">
+                sysdate
+            </if>
+            <if test="pdate!=null">
+                #{pdate}
+            </if>,'yyyy-mm')=to_char(BUG_PAY.PDATE,'yyyy-mm')
+        </where>
+    </select>
+    <select id="queryCurrentPagePayByDidJid" resultMap="payMap1">
+        SELECT * FROM (SELECT BUG_PAY.*,rownum rn FROM BUG_PAY,BUG_STAFF
+        <where>
+            <if test="jid!=0">
+                BUG_STAFF.JID=#{jid}
+            </if>
+            <if test="did!=0">
+                and BUG_STAFF.DID=#{did}
+            </if>
+            and BUG_STAFF.SID=BUG_PAY.SID
+            and to_char(
+            <if test="pdate==null">
+                sysdate
+            </if>
+            <if test="pdate!=null">
+                #{pdate}
+            </if>
+            ,'yyyy-mm')=to_char(BUG_PAY.PDATE,'yyyy-mm')
+        </where>) P
+        WHERE rn between #{begin} and #{end}
+    </select>
+    <select id="getCountBySid" resultType="java.lang.Integer">
+        SELECT count(*) FROM BUG_PAY where SID=#{sid}
+        and to_char(
+        <if test="pdate==null">
+            sysdate
+        </if>
+        <if test="pdate!=null">
+            #{pdate}
+        </if>
+        ,'yyyy-mm')=to_char(BUG_PAY.PDATE,'yyyy-mm')
+    </select>
+    <select id="queryCountBySid" resultMap="payMap1">
+        SELECT * from (SELECT BUG_PAY.*,rownum rn FROM BUG_PAY WHERE SID=#{sid}
+        and to_char(
+        <if test="pdate==null">
+            sysdate
+        </if>
+        <if test="pdate!=null">
+            #{pdate}
+        </if>
+        ,'yyyy-mm')=to_char(BUG_PAY.PDATE,'yyyy-mm')
+        )
+        WHERE rn between #{begin} and #{end}
+    </select>
+    <resultMap id="payMap" type="com.w.model.Pay">
+        <id property="pid" column="PID"/>
+        <result property="pdate" column="PDATE"/>
+        <result property="pbase" column="PBASE"/>
+        <result property="pperformance" column="PPERFORMANCE"/>
+        <result property="povertime" column="POVERTIME"/>
+        <result property="prap" column="PRAP"/>
+        <result property="pss" column="PSS"/>
+        <result property="ppay" column="PPAY"/>
+        <result property="pstate" column="PSTATE"/>
+        <result property="pintro" column="PINTRO"/>
+    </resultMap>
+    <resultMap id="payMap1" type="com.w.model.Pay" extends="payMap">
+        <association property="staff" resultMap="com.w.dao.StaffMapper.staffMap1"/>
+    </resultMap>
+</mapper>

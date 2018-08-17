@@ -11,29 +11,54 @@ import java.util.Date;
 public class Staff implements Serializable {
     private int sid;//员工表id
     private String susername;//用户名
-    private String spadd;//密码
+    private String spass;//密码
     private Department department;//部门id
     private Job job;//职位id；
     private int sstate;//入职状态
     private String sname;//姓名
     private String ssex;//性别
-    private int sidcardno;//身份证号码
+    private String sidcardno;//身份证号码
     @DateTimeFormat(pattern="yyyy-MM-dd")
-    private Date sbirrhday;//出生日期
+    private Date sbirthday;//出生日期
     private String sphone;//手机号
-    private String semall;//邮箱地址
+    private String semail;//邮箱地址
     private String saddress;//地址
     private String spost;//邮政编码
     private String seducation;//学历
     private String scollege;//大学
     private String smajor;//专业
     @DateTimeFormat(pattern="yyyy-MM-dd")
-    private Date sgraduta;//毕业时间
+    private Date sgraduate;//毕业时间
     private String sintro;//简介
     @DateTimeFormat(pattern="yyyy-MM-dd")
-    private Date sentrdate;//入职时间
+    private Date sentrydate;//入职时间
 
     public Staff() {
+    }
+
+    public Staff(int sid) {
+        this.sid = sid;
+    }
+
+    public Staff(String susername, String spass, Department department, Job job, int sstate, String sname, String ssex, String sidcardno, Date sbirthday, String sphone, String semail, String saddress, String spost, String seducation, String scollege, String smajor, Date sgraduate, String sintro) {
+        this.susername = susername;
+        this.spass = spass;
+        this.department = department;
+        this.job = job;
+        this.sstate = sstate;
+        this.sname = sname;
+        this.ssex = ssex;
+        this.sidcardno = sidcardno;
+        this.sbirthday = sbirthday;
+        this.sphone = sphone;
+        this.semail = semail;
+        this.saddress = saddress;
+        this.spost = spost;
+        this.seducation = seducation;
+        this.scollege = scollege;
+        this.smajor = smajor;
+        this.sgraduate = sgraduate;
+        this.sintro = sintro;
     }
 
     public int getSid() {
@@ -52,12 +77,12 @@ public class Staff implements Serializable {
         this.susername = susername;
     }
 
-    public String getSpadd() {
-        return spadd;
+    public String getSpass() {
+        return spass;
     }
 
-    public void setSpadd(String spadd) {
-        this.spadd = spadd;
+    public void setSpass(String spass) {
+        this.spass = spass;
     }
 
     public Department getDepartment() {
@@ -100,20 +125,20 @@ public class Staff implements Serializable {
         this.ssex = ssex;
     }
 
-    public int getSidcardno() {
+    public String getSidcardno() {
         return sidcardno;
     }
 
-    public void setSidcardno(int sidcardno) {
+    public void setSidcardno(String sidcardno) {
         this.sidcardno = sidcardno;
     }
 
-    public Date getSbirrhday() {
-        return sbirrhday;
+    public Date getSbirthday() {
+        return sbirthday;
     }
 
-    public void setSbirrhday(Date sbirrhday) {
-        this.sbirrhday = sbirrhday;
+    public void setSbirthday(Date sbirthday) {
+        this.sbirthday = sbirthday;
     }
 
     public String getSphone() {
@@ -124,12 +149,12 @@ public class Staff implements Serializable {
         this.sphone = sphone;
     }
 
-    public String getSemall() {
-        return semall;
+    public String getSemail() {
+        return semail;
     }
 
-    public void setSemall(String semall) {
-        this.semall = semall;
+    public void setSemail(String semail) {
+        this.semail = semail;
     }
 
     public String getSaddress() {
@@ -172,12 +197,12 @@ public class Staff implements Serializable {
         this.smajor = smajor;
     }
 
-    public Date getSgraduta() {
-        return sgraduta;
+    public Date getSgraduate() {
+        return sgraduate;
     }
 
-    public void setSgraduta(Date sgraduta) {
-        this.sgraduta = sgraduta;
+    public void setSgraduate(Date sgraduate) {
+        this.sgraduate = sgraduate;
     }
 
     public String getSintro() {
@@ -188,16 +213,16 @@ public class Staff implements Serializable {
         this.sintro = sintro;
     }
 
-    public Date getSentrdate() {
-        return sentrdate;
+    public Date getSentrydate() {
+        return sentrydate;
     }
 
-    public void setSentrdate(Date sentrdate) {
-        this.sentrdate = sentrdate;
+    public void setSentrydate(Date sentrydate) {
+        this.sentrydate = sentrydate;
     }
 
     @Override
     public String toString() {
-        return "Staff{" + "sid=" + sid + ", susername='" + susername + '\'' + ", spadd='" + spadd + '\'' + ", department=" + department + ", job=" + job + ", sstate=" + sstate + ", sname='" + sname + '\'' + ", ssex='" + ssex + '\'' + ", sidcardno=" + sidcardno + ", sbirrhday=" + sbirrhday + ", sphone='" + sphone + '\'' + ", semall='" + semall + '\'' + ", saddress='" + saddress + '\'' + ", spost='" + spost + '\'' + ", seducation='" + seducation + '\'' + ", scollege='" + scollege + '\'' + ", smajor='" + smajor + '\'' + ", sgraduta=" + sgraduta + ", sintro='" + sintro + '\'' + ", sentrdate=" + sentrdate + '}';
+        return "Staff{" + "sid=" + sid + ", susername='" + susername + '\'' + ", spass='" + spass + '\'' + ", department=" + department + ", job=" + job + ", sstate=" + sstate + ", sname='" + sname + '\'' + ", ssex='" + ssex + '\'' + ", sidcardno='" + sidcardno + '\'' + ", sbirthday=" + sbirthday + ", sphone='" + sphone + '\'' + ", semail='" + semail + '\'' + ", saddress='" + saddress + '\'' + ", spost='" + spost + '\'' + ", seducation='" + seducation + '\'' + ", scollege='" + scollege + '\'' + ", smajor='" + smajor + '\'' + ", sgraduate=" + sgraduate + ", sintro='" + sintro + '\'' + ", sentrydate=" + sentrydate + '}';
     }
 }

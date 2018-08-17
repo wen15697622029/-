@@ -8,14 +8,16 @@
         INSERT INTO BUG_USER VALUES (USER_SEQ.nextval,#{uname},#{upass})
     </insert>
     <update id="updateUser"></update>
-    <select id="getUserByNamePass" resultType="com.w.model.User">
+    <select id="getUserByNamePass" resultMap="userMap">
         select * from BUG_USER where UNAME=#{uname} and uPass=#{upass}
     </select>
 
-    <select id="getUserByName" resultType="com.w.model.User">
+    <select id="getUserByName" resultMap="userMap">
         SELECT * from BUG_USER WHERE UNAME=#{uname}
     </select>
-    <select id="getUserById" resultType="com.w.model.User"></select>
+    <select id="getUserById" resultMap="userMap">
+        SELECT * FROM BUG_USER WHERE "UID"=#{0}
+    </select>
     <resultMap id="userMap" type="com.w.model.User">
         <id property="uid" column="UID"/>
         <result property="uname" column="UNAME"/>

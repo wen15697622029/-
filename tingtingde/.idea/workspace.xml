@@ -2,56 +2,266 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dde6fd1f-9efc-4878-9210-016891f41f82" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/dao/ResumeMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/dao/ResumeMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/service/ResumeService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/service/impl/ResumeServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/util/DateAndString.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addResume.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/myResume.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/updateResume.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/66.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/controller/AdminController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/controller/StaffController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/dao/AdminMapper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/dao/AttendanceMapper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/dao/CultivateMapper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/dao/DepartmentMapper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/dao/InterviewMapper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/dao/JobMapper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/dao/PayMapper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/dao/RapMapper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/dao/RecruitMapper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/dao/StaffMapper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/service/AdminService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/service/AttendanceService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/service/CultivateService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/service/DepartmentService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/service/InterviewService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/service/JobService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/service/PayService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/service/RapService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/service/RecruitService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/service/StaffService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/service/impl/AdminServiceImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/service/impl/AttendanceServiceImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/service/impl/CultivateServiceImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/service/impl/DepartmentServiceImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/service/impl/InterviewServiceImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/service/impl/JobServiceImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/service/impl/PayServiceImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/service/impl/RapServiceImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/service/impl/RecruitServiceImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/service/impl/StaffServiceImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/controller/AdminController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/controller/StaffController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/AdminMapper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/AttendanceMapper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/CultivateMapper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/DepartmentMapper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/InterviewMapper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/JobMapper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/PayMapper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/RapMapper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/RecruitMapper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/StaffMapper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/service/AdminService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/service/AttendanceService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/service/CultivateService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/service/DepartmentService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/service/InterviewService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/service/JobService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/service/PayService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/service/RapService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/service/RecruitService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/service/StaffService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/service/impl/AdminServiceImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/service/impl/AttendanceServiceImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/service/impl/CultivateServiceImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/service/impl/DepartmentServiceImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/service/impl/InterviewServiceImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/service/impl/JobServiceImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/service/impl/PayServiceImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/service/impl/RapServiceImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/service/impl/RecruitServiceImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/service/impl/StaffServiceImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/controller/AdminController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/controller/StaffController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/dao/AdminMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/dao/AdminMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/dao/AttendanceMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/dao/AttendanceMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/dao/CultivateMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/dao/CultivateMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/dao/DepartmentMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/dao/DepartmentMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/dao/InterviewMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/dao/InterviewMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/dao/JobMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/dao/JobMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/dao/PayMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/dao/PayMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/dao/RapMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/dao/RapMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/dao/RecruitMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/dao/RecruitMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/dao/StaffMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/dao/StaffMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/service/AdminService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/service/AttendanceService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/service/CultivateService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/service/DepartmentService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/service/InterviewService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/service/JobService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/service/PayService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/service/RapService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/service/RecruitService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/service/StaffService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/service/impl/AdminServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/service/impl/AttendanceServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/service/impl/CultivateServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/service/impl/DepartmentServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/service/impl/InterviewServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/service/impl/JobServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/service/impl/PayServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/service/impl/RapServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/service/impl/RecruitServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/service/impl/StaffServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addCultivate.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/alter.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/attendanceInformation.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/attendanceMessage.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/check.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/cultivate.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/cultivateMessage.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/interview.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/interviewManage.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/myInterview.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/organizationalManagement.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/pay.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/payMessage.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/r.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/rap.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/rapMessage.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/ri.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/staff.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/staffAttendance.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/staffCultivate.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/staffDetail.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/staffInformation.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/staffPay.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/updateDetail.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/check.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/myInterview.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/myResume.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/rapMessage.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/staff.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/dao/AdminMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/dao/AttendanceMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/dao/CultivateMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/dao/DepartmentMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/dao/InterviewMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/dao/JobMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/dao/PayMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/dao/RapMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/dao/RecruitMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/dao/StaffMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/AdminMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/AttendanceMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/CultivateMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/DepartmentMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/InterviewMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/JobMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/PayMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/RapMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/RecruitMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/StaffMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/pages/admin.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/pages/alter.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/pages/check.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/pages/interview.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/pages/interviewManage.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/pages/myInterview.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/pages/organizationalManagement.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/pages/r.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/pages/ri.jsp" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addResume.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/tingtingde/WEB-INF/pages/addResume.jsp" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/85810bac-7e7e-4bca-a5c3-f839371fe837/_metadata_/metadata" afterPath="$PROJECT_DIR$/.idea/dataSources/85810bac-7e7e-4bca-a5c3-f839371fe837/_metadata_/metadata" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/85810bac-7e7e-4bca-a5c3-f839371fe837/_metadata_/metadata.values.at" afterPath="$PROJECT_DIR$/.idea/dataSources/85810bac-7e7e-4bca-a5c3-f839371fe837/_metadata_/metadata.values.at" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/w/controller/UserController.class" afterPath="$PROJECT_DIR$/target/classes/com/w/controller/UserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/w/model/Admin.class" afterPath="$PROJECT_DIR$/target/classes/com/w/model/Admin.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/w/dao/Recruit_InformationMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/w/dao/Recruit_InformationMapper.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/w/model/Attendance.class" afterPath="$PROJECT_DIR$/target/classes/com/w/model/Attendance.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/w/model/Cultivate.class" afterPath="$PROJECT_DIR$/target/classes/com/w/model/Cultivate.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/w/model/Department.class" afterPath="$PROJECT_DIR$/target/classes/com/w/model/Department.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/w/model/Interview.class" afterPath="$PROJECT_DIR$/target/classes/com/w/model/Interview.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/w/model/Job.class" afterPath="$PROJECT_DIR$/target/classes/com/w/model/Job.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/w/model/Pay.class" afterPath="$PROJECT_DIR$/target/classes/com/w/model/Pay.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/w/model/Rap.class" afterPath="$PROJECT_DIR$/target/classes/com/w/model/Rap.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/w/model/Recruit.class" afterPath="$PROJECT_DIR$/target/classes/com/w/model/Recruit.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/w/model/Recruit_Information.class" afterPath="$PROJECT_DIR$/target/classes/com/w/model/Recruit_Information.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/w/model/Resume.class" afterPath="$PROJECT_DIR$/target/classes/com/w/model/Resume.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/w/model/Staff.class" afterPath="$PROJECT_DIR$/target/classes/com/w/model/Staff.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/w/service/Recruit_InformationService.class" afterPath="$PROJECT_DIR$/target/classes/com/w/service/Recruit_InformationService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/w/service/impl/Recruit_InformationServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/w/service/impl/Recruit_InformationServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/w/util/DateAndString.class" afterPath="$PROJECT_DIR$/target/classes/com/w/util/DateAndString.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde.war" afterPath="$PROJECT_DIR$/target/tingtingde.war" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/controller/UserController.class" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/controller/UserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/model/Admin.class" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/model/Admin.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/Recruit_InformationMapper.class" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/Recruit_InformationMapper.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/model/Attendance.class" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/model/Attendance.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/model/Cultivate.class" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/model/Cultivate.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/model/Department.class" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/model/Department.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/model/Interview.class" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/model/Interview.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/model/Job.class" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/model/Job.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/model/Pay.class" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/model/Pay.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/model/Rap.class" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/model/Rap.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/model/Recruit.class" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/model/Recruit.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/model/Recruit_Information.class" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/model/Recruit_Information.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/model/Resume.class" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/model/Resume.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/model/Staff.class" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/model/Staff.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/service/Recruit_InformationService.class" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/service/Recruit_InformationService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/service/impl/Recruit_InformationServiceImpl.class" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/service/impl/Recruit_InformationServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/util/DateAndString.class" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/util/DateAndString.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/85810bac-7e7e-4bca-a5c3-f839371fe837.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/85810bac-7e7e-4bca-a5c3-f839371fe837.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/w/controller/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/w/controller/UserController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/w/model/Admin.java" afterPath="$PROJECT_DIR$/src/main/java/com/w/model/Admin.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/w/dao/Recruit_InformationMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/w/dao/Recruit_InformationMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/w/dao/Recruit_InformationMapper.xml" afterPath="$PROJECT_DIR$/src/main/java/com/w/dao/Recruit_InformationMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/w/dao/ResumeMapper.xml" afterPath="$PROJECT_DIR$/src/main/java/com/w/dao/ResumeMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/w/dao/UserMapper.xml" afterPath="$PROJECT_DIR$/src/main/java/com/w/dao/UserMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/w/model/Attendance.java" afterPath="$PROJECT_DIR$/src/main/java/com/w/model/Attendance.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/w/model/Cultivate.java" afterPath="$PROJECT_DIR$/src/main/java/com/w/model/Cultivate.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/w/model/Department.java" afterPath="$PROJECT_DIR$/src/main/java/com/w/model/Department.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/w/model/Interview.java" afterPath="$PROJECT_DIR$/src/main/java/com/w/model/Interview.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/w/model/Job.java" afterPath="$PROJECT_DIR$/src/main/java/com/w/model/Job.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/w/model/Pay.java" afterPath="$PROJECT_DIR$/src/main/java/com/w/model/Pay.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/w/model/Rap.java" afterPath="$PROJECT_DIR$/src/main/java/com/w/model/Rap.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/w/model/Recruit.java" afterPath="$PROJECT_DIR$/src/main/java/com/w/model/Recruit.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/w/model/Recruit_Information.java" afterPath="$PROJECT_DIR$/src/main/java/com/w/model/Recruit_Information.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/w/model/Resume.java" afterPath="$PROJECT_DIR$/src/main/java/com/w/model/Resume.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/w/model/Staff.java" afterPath="$PROJECT_DIR$/src/main/java/com/w/model/Staff.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/w/service/Recruit_InformationService.java" afterPath="$PROJECT_DIR$/src/main/java/com/w/service/Recruit_InformationService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/w/service/impl/Recruit_InformationServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/w/service/impl/Recruit_InformationServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/w/util/DateAndString.java" afterPath="$PROJECT_DIR$/src/main/java/com/w/util/DateAndString.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/myResume.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/myResume.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/updateResume.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/updateResume.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/user.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/user.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/adminLogin.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/adminLogin.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/register.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/register.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/admin.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/admin.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/index.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/index.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/login.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/login.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/register.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/register.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/user.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/user.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/staffLogin.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/staffLogin.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/w/dao/Recruit_InformationMapper.xml" afterPath="$PROJECT_DIR$/target/classes/com/w/dao/Recruit_InformationMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/w/dao/ResumeMapper.xml" afterPath="$PROJECT_DIR$/target/classes/com/w/dao/ResumeMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/w/dao/UserMapper.xml" afterPath="$PROJECT_DIR$/target/classes/com/w/dao/UserMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/Recruit_InformationMapper.xml" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/Recruit_InformationMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/ResumeMapper.xml" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/ResumeMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/UserMapper.xml" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/UserMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/WEB-INF/pages/myResume.jsp" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/pages/myResume.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/WEB-INF/pages/updateResume.jsp" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/pages/updateResume.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/WEB-INF/pages/user.jsp" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/pages/user.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/adminLogin.jsp" afterPath="$PROJECT_DIR$/target/tingtingde/adminLogin.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/login.jsp" afterPath="$PROJECT_DIR$/target/tingtingde/login.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/register.jsp" afterPath="$PROJECT_DIR$/target/tingtingde/register.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/resources/css/admin.css" afterPath="$PROJECT_DIR$/target/tingtingde/resources/css/admin.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/resources/css/index.css" afterPath="$PROJECT_DIR$/target/tingtingde/resources/css/index.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/resources/css/login.css" afterPath="$PROJECT_DIR$/target/tingtingde/resources/css/login.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/resources/css/register.css" afterPath="$PROJECT_DIR$/target/tingtingde/resources/css/register.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/resources/css/user.css" afterPath="$PROJECT_DIR$/target/tingtingde/resources/css/user.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/staffLogin.jsp" afterPath="$PROJECT_DIR$/target/tingtingde/staffLogin.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tingtingde.iml" afterPath="$PROJECT_DIR$/tingtingde.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -130,29 +340,7 @@
         <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="BUG_RESUME" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="BUG" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="BUG_RECRUIT" />
+        <option name="myItemId" value="BUG_RAP" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
@@ -160,127 +348,127 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/w/controller/UserController.java">
+      <file leaf-file-name="StaffService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/w/service/StaffService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="118" column="0" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+            <state relative-caret-position="169">
+              <caret line="34" column="16" lean-forward="false" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="myResume.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/myResume.jsp">
+      <file leaf-file-name="StaffServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/w/service/impl/StaffServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="addResume.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addResume.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="updateResume.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/updateResume.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NativeMethodAccessorImpl.class" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="37">
-              <caret line="33" column="33" lean-forward="false" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/w/dao/UserMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+            <state relative-caret-position="199">
+              <caret line="75" column="36" lean-forward="false" selection-start-line="75" selection-start-column="36" selection-end-line="75" selection-end-column="36" />
               <folding>
-                <marker date="1532655461847" expanded="true" signature="240:304" ph="INSERT INTO BUG_USER... " />
-                <marker date="1532655461847" expanded="true" signature="431:493" ph="select * fro... BUG_USER" />
-                <marker date="1532655461847" expanded="true" signature="579:622" ph="SELECT * fro... BUG_USER" />
+                <element signature="e#1887#1888#0" expanded="true" />
+                <element signature="e#1948#1949#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ResumeMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/w/dao/ResumeMapper.xml">
+      <file leaf-file-name="StaffMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/w/dao/StaffMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="85" column="53" lean-forward="false" selection-start-line="85" selection-start-column="53" selection-end-line="85" selection-end-column="53" />
-              <folding>
-                <marker date="1532946054116" expanded="true" signature="244:493" ph="INSERT INTO BUG_RESUME... " />
-                <marker date="1532946054116" expanded="true" signature="547:1961" ph="UPDATE BUG.B... " />
-                <marker date="1532946054116" expanded="true" signature="1934:1961" ph="UPDATE BUG.B... " />
-                <marker date="1532946054116" expanded="true" signature="2015:2056" ph="DELETE FROM " />
-                <marker date="1532946054116" expanded="true" signature="2145:2198" ph="SELECT COUNT... BUG_RESUME" />
-                <marker date="1532946054116" expanded="true" signature="2296:2480" ph="SELECT * FRO... *" />
-                <marker date="1532946054116" expanded="true" signature="2311:2392" ph="SELECT BUG_R... BUG_RESUME" />
-                <marker date="1532946054116" expanded="true" signature="2570:2613" ph="SELECT * FRO... BUG_RESUME" />
-                <marker date="1532946054116" expanded="true" signature="2702:2745" ph="SELECT * fro... BUG_RESUME" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/w/dao/UserMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="12" column="9" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+            <state relative-caret-position="169">
+              <caret line="34" column="16" lean-forward="false" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Resume.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/w/model/Resume.java">
+      <file leaf-file-name="StaffMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/w/dao/StaffMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2528">
-              <caret line="163" column="18" lean-forward="false" selection-start-line="163" selection-start-column="18" selection-end-line="163" selection-end-column="18" />
+            <state relative-caret-position="-851">
+              <caret line="147" column="44" lean-forward="true" selection-start-line="147" selection-start-column="44" selection-end-line="147" selection-end-column="44" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3151#3152#0" expanded="true" />
-                <element signature="e#3183#3184#0" expanded="true" />
-                <element signature="e#3233#3234#0" expanded="true" />
-                <element signature="e#3275#3276#0" expanded="true" />
+                <marker date="1535791080949" expanded="true" signature="276:757" ph="INSERT INTO BUG_STAFF... " />
+                <marker date="1535791080949" expanded="true" signature="811:865" ph="INSERT INTO BUG_SC... " />
+                <marker date="1535791080949" expanded="true" signature="918:2736" ph="UPDATE BUG_S... " />
+                <marker date="1535791080949" expanded="true" signature="2793:2828" ph="DELETE FROM " />
+                <marker date="1535791080949" expanded="true" signature="3328:3828" ph="SELECT * FRO... *" />
+                <marker date="1535791080949" expanded="true" signature="4303:4348" ph="SELECT count... BUG_STAFF" />
+                <marker date="1535791080949" expanded="true" signature="4436:4481" ph="SELECT count... BUG_STAFF" />
+                <marker date="1535791080949" expanded="true" signature="4558:4596" ph="SELECT * fro... BUG_STAFF" />
+                <marker date="1535791080949" expanded="true" signature="4683:4761" ph="select month... BUG_STAFF" />
+                <marker date="1535791080949" expanded="true" signature="4834:4857" ph="SELECT * FRO... BUG_STAFF" />
+                <marker date="1535791080949" expanded="true" signature="4938:5008" ph="SELECT * FRO... BUG_STAFF" />
+                <marker date="1535791080949" expanded="true" signature="4938:5091" ph="SELECT * FRO... BUG_STAFF" />
+                <marker date="1535791080949" expanded="true" signature="5169:5209" ph="SELECT * FRO... BUG_STAFF" />
+                <marker date="1535791080949" expanded="true" signature="5292:5477" ph="SELECT * FRO... BUG_STAFF" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BUG.BUG_RESUME" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/82cfe38c/85810bac-7e7e-4bca-a5c3-f839371fe837/BUG.BUG_RESUME">
+      <file leaf-file-name="RapMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/w/dao/RapMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="8" column="38" lean-forward="false" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+              <folding>
+                <marker date="1535791886556" expanded="true" signature="239:336" ph="INSERT INTO BUG_RAP... " />
+                <marker date="1535791886556" expanded="true" signature="427:675" ph="SELECT count... BUG_RAP" />
+                <marker date="1535791886556" expanded="true" signature="757:1077" ph="SELECT * FRO... *" />
+                <marker date="1535791886556" expanded="true" signature="772:1031" ph="SELECT BUG_R... BUG_RAP" />
+                <marker date="1535791886556" expanded="true" signature="1784:1902" ph="SELECT * FRO... BUG_RAP" />
+                <marker date="1535791886556" expanded="true" signature="2005:2726" ph="SELECT * FRO... *" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pay.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/pay.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="163">
+              <caret line="84" column="39" lean-forward="false" selection-start-line="84" selection-start-column="25" selection-end-line="84" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/w/controller/AdminController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="141">
+              <caret line="635" column="0" lean-forward="false" selection-start-line="635" selection-start-column="0" selection-end-line="635" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BUG.BUG_PAY" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/82cfe38c/85810bac-7e7e-4bca-a5c3-f839371fe837/BUG.BUG_PAY">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
           <provider editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BUG.BUG_ATTENDANCE" pinned="false" current-in-tab="true">
+        <entry file="dbDummy://dbtable:/82cfe38c/85810bac-7e7e-4bca-a5c3-f839371fe837/BUG.BUG_ATTENDANCE">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true" />
+            </state>
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -292,11 +480,27 @@
       <list>
         <option value="mybatis-config" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="Mybatis Mapper" />
+        <option value="Class" />
         <option value="Jsp File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>RecruitInformationService</find>
+      <find>gwy</find>
+      <find>HRM</find>
+      <find>_</find>
+      <find>img</find>
+      <find>addRi</find>
+      <find>addm</find>
+      <find>payCalculation</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>RecruitInformationService</replace>
+      <replace>w</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -309,55 +513,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/db.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/w/dao/UserMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/w/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/w/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/w/model/ATTENDANCE.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/w/model/Recruit_Infpramation.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/w/service/Recruit_InformationService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/w/service/impl/Recruit_InformationServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/w/dao/Recruit_InformationMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/w/model/Job.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/start.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/js.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/w/util/DoPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/w/model/User.java" />
-        <option value="dbsequence:/82cfe38c/85810bac-7e7e-4bca-a5c3-f839371fe837/BUG.USER_SEQ" />
-        <option value="$PROJECT_DIR$/src/main/java/com/w/dao/UserMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/w/dao/Recruit_InformationMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/w/model/Department.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/w/model/Recruit_Information.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/w/model/Recruit.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/w/model/Rap.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/w/model/Pay.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/w/model/Interview.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/w/model/Cultivate.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/w/model/Attendance.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/w/model/Admin.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/w/dao/RapMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/w/service/RapService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/w/service/impl/RapServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/w/util/DateAndString.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/adminLogin.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/staffLogin.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/register.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/w/dao/ResumeService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/w/dao/ResumeMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/w/model/Job.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/w/model/Pay.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/w/model/Rap.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/w/dao/AdminMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/w/model/Staff.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/w/service/impl/ResumeService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/w/service/ResumeService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/w/service/impl/ResumeServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/w/service/CultivateService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/w/dao/CultivateMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/w/service/impl/CultivateServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/payMessage.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/user.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/w/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/updataResume.jsp" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/85810bac-7e7e-4bca-a5c3-f839371fe837/console.sql" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addResume.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/w/model/Resume.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/w/dao/ResumeMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/myResume.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/updateResume.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/updateDetail.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/staffPay.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/staffInformation.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/staffDetail.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/staffCultivate.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/staffAttendance.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/staff.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/ri.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/rapMessage.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/rap.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/r.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/pay.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/organizationalManagement.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/myResume.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/interview.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/cultivateMessage.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/cultivate.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/check.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/attendanceInformation.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/alter.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addCultivate.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/w/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/w/dao/InterviewMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/myInterview.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/interviewManage.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/staffLogin.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/w/dao/CultivateMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/w/controller/StaffController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/attendanceMessage.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/w/dao/AttendanceMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/w/controller/AdminController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/w/dao/StaffMapper.xml" />
+        <option value="dbsequence:/82cfe38c/85810bac-7e7e-4bca-a5c3-f839371fe837/BUG.RAP_SEQ" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/85810bac-7e7e-4bca-a5c3-f839371fe837/console.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/w/dao/RapMapper.xml" />
       </list>
     </option>
   </component>
@@ -407,6 +613,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -529,7 +736,89 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tingtingde" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tingtingde" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tingtingde" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tingtingde" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tingtingde" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tingtingde" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -586,6 +875,44 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="w" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tingtingde" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tingtingde" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="w" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="impl" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -681,7 +1008,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
@@ -691,20 +1017,24 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Oracle" />
-    <property name="last_opened_file_path" value="D:/KuGou/HRM" />
+    <property name="last_opened_file_path" value="D:/KuGou/000/HRM/HRM" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.w.util" />
       <recent name="com.w.service" />
+      <recent name="com.w.controller" />
+      <recent name="com.w.util" />
       <recent name="com.w.service.impl" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\gitcccc\tingtingde\tingtingde\src\main\java\com\w\service\impl" />
-      <recent name="D:\gitcccc\tingtingde\tingtingde\src\main\java\com\w\dao" />
+      <recent name="D:\gitcccc\tingtingde\tingtingde\src\main\webapp\resources\images" />
+      <recent name="D:\gitcccc\tingtingde\tingtingde\src\main\webapp\resources\css" />
+      <recent name="D:\gitcccc\tingtingde\tingtingde\src\main\webapp\WEB-INF" />
+      <recent name="D:\gitcccc\tingtingde\tingtingde\src\main\java\com\w\controller" />
       <recent name="D:\gitcccc\tingtingde\tingtingde\src\main\webapp\WEB-INF\pages" />
-      <recent name="D:\gitcccc\tingtingde\tingtingde\src\main\webapp\resources" />
-      <recent name="D:\gitcccc\tingtingde\tingtingde\src\main\webapp\resources\js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -720,15 +1050,67 @@
     </option>
   </component>
   <component name="RunManager" selected="Tomcat Server.tom">
-    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.33" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment />
-      <server-settings />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_tingtingde" />
+      </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
       <predefined_log_file id="Tomcat Manager" enabled="false" />
       <predefined_log_file id="Tomcat Host Manager" enabled="false" />
       <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="53328" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -1118,7 +1500,7 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <configuration default="false" name="tom" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.331" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration default="false" name="tom" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.33" ALTERNATIVE_JRE_ENABLED="false">
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -1129,7 +1511,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_tingtingde" />
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_tingtingde_2" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
@@ -1138,7 +1520,7 @@
       <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="60541" />
+        <option name="DEBUG_PORT" value="53328" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -1211,7 +1593,24 @@
       <workItem from="1532603379173" duration="629000" />
       <workItem from="1532653788464" duration="5053000" />
       <workItem from="1532869444987" duration="871000" />
-      <workItem from="1532912564523" duration="23833000" />
+      <workItem from="1532912564523" duration="24623000" />
+      <workItem from="1533015276981" duration="2805000" />
+      <workItem from="1533018601746" duration="26000" />
+      <workItem from="1533018691540" duration="516000" />
+      <workItem from="1533019284375" duration="3919000" />
+      <workItem from="1533023446747" duration="1338000" />
+      <workItem from="1533085294765" duration="6390000" />
+      <workItem from="1533091788914" duration="50000" />
+      <workItem from="1533092255911" duration="22808000" />
+      <workItem from="1533172338700" duration="8031000" />
+      <workItem from="1533258781032" duration="12853000" />
+      <workItem from="1533475362655" duration="1623000" />
+      <workItem from="1533517333972" duration="17388000" />
+      <workItem from="1533692263963" duration="10466000" />
+      <workItem from="1533804294379" duration="10154000" />
+      <workItem from="1533862958884" duration="11627000" />
+      <workItem from="1533884782359" duration="198000" />
+      <workItem from="1533885359068" duration="7021000" />
     </task>
     <task id="LOCAL-00001" summary="111">
       <created>1532503896019</created>
@@ -1224,82 +1623,90 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55800000" />
+    <option name="totallyTimeSpent" value="173803000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
-    <editor active="true" />
+    <frame x="-9" y="-9" width="1938" height="1060" extended-state="1" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329235" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14806867" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847533" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2247854" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44955158" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.013452915" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24548192" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6367713" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40134528" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18615879" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32735425" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39349777" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.049327355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.012331839" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295964" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.132287" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24551569" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3285528" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295964" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295964" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24195279" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32735425" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329235" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847533" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13090129" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2247854" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.132287" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.013452915" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24548192" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40134528" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18615879" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52690583" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.049327355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.012331839" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295964" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.132287" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17713004" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3285528" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295964" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24195279" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32735425" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1310,11 +1717,32 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="111" />
-    <option name="LAST_COMMIT_MESSAGE" value="111" />
+    <MESSAGE value="写完了部门，在写培训" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="18" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/w/controller/StaffController.java</url>
+          <line>131</line>
+          <properties />
+          <option name="timeStamp" value="98" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/w/controller/StaffController.java</url>
+          <line>114</line>
+          <properties />
+          <option name="timeStamp" value="100" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/w/controller/AdminController.java</url>
+          <line>635</line>
+          <properties />
+          <option name="timeStamp" value="101" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="102" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1323,665 +1751,597 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/start.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="40" column="27" lean-forward="false" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbsequence:/82cfe38c/85810bac-7e7e-4bca-a5c3-f839371fe837/BUG.USER_SEQ">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-360">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/MVN-Repqsitory/org/mybatis/mybatis-spring/1.3.0/mybatis-spring-1.3.0.jar!/org/mybatis/spring/MyBatisExceptionTranslator.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/82cfe38c/85810bac-7e7e-4bca-a5c3-f839371fe837/BUG.BUG_CULTIVATE">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/82cfe38c/85810bac-7e7e-4bca-a5c3-f839371fe837/BUG.BUG_ATTENDANCE">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/82cfe38c/85810bac-7e7e-4bca-a5c3-f839371fe837/BUG.BUG_DEPARTMENT">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
-          <caret line="40" column="18" lean-forward="false" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/82cfe38c/85810bac-7e7e-4bca-a5c3-f839371fe837/BUG.BUG_RECRUIT_INFORMATION">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/82cfe38c/85810bac-7e7e-4bca-a5c3-f839371fe837/BUG.BUG_RECRUIT">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/model/Recruit_Information.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="77" column="18" lean-forward="false" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/model/Rap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="59" column="18" lean-forward="false" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#368#369#0" expanded="true" />
-            <element signature="e#395#396#0" expanded="true" />
-            <element signature="e#432#433#0" expanded="true" />
-            <element signature="e#464#465#0" expanded="true" />
-            <element signature="e#495#496#0" expanded="true" />
-            <element signature="e#524#525#0" expanded="true" />
-            <element signature="e#566#567#0" expanded="true" />
-            <element signature="e#602#603#0" expanded="true" />
-            <element signature="e#633#634#0" expanded="true" />
-            <element signature="e#663#664#0" expanded="true" />
-            <element signature="e#706#707#0" expanded="true" />
-            <element signature="e#744#745#0" expanded="true" />
-            <element signature="e#775#776#0" expanded="true" />
-            <element signature="e#803#804#0" expanded="true" />
-            <element signature="e#844#845#0" expanded="true" />
-            <element signature="e#878#879#0" expanded="true" />
-            <element signature="e#910#911#0" expanded="true" />
-            <element signature="e#941#942#0" expanded="true" />
-            <element signature="e#986#987#0" expanded="true" />
-            <element signature="e#1026#1027#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/model/Pay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="113" column="18" lean-forward="false" selection-start-line="113" selection-start-column="18" selection-end-line="113" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#543#544#0" expanded="true" />
-            <element signature="e#569#570#0" expanded="true" />
-            <element signature="e#604#605#0" expanded="true" />
-            <element signature="e#634#635#0" expanded="true" />
-            <element signature="e#664#665#0" expanded="true" />
-            <element signature="e#692#693#0" expanded="true" />
-            <element signature="e#732#733#0" expanded="true" />
-            <element signature="e#766#767#0" expanded="true" />
-            <element signature="e#797#798#0" expanded="true" />
-            <element signature="e#825#826#0" expanded="true" />
-            <element signature="e#866#867#0" expanded="true" />
-            <element signature="e#900#901#0" expanded="true" />
-            <element signature="e#929#930#0" expanded="true" />
-            <element signature="e#957#958#0" expanded="true" />
-            <element signature="e#996#997#0" expanded="true" />
-            <element signature="e#1030#1031#0" expanded="true" />
-            <element signature="e#1066#1067#0" expanded="true" />
-            <element signature="e#1101#1102#0" expanded="true" />
-            <element signature="e#1154#1155#0" expanded="true" />
-            <element signature="e#1202#1203#0" expanded="true" />
-            <element signature="e#1235#1236#0" expanded="true" />
-            <element signature="e#1267#1268#0" expanded="true" />
-            <element signature="e#1314#1315#0" expanded="true" />
-            <element signature="e#1356#1357#0" expanded="true" />
-            <element signature="e#1384#1385#0" expanded="true" />
-            <element signature="e#1411#1412#0" expanded="true" />
-            <element signature="e#1448#1449#0" expanded="true" />
-            <element signature="e#1480#1481#0" expanded="true" />
-            <element signature="e#1507#1508#0" expanded="true" />
-            <element signature="e#1533#1534#0" expanded="true" />
-            <element signature="e#1568#1569#0" expanded="true" />
-            <element signature="e#1598#1599#0" expanded="true" />
-            <element signature="e#1626#1627#0" expanded="true" />
-            <element signature="e#1653#1654#0" expanded="true" />
-            <element signature="e#1690#1691#0" expanded="true" />
-            <element signature="e#1722#1723#0" expanded="true" />
-            <element signature="e#1752#1753#0" expanded="true" />
-            <element signature="e#1781#1782#0" expanded="true" />
-            <element signature="e#1822#1823#0" expanded="true" />
-            <element signature="e#1858#1859#0" expanded="true" />
-            <element signature="e#1891#1892#0" expanded="true" />
-            <element signature="e#1920#1921#0" expanded="true" />
-            <element signature="e#1964#1965#0" expanded="true" />
-            <element signature="e#2000#2001#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/model/Job.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/model/Interview.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="90" column="18" lean-forward="false" selection-start-line="90" selection-start-column="18" selection-end-line="90" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#571#572#0" expanded="true" />
-            <element signature="e#597#598#0" expanded="true" />
-            <element signature="e#632#633#0" expanded="true" />
-            <element signature="e#662#663#0" expanded="true" />
-            <element signature="e#691#692#0" expanded="true" />
-            <element signature="e#718#719#0" expanded="true" />
-            <element signature="e#756#757#0" expanded="true" />
-            <element signature="e#788#789#0" expanded="true" />
-            <element signature="e#861#862#0" expanded="true" />
-            <element signature="e#910#911#0" expanded="true" />
-            <element signature="e#1120#1121#0" expanded="true" />
-            <element signature="e#1149#1150#0" expanded="true" />
-            <element signature="e#1190#1191#0" expanded="true" />
-            <element signature="e#1226#1227#0" expanded="true" />
-            <element signature="e#1256#1257#0" expanded="true" />
-            <element signature="e#1284#1285#0" expanded="true" />
-            <element signature="e#1324#1325#0" expanded="true" />
-            <element signature="e#1358#1359#0" expanded="true" />
-            <element signature="e#1393#1394#0" expanded="true" />
-            <element signature="e#1424#1425#0" expanded="true" />
-            <element signature="e#1472#1473#0" expanded="true" />
-            <element signature="e#1512#1513#0" expanded="true" />
-            <element signature="e#1545#1546#0" expanded="true" />
-            <element signature="e#1574#1575#0" expanded="true" />
-            <element signature="e#1618#1619#0" expanded="true" />
-            <element signature="e#1654#1655#0" expanded="true" />
-            <element signature="e#1685#1686#0" expanded="true" />
-            <element signature="e#1713#1714#0" expanded="true" />
-            <element signature="e#1754#1755#0" expanded="true" />
-            <element signature="e#1788#1789#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/model/Department.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="40" column="18" lean-forward="false" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/model/Cultivate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="86" column="18" lean-forward="false" selection-start-line="86" selection-start-column="18" selection-end-line="86" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#485#486#0" expanded="true" />
-            <element signature="e#511#512#0" expanded="true" />
-            <element signature="e#546#547#0" expanded="true" />
-            <element signature="e#576#577#0" expanded="true" />
-            <element signature="e#609#610#0" expanded="true" />
-            <element signature="e#638#639#0" expanded="true" />
-            <element signature="e#682#683#0" expanded="true" />
-            <element signature="e#718#719#0" expanded="true" />
-            <element signature="e#753#754#0" expanded="true" />
-            <element signature="e#784#785#0" expanded="true" />
-            <element signature="e#832#833#0" expanded="true" />
-            <element signature="e#872#873#0" expanded="true" />
-            <element signature="e#907#908#0" expanded="true" />
-            <element signature="e#940#941#0" expanded="true" />
-            <element signature="e#990#991#0" expanded="true" />
-            <element signature="e#1034#1035#0" expanded="true" />
-            <element signature="e#1066#1067#0" expanded="true" />
-            <element signature="e#1096#1097#0" expanded="true" />
-            <element signature="e#1140#1141#0" expanded="true" />
-            <element signature="e#1178#1179#0" expanded="true" />
-            <element signature="e#1213#1214#0" expanded="true" />
-            <element signature="e#1244#1245#0" expanded="true" />
-            <element signature="e#1292#1293#0" expanded="true" />
-            <element signature="e#1332#1333#0" expanded="true" />
-            <element signature="e#1362#1363#0" expanded="true" />
-            <element signature="e#1391#1392#0" expanded="true" />
-            <element signature="e#1432#1433#0" expanded="true" />
-            <element signature="e#1468#1469#0" expanded="true" />
-            <element signature="e#1503#1504#0" expanded="true" />
-            <element signature="e#1536#1537#0" expanded="true" />
-            <element signature="e#1586#1587#0" expanded="true" />
-            <element signature="e#1630#1631#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/model/Attendance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="68" column="18" lean-forward="false" selection-start-line="68" selection-start-column="18" selection-end-line="68" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#409#410#0" expanded="true" />
-            <element signature="e#435#436#0" expanded="true" />
-            <element signature="e#470#471#0" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
-            <element signature="e#531#532#0" expanded="true" />
-            <element signature="e#559#560#0" expanded="true" />
-            <element signature="e#600#601#0" expanded="true" />
-            <element signature="e#634#635#0" expanded="true" />
-            <element signature="e#664#665#0" expanded="true" />
-            <element signature="e#692#693#0" expanded="true" />
-            <element signature="e#732#733#0" expanded="true" />
-            <element signature="e#766#767#0" expanded="true" />
-            <element signature="e#797#798#0" expanded="true" />
-            <element signature="e#826#827#0" expanded="true" />
-            <element signature="e#868#869#0" expanded="true" />
-            <element signature="e#904#905#0" expanded="true" />
-            <element signature="e#935#936#0" expanded="true" />
-            <element signature="e#964#965#0" expanded="true" />
-            <element signature="e#1006#1007#0" expanded="true" />
-            <element signature="e#1042#1043#0" expanded="true" />
-            <element signature="e#1072#1073#0" expanded="true" />
-            <element signature="e#1101#1102#0" expanded="true" />
-            <element signature="e#1142#1143#0" expanded="true" />
-            <element signature="e#1178#1179#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/model/Admin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1470">
-          <caret line="49" column="18" lean-forward="false" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
-          <folding>
-            <element signature="e#322#323#0" expanded="true" />
-            <element signature="e#349#350#0" expanded="true" />
-            <element signature="e#386#387#0" expanded="true" />
-            <element signature="e#418#419#0" expanded="true" />
-            <element signature="e#451#452#0" expanded="true" />
-            <element signature="e#480#481#0" expanded="true" />
-            <element signature="e#524#525#0" expanded="true" />
-            <element signature="e#560#561#0" expanded="true" />
-            <element signature="e#593#594#0" expanded="true" />
-            <element signature="e#622#623#0" expanded="true" />
-            <element signature="e#666#667#0" expanded="true" />
-            <element signature="e#702#703#0" expanded="true" />
-            <element signature="e#733#734#0" expanded="true" />
-            <element signature="e#761#762#0" expanded="true" />
-            <element signature="e#802#803#0" expanded="true" />
-            <element signature="e#836#837#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/util/DateAndString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/dao/ResumeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-47">
-          <caret line="4" column="11" lean-forward="true" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/model/Recruit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="49" column="18" lean-forward="false" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/model/Staff.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="32" column="41" lean-forward="false" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="29" column="34" lean-forward="false" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
-          <folding>
-            <element signature="e#649#650#0" expanded="false" />
-            <element signature="e#704#705#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/service/impl/Recruit_InformationServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/service/Recruit_InformationService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="21" column="11" lean-forward="true" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/adminLogin.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/dao/Recruit_InformationMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/dao/Recruit_InformationMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-240">
-          <caret line="7" column="31" lean-forward="false" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-          <folding>
-            <marker date="1532656199510" expanded="true" signature="311:374" ph="SELECT count... HRM_RECRUIT_INFORMATION" />
-            <marker date="1532656199510" expanded="true" signature="496:768" ph="SELECT * FRO... *" />
-            <marker date="1532656199510" expanded="true" signature="511:633" ph="SELECT HRM_R... HRM_RECRUIT_INFORMATION" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="747" column="0" lean-forward="false" selection-start-line="747" selection-start-column="0" selection-end-line="747" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/82cfe38c/85810bac-7e7e-4bca-a5c3-f839371fe837/BUG.BUG_USER">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/service/ResumeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/service/impl/ResumeServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="36" column="33" lean-forward="false" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#878#879#0" expanded="true" />
-            <element signature="e#935#936#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/dao/ResumeMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="19" column="11" lean-forward="false" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/85810bac-7e7e-4bca-a5c3-f839371fe837/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="1" column="2" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/staffLogin.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="31" column="25" lean-forward="false" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/register.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="108" column="32" lean-forward="false" selection-start-line="108" selection-start-column="32" selection-end-line="108" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/user.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="29" column="28" lean-forward="false" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/dao/UserMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/rap.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="12" column="9" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/dao/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+          <caret line="57" column="7" lean-forward="false" selection-start-line="57" selection-start-column="7" selection-end-line="57" selection-end-column="7" />
           <folding>
-            <marker date="1532655461847" expanded="true" signature="240:304" ph="INSERT INTO BUG_USER... " />
-            <marker date="1532655461847" expanded="true" signature="431:493" ph="select * fro... BUG_USER" />
-            <marker date="1532655461847" expanded="true" signature="579:622" ph="SELECT * fro... BUG_USER" />
+            <marker date="1533870582867" expanded="false" signature="1984:2010" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/dao/ResumeMapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/r.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="36" column="8" lean-forward="false" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+          <folding>
+            <marker date="1533870583022" expanded="false" signature="1173:1199" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/payMessage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="70" column="17" lean-forward="true" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/organizationalManagement.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="85" column="53" lean-forward="false" selection-start-line="85" selection-start-column="53" selection-end-line="85" selection-end-column="53" />
-          <folding>
-            <marker date="1532946054116" expanded="true" signature="244:493" ph="INSERT INTO BUG_RESUME... " />
-            <marker date="1532946054116" expanded="true" signature="547:1961" ph="UPDATE BUG.B... " />
-            <marker date="1532946054116" expanded="true" signature="1934:1961" ph="UPDATE BUG.B... " />
-            <marker date="1532946054116" expanded="true" signature="2015:2056" ph="DELETE FROM " />
-            <marker date="1532946054116" expanded="true" signature="2145:2198" ph="SELECT COUNT... BUG_RESUME" />
-            <marker date="1532946054116" expanded="true" signature="2296:2480" ph="SELECT * FRO... *" />
-            <marker date="1532946054116" expanded="true" signature="2311:2392" ph="SELECT BUG_R... BUG_RESUME" />
-            <marker date="1532946054116" expanded="true" signature="2570:2613" ph="SELECT * FRO... BUG_RESUME" />
-            <marker date="1532946054116" expanded="true" signature="2702:2745" ph="SELECT * fro... BUG_RESUME" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/model/Resume.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2528">
-          <caret line="163" column="18" lean-forward="false" selection-start-line="163" selection-start-column="18" selection-end-line="163" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3151#3152#0" expanded="true" />
-            <element signature="e#3183#3184#0" expanded="true" />
-            <element signature="e#3233#3234#0" expanded="true" />
-            <element signature="e#3275#3276#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/82cfe38c/85810bac-7e7e-4bca-a5c3-f839371fe837/BUG.BUG_RESUME">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="33" column="33" lean-forward="false" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+          <caret line="241" column="8" lean-forward="false" selection-start-line="241" selection-start-column="12" selection-end-line="241" selection-end-column="81" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/myResume.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+        <state relative-caret-position="90">
+          <caret line="36" column="6" lean-forward="false" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="81" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/updateResume.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/cultivateMessage.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        <state relative-caret-position="120">
+          <caret line="37" column="8" lean-forward="false" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="81" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addResume.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/cultivate.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <caret line="72" column="3" lean-forward="false" selection-start-line="72" selection-start-column="3" selection-end-line="72" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/check.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="35" column="6" lean-forward="false" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/attendanceInformation.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="54" column="5" lean-forward="false" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/alter.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="78" column="2" lean-forward="false" selection-start-line="78" selection-start-column="2" selection-end-line="78" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2670">
+          <caret line="20" column="50" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addCultivate.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="51" column="2" lean-forward="false" selection-start-line="51" selection-start-column="2" selection-end-line="51" selection-end-column="81" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/w/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="118" column="0" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+        <state relative-caret-position="281">
+          <caret line="136" column="24" lean-forward="false" selection-start-line="136" selection-start-column="24" selection-end-line="136" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/interview.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="71" column="30" lean-forward="false" selection-start-line="71" selection-start-column="30" selection-end-line="71" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/service/InterviewService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/service/impl/InterviewServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="20" column="35" lean-forward="false" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/dao/InterviewMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/dao/InterviewMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1320">
+          <caret line="7" column="33" lean-forward="false" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+          <folding>
+            <marker date="1533882772908" expanded="true" signature="251:418" ph="INSERT INTO BUG_INTERVIEW... " />
+            <marker date="1533882772908" expanded="true" signature="476:534" ph="UPDATE BUG_I... " />
+            <marker date="1533882772908" expanded="true" signature="631:698" ph="SELECT count... BUG_INTERVIEW" />
+            <marker date="1533882772908" expanded="true" signature="799:1115" ph="SELECT * FRO... *" />
+            <marker date="1533882772908" expanded="true" signature="814:906" ph="SELECT BUG_I... BUG_INTERVIEW" />
+            <marker date="1533882772908" expanded="true" signature="1201:1424" ph="SELECT * FRO... BUG_INTERVIEW" />
+            <marker date="1533882772908" expanded="true" signature="1516:1582" ph="SELECT count... BUG_INTERVIEW" />
+            <marker date="1533882772908" expanded="true" signature="1681:1996" ph="SELECT * FRO... *" />
+            <marker date="1533882772908" expanded="true" signature="1696:1787" ph="SELECT BUG_I... BUG_INTERVIEW" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/82cfe38c/85810bac-7e7e-4bca-a5c3-f839371fe837/BUG.BUG_RECRUIT_INFORMATION">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/82cfe38c/85810bac-7e7e-4bca-a5c3-f839371fe837/BUG.BUG_RECRUIT">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/82cfe38c/85810bac-7e7e-4bca-a5c3-f839371fe837/BUG.BUG_INTERVIEW">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/model/Interview.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="15" column="38" lean-forward="false" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/myInterview.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3630">
+          <caret line="121" column="59" lean-forward="false" selection-start-line="121" selection-start-column="59" selection-end-line="121" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/staffPay.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="38" column="7" lean-forward="false" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/staffLogin.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="32" column="110" lean-forward="false" selection-start-line="32" selection-start-column="110" selection-end-line="32" selection-end-column="110" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/interviewManage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3240">
+          <caret line="108" column="59" lean-forward="false" selection-start-line="108" selection-start-column="59" selection-end-line="108" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/dao/CultivateMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1590">
+          <caret line="53" column="60" lean-forward="false" selection-start-line="53" selection-start-column="60" selection-end-line="53" selection-end-column="60" />
+          <folding>
+            <marker date="1533884251808" expanded="true" signature="621:1357" ph="UPDATE BUG_C... " />
+            <marker date="1533884251808" expanded="true" signature="1451:1508" ph="SELECT COUNT... BUG_CULTIVATE" />
+            <marker date="1533884251808" expanded="true" signature="1608:1734" ph="SELECT * fro... *" />
+            <marker date="1533884251808" expanded="true" signature="1623:1692" ph="SELECT BUG_C... BUG_CULTIVATE" />
+            <marker date="1533884251808" expanded="true" signature="1818:1862" ph="SELECT * FRO... BUG_CULTIVATE" />
+            <marker date="1533884251808" expanded="true" signature="1949:2028" ph="SELECT ((sys... BUG_CULTIVATE" />
+            <marker date="1533884251808" expanded="true" signature="2112:2271" ph="SELECT * fro... *" />
+            <marker date="1533884251808" expanded="true" signature="2127:2229" ph="SELECT C.*,r... BUG_CULTIVATE" />
+            <marker date="1533884251808" expanded="true" signature="2357:2456" ph="SELECT count... BUG_CULTIVATE" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/model/Rap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/82cfe38c/85810bac-7e7e-4bca-a5c3-f839371fe837/BUG.BUG_RESUME">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/staff.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/staff.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="65" column="30" lean-forward="false" selection-start-line="65" selection-start-column="30" selection-end-line="65" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/82cfe38c/85810bac-7e7e-4bca-a5c3-f839371fe837/BUG.BUG_STAFF">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/service/impl/AttendanceServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="32" column="40" lean-forward="true" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
+          <folding>
+            <element signature="e#776#777#0" expanded="false" />
+            <element signature="e#848#849#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/service/AttendanceService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/model/Attendance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/attendanceMessage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="84" column="30" lean-forward="false" selection-start-line="84" selection-start-column="30" selection-end-line="84" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/controller/StaffController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="114" column="0" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/dao/AttendanceMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/dao/AttendanceMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-240">
+          <caret line="109" column="31" lean-forward="false" selection-start-line="109" selection-start-column="31" selection-end-line="109" selection-end-column="31" />
+          <folding>
+            <marker date="1535790498956" expanded="true" signature="252:354" ph="INSERT INTO BUG_ATTENDANCE... " />
+            <marker date="1535790498956" expanded="true" signature="414:666" ph="UPDATE BUGAT... " />
+            <marker date="1535790498956" expanded="true" signature="711:769" ph="UPDATE BUG_A... " />
+            <marker date="1535790498956" expanded="true" signature="859:958" ph="SELECT COUNT... BUG_ATTENDANCE" />
+            <marker date="1535790498956" expanded="true" signature="1045:1286" ph="SELECT ROUND... BUG_ATTENDANCE" />
+            <marker date="1535790498956" expanded="true" signature="1376:1491" ph="SELECT * FRO... BUG_ATTENDANCE" />
+            <marker date="1535790498956" expanded="true" signature="1578:1820" ph="SELECT ROUND... BUG_ATTENDANCE" />
+            <marker date="1535790498956" expanded="true" signature="1912:2155" ph="SELECT count... BUG_ATTENDANCE" />
+            <marker date="1535790498956" expanded="true" signature="2245:2575" ph="SELECT * FRO... *" />
+            <marker date="1535790498956" expanded="true" signature="2260:2529" ph="SELECT BUG_A... BUG_ATTENDANCE" />
+            <marker date="1535790498956" expanded="true" signature="3310:4048" ph="SELECT * FRO... *" />
+            <marker date="1535790498956" expanded="true" signature="4144:4311" ph="SELECT count... BUGATTENDANCE" />
+            <marker date="1535790498956" expanded="true" signature="4408:4562" ph="SELECT * FRO... BUG_ATTENDANCE" />
+            <marker date="1535790498956" expanded="true" signature="4653:4825" ph="SELECT ROUND... BUG_ATTENDANCE" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/dao/RapMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/pay.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="84" column="39" lean-forward="false" selection-start-line="84" selection-start-column="25" selection-end-line="84" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/service/StaffService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="34" column="16" lean-forward="false" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/service/impl/StaffServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="75" column="36" lean-forward="false" selection-start-line="75" selection-start-column="36" selection-end-line="75" selection-end-column="36" />
+          <folding>
+            <element signature="e#1887#1888#0" expanded="true" />
+            <element signature="e#1948#1949#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/dao/StaffMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="34" column="16" lean-forward="false" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/dao/StaffMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-851">
+          <caret line="147" column="44" lean-forward="true" selection-start-line="147" selection-start-column="44" selection-end-line="147" selection-end-column="44" />
+          <folding>
+            <marker date="1535791080949" expanded="true" signature="276:757" ph="INSERT INTO BUG_STAFF... " />
+            <marker date="1535791080949" expanded="true" signature="811:865" ph="INSERT INTO BUG_SC... " />
+            <marker date="1535791080949" expanded="true" signature="918:2736" ph="UPDATE BUG_S... " />
+            <marker date="1535791080949" expanded="true" signature="2793:2828" ph="DELETE FROM " />
+            <marker date="1535791080949" expanded="true" signature="3328:3828" ph="SELECT * FRO... *" />
+            <marker date="1535791080949" expanded="true" signature="4303:4348" ph="SELECT count... BUG_STAFF" />
+            <marker date="1535791080949" expanded="true" signature="4436:4481" ph="SELECT count... BUG_STAFF" />
+            <marker date="1535791080949" expanded="true" signature="4558:4596" ph="SELECT * fro... BUG_STAFF" />
+            <marker date="1535791080949" expanded="true" signature="4683:4761" ph="select month... BUG_STAFF" />
+            <marker date="1535791080949" expanded="true" signature="4834:4857" ph="SELECT * FRO... BUG_STAFF" />
+            <marker date="1535791080949" expanded="true" signature="4938:5008" ph="SELECT * FRO... BUG_STAFF" />
+            <marker date="1535791080949" expanded="true" signature="4938:5091" ph="SELECT * FRO... BUG_STAFF" />
+            <marker date="1535791080949" expanded="true" signature="5169:5209" ph="SELECT * FRO... BUG_STAFF" />
+            <marker date="1535791080949" expanded="true" signature="5292:5477" ph="SELECT * FRO... BUG_STAFF" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/controller/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="635" column="0" lean-forward="false" selection-start-line="635" selection-start-column="0" selection-end-line="635" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/82cfe38c/85810bac-7e7e-4bca-a5c3-f839371fe837/BUG.BUG_PAY">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbsequence:/82cfe38c/85810bac-7e7e-4bca-a5c3-f839371fe837/BUG.RAP_SEQ">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/85810bac-7e7e-4bca-a5c3-f839371fe837/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="1" column="69" lean-forward="false" selection-start-line="1" selection-start-column="69" selection-end-line="1" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/dao/RapMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" column="38" lean-forward="false" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+          <folding>
+            <marker date="1535791886556" expanded="true" signature="239:336" ph="INSERT INTO BUG_RAP... " />
+            <marker date="1535791886556" expanded="true" signature="427:675" ph="SELECT count... BUG_RAP" />
+            <marker date="1535791886556" expanded="true" signature="757:1077" ph="SELECT * FRO... *" />
+            <marker date="1535791886556" expanded="true" signature="772:1031" ph="SELECT BUG_R... BUG_RAP" />
+            <marker date="1535791886556" expanded="true" signature="1784:1902" ph="SELECT * FRO... BUG_RAP" />
+            <marker date="1535791886556" expanded="true" signature="2005:2726" ph="SELECT * FRO... *" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/82cfe38c/85810bac-7e7e-4bca-a5c3-f839371fe837/BUG.BUG_ATTENDANCE">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>tingtingde:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>tingtingde</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

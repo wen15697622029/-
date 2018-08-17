@@ -105,8 +105,8 @@
 </head>
 <body>
 <form action="register" method="post">
-    账号:<input name="uname"><br/>
-    密码:<input name="upass"><br/>
+    账号:<input type="text" name="uname"><br/>
+    密码:<input type="password" name="upass"><br/>
     <input type="submit" value="注册">
 
 </form>

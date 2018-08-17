@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.w.dao.JobMapper" >
+    <insert id="addJob">
+        INSERT INTO BUG_JOB VALUES (JOB_SEQ.nextval,#{1},#{0},#{2})
+    </insert>
+    <update id="updateJob">
+        UPDATE BUG_JOB SET JNAME=#{1},JSALARY=#{2} where JID=#{0}
+    </update>
+    <delete id="deleteJobByDid">
+        DELETE FROM BUG_JOB WHERE DID=#{did}
+    </delete>
+    <delete id="deleteJobByJid">
+        DELETE FROM BUG_JOB WHERE JID=#{jid}
+    </delete>
+
+    <select id="getJob" resultMap="jobMap1">
+        SELECT * FROM BUG_JOB
+    </select>
+    <select id="getJobByDid" resultMap="jobMap1">
+        SELECT * from BUG_JOB WHERE DID=#{did}
+    </select>
+    <select id="getCountByJname" resultType="java.lang.Integer">
+         SELECT count(*) FROM BUG_JOB WHERE JNAME=#{jname}
+    </select>
+    <select id="getJobByJid" resultMap="jobMap1">
+         SELECT * from BUG_JOB WHERE JID=#{jid}
+    </select>
+    <resultMap id="jobMap" type="com.w.model.Job">
+        <id property="jid" column="JID"/>
+        <result property="jname" column="JNAME"/>
+        <result property="jsalary" column="JSALARY"/>
+    </resultMap>
+    <resultMap id="jobMap1" type="com.w.model.Job" extends="jobMap">
+        <association property="department" resultMap="com.w.dao.DepartmentMapper.departmentMap"/>
+    </resultMap>
+</mapper>

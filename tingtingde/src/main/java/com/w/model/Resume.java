@@ -17,9 +17,9 @@ public class Resume implements Serializable {
     private Date rebirthday;//出生日期
     private String rephone;//手机号
     private String reemail;//邮箱地址
-    private long reidcardno;//身份证号
+    private String reidcardno;//身份证号
     private String readdress;//地址
-    private long repost;//邮政编码
+    private String repost;//邮政编码
     private String recollege;//大学
     private String remajor;//专业
     @DateTimeFormat(pattern="yyyy-MM-dd")
@@ -29,6 +29,10 @@ public class Resume implements Serializable {
     private String resumename;//简历名字
 
     public Resume() {
+    }
+
+    public Resume(int reid) {
+        this.reid = reid;
     }
 
     public int getReid() {
@@ -79,13 +83,19 @@ public class Resume implements Serializable {
         this.rephone = rephone;
     }
 
+    public String getReemail() {
+        return reemail;
+    }
 
+    public void setReemail(String reemail) {
+        this.reemail = reemail;
+    }
 
-    public long getReidcardno() {
+    public String getReidcardno() {
         return reidcardno;
     }
 
-    public void setReidcardno(long reidcardno) {
+    public void setReidcardno(String reidcardno) {
         this.reidcardno = reidcardno;
     }
 
@@ -97,13 +107,22 @@ public class Resume implements Serializable {
         this.readdress = readdress;
     }
 
-    public long getRepost() {
+    public String getRepost() {
         return repost;
     }
 
-    public void setRepost(long repost) {
+    public void setRepost(String repost) {
         this.repost = repost;
     }
+
+    public String getRecollege() {
+        return recollege;
+    }
+
+    public void setRecollege(String recollege) {
+        this.recollege = recollege;
+    }
+
     public String getRemajor() {
         return remajor;
     }
@@ -144,24 +163,8 @@ public class Resume implements Serializable {
         this.resumename = resumename;
     }
 
-    public String getReemail() {
-        return reemail;
-    }
-
-    public void setReemail(String reemail) {
-        this.reemail = reemail;
-    }
-
-    public String getRecollege() {
-        return recollege;
-    }
-
-    public void setRecollege(String recollege) {
-        this.recollege = recollege;
-    }
-
     @Override
     public String toString() {
-        return "Resume{" + "reid=" + reid + ", user=" + user + ", rename='" + rename + '\'' + ", resex='" + resex + '\'' + ", rebirthday=" + rebirthday + ", rephone='" + rephone + '\'' + ", reemail='" + reemail + '\'' + ", reidcardno=" + reidcardno + ", readdress='" + readdress + '\'' + ", repost=" + repost + ", recollege='" + recollege + '\'' + ", remajor='" + remajor + '\'' + ", regraduate=" + regraduate + ", reintro='" + reintro + '\'' + ", reeducation='" + reeducation + '\'' + ", resumename='" + resumename + '\'' + '}';
+        return "Resume{" + "reid=" + reid + ", user=" + user + ", rename='" + rename + '\'' + ", resex='" + resex + '\'' + ", rebirthday=" + rebirthday + ", rephone='" + rephone + '\'' + ", reemail='" + reemail + '\'' + ", reidcardno='" + reidcardno + '\'' + ", readdress='" + readdress + '\'' + ", repost='" + repost + '\'' + ", recollege='" + recollege + '\'' + ", remajor='" + remajor + '\'' + ", regraduate=" + regraduate + ", reintro='" + reintro + '\'' + ", reeducation='" + reeducation + '\'' + ", resumename='" + resumename + '\'' + '}';
     }
 }

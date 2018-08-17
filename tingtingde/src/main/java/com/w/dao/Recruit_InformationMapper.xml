@@ -1,11 +1,42 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE mapper
-        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
-        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.w.dao.Recruit_InformationMapper" >
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.w.dao.Recruit_InformationMapper">
+    <insert id="addRecruit_Information">
+ INSERT INTO BUG_RECRUIT_INFORMATION
+        VALUES (RECRUIT_INFORMATION_SEQ.nextval,#{department.did},#{job.jid},#{rinum},#{riintro},#{ristate},sysdate)
+    </insert>
+
+    <update id="updateRecruit_Information">
+        UPDATE BUG_RECRUIT_INFORMATION
+        <set>
+            <if test="department.did!=0">
+                DID=#{department.did},
+            </if>
+            <if test="job.jid!=0">
+                JID=#{job.jid},
+            </if>
+            <if test="rinum!=0">
+                RINUM=#{rinum},
+            </if>
+            <if test="riintro!=null">
+                RIINTRO=#{riintro},
+            </if>
+            <if test="ristate>=0">
+                RISTATE=#{ristate},
+            </if>
+            <if test="ridate!=null">
+                RIDATE=sysdate
+            </if>
+        </set>
+        WHERE RIID=#{riid}
+    </update>
+
+    <delete id="deleteRecruit_Information">
+   DELETE FROM BUG_RECRUIT_INFORMATION WHERE RIID=#{riid}
+    </delete>
 
     <select id="getRecruit_InformationByRiState" resultType="java.lang.Integer">
-        SELECT count(*) FROM BUG_RECRUIT_INFORMATION WHERE RISTATE=#{0}
+         SELECT count(*) FROM BUG_RECRUIT_INFORMATION WHERE RISTATE=#{0}
     </select>
     <select id="queryCurrentPageRecruit_InformationByRiState" resultMap="recruit_InformationMap1">
         SELECT * FROM (SELECT BUG_RECRUIT_INFORMATION.*,rownum rn FROM BUG_RECRUIT_INFORMATION
@@ -14,23 +45,21 @@
         AND RI.JID=BUG_JOB.JID
         and rn between #{1} and #{2}
     </select>
+    <select id="getRecruit_InformationByRiid" resultMap="recruit_InformationMap1">
+        SELECT * from BUG_RECRUIT_INFORMATION,BUG_DEPARTMENT,BUG_JOB
+        WHERE BUG_RECRUIT_INFORMATION.DID=BUG_DEPARTMENT.DID
+        AND BUG_RECRUIT_INFORMATION.JID=BUG_JOB.JID
+        AND BUG_RECRUIT_INFORMATION.RIId=#{0}
+    </select>
     <resultMap id="recruit_InformationMap" type="com.w.model.Recruit_Information">
         <id property="riid" column="RIID"/>
         <result property="rinum" column="RINUM"/>
         <result property="riintro" column="RIINTRO"/>
         <result property="ristate" column="RISTATE"/>
-        <result property="riday" column="RIDAY"/>
+        <result property="ridate" column="RIDATE"/>
     </resultMap>
     <resultMap id="recruit_InformationMap1" type="com.w.model.Recruit_Information" extends="recruit_InformationMap">
-        <association property="department" javaType="com.w.model.Department" column="DID">
-            <id property="did" column="DID"/>
-            <result property="dname" column="DNAME"/>
-            <result property="ddate" column="DDATE"/>
-        </association>
-        <association property="job" javaType="com.w.model.Job" column="JID">
-            <id property="jid" column="JID"/>
-            <result property="jname" column="JNAME"/>
-            <result property="jsalary" column="JSALARY"/>
-        </association>
+        <association property="department" resultMap="com.w.dao.DepartmentMapper.departmentMap"/>
+        <association property="job" resultMap="com.w.dao.JobMapper.jobMap"/>
     </resultMap>
 </mapper>

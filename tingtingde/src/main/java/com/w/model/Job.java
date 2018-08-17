@@ -9,12 +9,14 @@ public class Job implements Serializable {
     private int jid;//职位 id
     private String jname;//职位名字
     private Department department;//部门id
-    private String jsalary;//基本工资
+    private double jsalary;//基本工资
 
     public Job() {
     }
 
-
+    public Job(int jid) {
+        this.jid = jid;
+    }
 
     public String getJname() {
         return jname;
@@ -32,13 +34,7 @@ public class Job implements Serializable {
         this.department = department;
     }
 
-    public String getJsalary() {
-        return jsalary;
-    }
 
-    public void setJsalary(String jsalary) {
-        this.jsalary = jsalary;
-    }
 
     public int getJid() {
         return jid;
@@ -48,8 +44,16 @@ public class Job implements Serializable {
         this.jid = jid;
     }
 
+    public double getJsalary() {
+        return jsalary;
+    }
+
+    public void setJsalary(double jsalary) {
+        this.jsalary = jsalary;
+    }
+
     @Override
     public String toString() {
-        return "Job{" + "jid=" + jid + ", jname='" + jname + '\'' + ", department=" + department + ", jsalary='" + jsalary + '\'' + '}';
+        return "Job{" + "jid=" + jid + ", jname='" + jname + '\'' + ", department=" + department + ", jsalary=" + jsalary + '}';
     }
 }

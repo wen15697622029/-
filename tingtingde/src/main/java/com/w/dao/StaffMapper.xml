@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.w.dao.StaffMapper" >
+    <insert id="addStaff" parameterType="com.w.model.Staff">
+        INSERT INTO BUG_STAFF(SID, SUSERNAME, SPASS, DID, JID, SSTATE, SNAME, SSEX, SIDCARDNO,
+        SBIRTHDAY, SPHONE, SEMAIL, SADDRESS, SPOST, SEDUCATION, SCOLLEGE,
+        SMAJOR, SGRADUATE, SINTRO, SENTRYDATE)
+        VALUES (STAFF_SEQ.nextval,#{susername},#{spass},#{department.did},#{job.jid},
+        #{sstate},#{sname},#{ssex},#{sidcardno},#{sbirthday},#{sphone},#{semail},
+        #{saddress},#{spost},#{seducation},#{scollege},#{smajor},#{sgraduate},
+        #{sintro},sysdate)
+    </insert>
+    <insert id="addCultivate">
+        INSERT INTO BUG_SC VALUES (SC_SEQ.nextval,#{0},#{1},0)
+    </insert>
+    <update id="updateStaff">
+        UPDATE BUG_STAFF
+        <set>
+            <if test="susername!=null">
+                SUSERNAME=#{susername},
+            </if>
+            <if test="spass!=null">
+                SPASS=#{spass},
+            </if>
+            <if test="department!=null">
+                DID=#{department.did},
+            </if>
+            <if test="job!=null">
+                JID=#{job.jid},
+            </if>
+            <if test="sstate>=0">
+                SSTATE=#{sstate},
+            </if>
+            <if test="sname!=null">
+                SNAME=#{sname},
+            </if>
+            <if test="ssex!=null">
+                SSEX=#{ssex},
+            </if>
+            <if test="sidcardno!=null">
+                SIDCARDNO=#{sidcardno},
+            </if>
+            <if test="sbirthday!=null">
+                SBIRTHDAY=#{sbirthday},
+            </if>
+            <if test="sphone!=null">
+                SPHONE=#{sphone},
+            </if>
+            <if test="semail!=null">
+                SEMAIL=#{semail},
+            </if>
+            <if test="saddress!=null">
+                SADDRESS=#{saddress},
+            </if>
+            <if test="spost!=null">
+                SPOST=#{spost},
+            </if>
+            <if test="seducation!=null">
+                SEDUCATION=#{seducation},
+            </if>
+            <if test="scollege!=null">
+                SCOLLEGE=#{scollege},
+            </if>
+            <if test="smajor!=null">
+                SMAJOR=#{smajor},
+            </if>
+            <if test="sgraduate!=null">
+                SGRADUATE=#{sgraduate},
+            </if>
+            <if test="sintro!=null">
+                SINTRO=#{sintro},
+            </if>
+            <if test="sentrydate!=null">
+                SENTRYDATE=#{sentrydate}
+            </if>
+        </set>
+        WHERE SID=#{sid}
+    </update>
+    <delete id="deleteCultivate">
+        DELETE FROM BUG_SC WHERE CID=#{cid}
+    </delete>
+    <select id="getStaffByDidJidState" resultType="java.lang.Integer">
+        SELECT count(*) FROM BUG_STAFF
+        <where>
+            <if test="did!=0">
+                DID=#{did}
+            </if>
+            <if test="jid!=0">
+                and JID=#{jid}
+            </if>
+            <if test="sstate>=0">
+                and SSTATE=#{sstate}
+            </if>
+        </where>
+    </select>
+    <select id="queryCurrentPageStaffByDidJidState" resultMap="staffMap1">
+        SELECT * FROM (SELECT BUG_STAFF.*,rownum rn FROM BUG_STAFF
+        <where>
+            <if test="param1!=0">
+                DID=#{param1}
+            </if>
+            <if test="param2!=0">
+                and JID=#{param2}
+            </if>
+            <if test="param3>=0">
+                and SSTATE=#{param3}
+            </if>
+        </where>) S left join BUG_DEPARTMENT on S.DID=BUG_DEPARTMENT.DID
+        left join BUG_JOB on S.JID=BUG_JOB.JID
+        where rn between #{param4} and #{param5}
+    </select>
+    <select id="getStaffsByDidJidState" resultMap="staffMap1">
+        SELECT * FROM BUG_STAFF
+        <where>
+            <if test="did!=0">
+                DID=#{did}
+            </if>
+            <if test="jid!=0">
+                and JID=#{jid}
+            </if>
+            <if test="sstate>=0">
+                and SSTATE=#{sstate}
+            </if>
+        </where>
+    </select>
+    <select id="countStaffByDid" resultType="java.lang.Integer">
+        SELECT count(*) FROM BUG_STAFF WHERE DID=#{0}
+    </select>
+    <select id="countStaffByJid" resultType="java.lang.Integer">
+        SELECT count(*) FROM BUG_STAFF WHERE JID=#{0}
+    </select>
+    <select id="getStaffBySid" resultMap="staffMap1">
+        SELECT * from BUG_STAFF where SID=#{s}
+    </select>
+
+    <select id="getMonthsBySid" resultType="java.lang.Double">
+        select months_between(sysdate,SENTRYDATE) days from BUG_STAFF WHERE SID=#{sid}
+    </select>
+
+    <select id="getStaff" resultMap="staffMap1">
+        SELECT * FROM BUG_STAFF
+    </select>
+
+    <select id="getStaffBySstate" resultMap="staffMap1">
+        SELECT * FROM  BUG_STAFF,BUG_DEPARTMENT,BUG_JOB WHERE SSTATE=#{sstate}
+        and BUG_STAFF.DID=BUG_DEPARTMENT.DID
+        and BUG_STAFF.JID=BUG_JOB.JID
+    </select>
+
+    <select id="getStaffByDid" resultMap="staffMap1">
+        SELECT * FROM BUG_STAFF WHERE DID=#{did}
+    </select>
+
+    <select id="getStaffByNamePass" resultMap="staffMap1">
+        SELECT * FROM BUG_STAFF,BUG_DEPARTMENT,BUG_JOB WHERE
+        BUG_STAFF.DID=BUG_DEPARTMENT.DID
+        AND BUG_STAFF.JID=BUG_JOB.JID
+        AND SUSERNAME=#{susername} and SPASS=#{spass}
+    </select>
+
+
+    <resultMap id="staffMap" type="com.w.model.Staff">
+        <id property="sid" column="SID"/>
+        <result property="susername" column="SUSERNAME"/>
+        <result property="spass" column="SPASS"/>
+        <result property="sstate" column="SSTATE"/>
+        <result property="sname" column="SNAME"/>
+        <result property="ssex" column="SSEX"/>
+        <result property="sidcardno" column="SIDCARDNO"/>
+        <result property="sbirthday" column="SBIRTHDAY"/>
+        <result property="sphone" column="SPHONE"/>
+        <result property="semail" column="SEMAIL"/>
+        <result property="saddress" column="SADDRESS"/>
+        <result property="spost" column="SPOST"/>
+        <result property="seducation" column="SEDUCATION"/>
+        <result property="scollege" column="SCOLLEGE"/>
+        <result property="smajor" column="SMAJOR"/>
+        <result property="sgraduate" column="SGRADUATE"/>
+        <result property="sintro" column="SINTRO"/>
+        <result property="sentrydate" column="SENTRYDATE"/>
+    </resultMap>
+    <resultMap id="staffMap1" type="com.w.model.Staff" extends="staffMap">
+        <association property="department" resultMap="com.w.dao.DepartmentMapper.departmentMap"/>
+        <association property="job" resultMap="com.w.dao.JobMapper.jobMap"/>
+    </resultMap>
+</mapper>

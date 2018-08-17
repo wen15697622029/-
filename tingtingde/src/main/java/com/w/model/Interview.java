@@ -13,7 +13,7 @@ import java.util.Date;
 public class Interview implements Serializable {
     private int iid;//面试表id
     private User user;//用户id
-    private Recruit_InformationService recruit_informationService;//招聘信息id
+    private Recruit_Information recruit_information;//招聘信息id
     private int istate;//状态
     private Date idate;//面试时间
     private String iaddress;//面试地址
@@ -39,13 +39,7 @@ public class Interview implements Serializable {
         this.user = user;
     }
 
-    public Recruit_InformationService getRecruit_informationService() {
-        return recruit_informationService;
-    }
 
-    public void setRecruit_informationService(Recruit_InformationService recruit_informationService) {
-        this.recruit_informationService = recruit_informationService;
-    }
 
     public int getIstate() {
         return istate;
@@ -87,8 +81,16 @@ public class Interview implements Serializable {
         this.staff = staff;
     }
 
+    public Recruit_Information getRecruit_information() {
+        return recruit_information;
+    }
+
+    public void setRecruit_information(Recruit_Information recruit_information) {
+        this.recruit_information = recruit_information;
+    }
+
     @Override
     public String toString() {
-        return "Interview{" + "iid=" + iid + ", user=" + user + ", recruit_informationService=" + recruit_informationService + ", istate=" + istate + ", idate=" + idate + ", iaddress='" + iaddress + '\'' + ", iintro='" + iintro + '\'' + ", staff=" + staff + '}';
+        return "Interview{" + "iid=" + iid + ", user=" + user + ", recruit_information=" + recruit_information + ", istate=" + istate + ", idate=" + idate + ", iaddress='" + iaddress + '\'' + ", iintro='" + iintro + '\'' + ", staff=" + staff + '}';
     }
 }

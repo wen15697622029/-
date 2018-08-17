@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.w.dao.RecruitMapper" >
+    <insert id="addRecruit">
+        INSERT INTO BUG_RECRUIT VALUES (RECRUIT_SEQ.nextval,#{recruitInformation.riid},#{resume.reid},#{rstate})
+    </insert>
+    <update id="updateRecruit">
+        UPDATE BUG_RECRUIT SET RSTATE=#{rstate} where RID=#{rid}
+    </update>
+
+    <select id="getRecruitByUserRe" resultMap="recruitMap1">
+        SELECT * FROM BUG_RECRUIT r,BUG_RESUME re,BUG_RECRUIT_INFORMATION ri
+        WHERE r.REID=re.REID AND r.RIID=ri.RIID AND re."UID"=#{0} AND ri.RIID=#{1}
+    </select>
+
+    <select id="getRecruitByRiidRstate" resultType="java.lang.Integer">
+        SELECT count(*) FROM BUG_RECRUIT WHERE RIID=#{0} and RSTATE=#{1}
+    </select>
+    <select id="queryCurrentPageRecruitByRiidRstate" resultMap="recruitMap1">
+        SELECT * from (SELECT BUG_RECRUIT.*,rownum rn FROM BUG_RECRUIT
+        WHERE RIID=#{0} and RSTATE=#{1}) R,BUG_RECRUIT_INFORMATION RI,BUG_RESUME RE
+        WHERE R.RIID=RI.RIID
+        and R.REID=RE.REID
+        and rn between #{2} and #{3}
+    </select>
+    <select id="getRecruitByRid" resultMap="recruitMap1">
+        SELECT * FROM BUG_RECRUIT r,BUG_RESUME re,BUG_RECRUIT_INFORMATION ri
+        WHERE r.REID=re.REID AND r.RIID=ri.RIID AND r.RID=#{0}
+    </select>
+    <select id="getRecruitByUidRiid" resultMap="recruitMap1">
+        SELECT * FROM BUG_RECRUIT r,BUG_RESUME re,BUG_RECRUIT_INFORMATION ri,
+        BUG_USER u,BUG_DEPARTMENT d,BUG_JOB j
+        WHERE r.REID=re.REID
+        AND r.RIID=ri.RIID
+        AND re."UID"=#{0}
+        AND re."UID"=u."UID"
+        AND ri.DID=d.DID
+        AND ri.JID=j.JID
+        AND ri.RIID=#{1}
+    </select>
+    <resultMap id="recruitMap" type="com.w.model.Recruit">
+        <id property="rid" column="RID"/>
+        <result property="rstate" column="RSTATE"/>
+    </resultMap>
+    <resultMap id="recruitMap1" type="com.w.model.Recruit" extends="recruitMap">
+        <association property="recruitInformation" resultMap="com.w.dao.Recruit_InformationMapper.recruit_InformationMap1"/>
+        <association property="resume" resultMap="com.w.dao.ResumeMapper.resumeMap1"/>
+    </resultMap>
+</mapper>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.w.dao.RapMapper" >
+
+    <insert id="addRap">
+        INSERT INTO BUG_RAP
+        VALUES (RAP_SEQ.nextval,sysdate,#{ramoney},#{staff.sid},#{raexplain})
+    </insert>
+    <select id="getCountMonthBySid" resultType="java.lang.Integer">
+        SELECT count(*) FROM BUG_RAP WHERE to_char(
+        <if test="radate==null">
+            sysdate
+        </if>
+        <if test="radate!=null">
+            #{radate}
+        </if>
+        ,'yyyy-mm')=to_char(RADATE,'yyyy-mm')
+        AND SID=#{sid}
+    </select>
+    <select id="queryCountMonthBySid" resultMap="rapMap1">
+        SELECT * FROM (SELECT BUG_RAP.*,rownum rn FROM BUG_RAP
+        WHERE to_char(
+        <if test="radate==null">
+            sysdate
+        </if>
+        <if test="radate!=null">
+            #{radate}
+        </if>
+        ,'yyyy-mm')=to_char(RADATE,'yyyy-mm') AND SID=#{sid})
+        WHERE rn between #{begin} and #{end}
+    </select>
+    <select id="getCountDayByDidJid" resultType="java.lang.Integer">
+        SELECT count(*) FROM BUG_RAP,BUG_STAFF
+        <where>
+            <if test="jid!=0">
+                BUG_STAFF.JID=#{jid}
+            </if>
+            <if test="did!=0">
+                and BUG_STAFF.DID=#{did}
+            </if>
+            and BUG_STAFF.SID=BUG_RAP.SID
+            and to_char(
+            <if test="radate==null">
+                sysdate
+            </if>
+            <if test="radate!=null">
+                #{radate}
+            </if>
+            ,'yyyy-mm')=to_char(BUG_RAP.RADATE,'yyyy-mm')
+        </where>
+    </select>
+    <select id="getRapLastMonthBySid" resultMap="rapMap1">
+         SELECT * FROM BUG_RAP WHERE SID=#{sid}
+        and to_char(add_months(sysdate,-1),'yyyy-mm')=to_char(RADATE,'yyyy-mm')
+    </select>
+    <select id="queryCurrentPageStaffDayByDidJid" resultType="com.w.model.Rap">
+        SELECT * FROM (SELECT BUG_RAP.*,rownum rn FROM BUG_RAP,BUG_STAFF,BUG_DEPARTMENT,BUG_JOB
+        <where>
+            <if test="jid!=0">
+                BUG_STAFF.JID=#{jid}
+            </if>
+            <if test="did!=0">
+                and BUG_STAFF.DID=#{did}
+            </if>
+            and BUG_STAFF.SID=BUG_RAP.SID
+            and BUG_STAFF.DID=BUG_DEPARTMENT.DID
+            and BUG_STAFF.JID=BUG_JOB.JID
+            and to_char(
+            <if test="radate==null">
+                sysdate
+            </if>
+            <if test="radate!=null">
+                #{radate}
+            </if>
+            ,'yyyy-mm')=to_char(BUG_RAP.RADATE,'yyyy-mm')
+        </where> ) s
+        WHERE rn between #{begin} and #{end}
+    </select>
+
+    <resultMap id="rapMap" type="com.w.model.Rap">
+        <id property="raid" column="RAID"/>
+        <result property="radate" column="RADATE"/>
+        <result property="ramoney" column="RAMONEY"/>
+        <result property="raexplain" column="RAEXPLAIN"/>
+    </resultMap>
+    <resultMap id="rapMap1" type="com.w.model.Rap" extends="rapMap">
+        <association property="staff" resultMap="com.w.dao.StaffMapper.staffMap1"/>
+    </resultMap>
+</mapper>

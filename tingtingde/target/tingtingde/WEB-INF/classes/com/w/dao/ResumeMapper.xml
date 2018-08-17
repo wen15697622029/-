@@ -64,16 +64,16 @@
         SELECT  COUNT (*) FROM BUG_RESUME WHERE  "UID"=#{uid}
     </select>
 
-    <select id="queryCurrentResumeByUser" resultType="com.w.model.Resume">
+    <select id="queryCurrentResumeByUser" resultMap="resumeMap1">
        SELECT * FROM (SELECT BUG_RESUME.*,rownum rn FROM BUG_RESUME
         WHERE BUG_RESUME."UID"=#{0}) RE,BUG_USER
         WHERE RE."UID"=BUG_USER."UID"
         and rn between #{1} and #{2}
     </select>
-    <select id="getResumesByUser" resultType="com.w.model.Resume">
+    <select id="getResumesByUser" resultMap="resumeMap1">
         SELECT * FROM BUG_RESUME WHERE "UID"=#{uid}
     </select>
-    <select id="getResumeByReid" resultType="com.w.model.Resume">
+    <select id="getResumeByReid" resultMap="resumeMap1">
         SELECT * from BUG_RESUME where REID=#{reid}
     </select>
     <resultMap id="resumeMap" type="com.w.model.Resume">

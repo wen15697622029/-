@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.w.dao.InterviewMapper" >
+
+    <insert id="addInterview">
+        INSERT INTO BUG_INTERVIEW
+        VALUES (INTERVIEW_SEQ.nextval,#{user.uid},#{recruit_information.riid},#{istate},#{idate},#{iaddress},
+        #{iintro},#{staff.sid})
+    </insert>
+
+    <update id="updateInterview">
+        UPDATE BUG_INTERVIEW SET ISTATE=#{istate} where IID=#{iid}
+    </update>
+
+    <select id="getInterviewByUidIstate" resultType="java.lang.Integer">
+        SELECT count(*) FROM BUG_INTERVIEW WHERE "UID"=#{0} and ISTATE=#{1}
+    </select>
+
+    <select id="queryCurrentInterviewByUidIstate" resultMap="interviewMap1">
+        SELECT * FROM (SELECT BUG_INTERVIEW.*,rownum rn FROM BUG_INTERVIEW
+        WHERE "UID"=#{0} and ISTATE=#{1}) I,BUG_RECRUIT_INFORMATION RI,BUG_STAFF S,BUG_DEPARTMENT D,BUG_JOB J
+        WHERE I.RIID=RI.RIID
+        AND I.SID=S.SID
+        AND RI.DID=D.DID
+        AND RI.JID=J.JID
+        and rn between #{2} and #{3}
+    </select>
+
+    <select id="getInterviewByIid" resultMap="interviewMap1">
+        SELECT * FROM BUG_INTERVIEW I,BUG_RECRUIT_INFORMATION RI,BUG_STAFF S,BUG_DEPARTMENT D,BUG_JOB J
+        WHERE I.RIID=RI.RIID
+        AND I.SID=S.SID
+        AND RI.DID=D.DID
+        AND RI.JID=J.JID
+        AND I.IID=#{iid}
+    </select>
+
+    <select id="getInterviewByRiid" resultType="java.lang.Integer">
+        SELECT count(*) FROM BUG_INTERVIEW WHERE RIID=#{0} and ISTATE=#{1}
+    </select>
+    <select id="queryCurrentPageInterviewByRiid" resultMap="interviewMap1">
+        SELECT * FROM (SELECT BUG_INTERVIEW.*,rownum rn FROM BUG_INTERVIEW
+        WHERE RIID=#{0} and ISTATE=#{1}) I,BUG_RECRUIT_INFORMATION RI,BUG_STAFF S,BUG_DEPARTMENT D,BUG_JOB J
+        WHERE I.RIID=RI.RIID
+        AND I.SID=S.SID
+        AND RI.DID=D.DID
+        AND RI.JID=J.JID
+        and rn between #{2} and #{3}
+    </select>
+    <resultMap id="interviewMap" type="com.w.model.Interview">
+        <id property="iid" column="IID"/>
+        <result property="istate" column="ISTATE"/>
+        <result property="idate" column="IDATE"/>
+        <result property="iaddress" column="IADDRESS"/>
+        <result property="iintro" column="I_NTRO"/>
+    </resultMap>
+    <resultMap id="interviewMap1" type="com.w.model.Interview" extends="interviewMap">
+        <association property="user" resultMap="com.w.dao.UserMapper.userMap"/>
+        <association property="recruit_information" resultMap="com.w.dao.Recruit_InformationMapper.recruit_InformationMap1"/>
+        <association property="staff" resultMap="com.w.dao.StaffMapper.staffMap1"/>
+    </resultMap>
+</mapper>

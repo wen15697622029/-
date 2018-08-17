@@ -13,9 +13,13 @@ public class Recruit_Information implements Serializable {
     private int rinum;//招聘人数
     private String riintro;//描述
     private int ristate;//状态
-    private Date riday;//时间
+    private Date ridate;//时间
 
     public Recruit_Information() {
+    }
+
+    public Recruit_Information(int riid) {
+        this.riid = riid;
     }
 
     public int getRiid() {
@@ -66,17 +70,17 @@ public class Recruit_Information implements Serializable {
         this.ristate = ristate;
     }
 
-    public Date getRiday() {
-        return riday;
+    public Date getRidate() {
+        return ridate;
     }
 
-    public void setRiday(Date riday) {
-        this.riday = riday;
+    public void setRidate(Date ridate) {
+        this.ridate = ridate;
     }
 
     @Override
     public String toString() {
-        return "Recruit_Information{" + "riid=" + riid + ", department=" + department + ", job=" + job + ", rinum=" + rinum + ", riintro='" + riintro + '\'' + ", ristate=" + ristate + ", riday=" + riday + '}';
+        return "Recruit_Information{" + "riid=" + riid + ", department=" + department + ", job=" + job + ", rinum=" + rinum + ", riintro='" + riintro + '\'' + ", ristate=" + ristate + ", ridate=" + ridate + '}';
     }
 }
 

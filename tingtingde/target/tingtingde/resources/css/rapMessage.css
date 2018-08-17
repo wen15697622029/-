@@ -1,0 +1,81 @@
+#d{
+    margin: 0px auto;
+    width: 1000px;
+    height: 720px;
+    background-color: white;
+}
+*{
+    font-family: 幼圆;
+}
+#d1{
+    width: 1000px;
+    height: 25px;
+    line-height: 25px;
+    background-color: rgba(0, 0, 0, 0.06);
+    font-size: 20px;
+}
+#d1 #d11{
+    float: left;
+}
+#d1 #d12{
+    float: right;
+}
+* a{
+    text-decoration: none;
+}
+#d3{
+    margin-top: 90px;
+    padding-top: 30px;
+    width: 1000px;
+    height: 535px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.06);
+}
+#d31{
+    height: 435px;
+}
+table{
+    line-height: 39px;
+    padding: 0px;
+    border-spacing:0px;
+    font-size: 18px;
+    table-layout:fixed;
+    text-align: left;
+    margin: 0px auto;
+}
+table tr:nth-child(even){
+    background: white;
+}
+table tr:nth-child(odd){
+    background: rgba(126, 87, 100, 0.2);
+}
+td{
+    line-height: 39px;
+}
+#d4{
+    width: 1000px;
+    height: 83px;
+    float: left;
+    background-color: rgba(0, 0, 0, 0.06);
+}
+#d5{
+    width: 1000px;
+    height: 22px;
+    float: left;
+    font-size: 22px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.06);
+}
+#d5{
+    width: 1000px;
+    height: 22px;
+    float: left;
+    font-size: 22px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.06);
+}
+#d32{
+    font-size: 22px;
+    text-align: center;
+    padding-top: 30px;
+}

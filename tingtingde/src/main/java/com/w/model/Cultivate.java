@@ -11,7 +11,7 @@ public class Cultivate implements Serializable {
     private String ctheme;//主题
     private String ccontent;//内容
     private Date cbegintime;//开始时间
-    private Date endtime;//结束时间
+    private Date cendtime;//结束时间
     private String caddress;//地址
     private int cstate;//状态
     private Date cissuetime;//发布时间
@@ -51,13 +51,6 @@ public class Cultivate implements Serializable {
         this.cbegintime = cbegintime;
     }
 
-    public Date getEndtime() {
-        return endtime;
-    }
-
-    public void setEndtime(Date endtime) {
-        this.endtime = endtime;
-    }
 
     public String getCaddress() {
         return caddress;
@@ -83,8 +76,16 @@ public class Cultivate implements Serializable {
         this.cissuetime = cissuetime;
     }
 
+    public Date getCendtime() {
+        return cendtime;
+    }
+
+    public void setCendtime(Date cendtime) {
+        this.cendtime = cendtime;
+    }
+
     @Override
     public String toString() {
-        return "Cultivate{" + "cid=" + cid + ", ctheme='" + ctheme + '\'' + ", ccontent='" + ccontent + '\'' + ", cbegintime=" + cbegintime + ", endtime=" + endtime + ", caddress='" + caddress + '\'' + ", cstate=" + cstate + ", cissuetime=" + cissuetime + '}';
+        return "Cultivate{" + "cid=" + cid + ", ctheme='" + ctheme + '\'' + ", ccontent='" + ccontent + '\'' + ", cbegintime=" + cbegintime + ", cendtime=" + cendtime + ", caddress='" + caddress + '\'' + ", cstate=" + cstate + ", cissuetime=" + cissuetime + '}';
     }
 }

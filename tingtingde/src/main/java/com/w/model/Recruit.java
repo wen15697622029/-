@@ -14,6 +14,12 @@ public class Recruit implements Serializable {
     public Recruit() {
     }
 
+    public Recruit(Recruit_Information recruitInformation, Resume resume, int rstate) {
+        this.recruitInformation = recruitInformation;
+        this.resume = resume;
+        this.rstate = rstate;
+    }
+
     public int getRid() {
         return rid;
     }

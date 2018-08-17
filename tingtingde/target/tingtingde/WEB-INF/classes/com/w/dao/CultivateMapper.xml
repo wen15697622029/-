@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.w.dao.CultivateMapper" >
+    <insert id="addCultivate"  parameterType="com.w.model.Cultivate">
+        <selectKey resultType="java.lang.Integer" order="BEFORE" keyProperty="cid">
+            SELECT CULTIVATE_SEQ.nextval FROM DUAL
+        </selectKey>
+        INSERT INTO BUG_CULTIVATE
+        VALUES (#{cid},#{ctheme},#{ccontent},#{cbegintime},#{cendtime},#{caddress},0,sysdate)
+    </insert>
+    <update id="updateCultivate">
+        UPDATE BUG_CULTIVATE
+        <set>
+            <if test="ctheme!=null">
+                CTHEME=#{ctheme},
+            </if>
+            <if test="ccontent!=null">
+                CCONTENT=#{ccontent},
+            </if>
+            <if test="cbegintime!=null">
+                CBEGINTIME=#{cbegintime},
+            </if>
+            <if test="cendtime!=null">
+                CENDTIME=#{cendtime},
+            </if>
+            <if test="caddress!=null">
+                CADDRESS=#{caddress},
+            </if>
+            <if test="cstate>=0">
+                CSTATE=#{cstate},
+            </if>
+            <if test="cissuetime!=null">
+                CISSUETIME=#{cissuetime},
+            </if>
+        </set>
+        where CID=#{cid}
+    </update>
+
+    <select id="getCultivateByCstate" resultType="java.lang.Integer">
+        SELECT COUNT(*) FROM BUG_CULTIVATE WHERE CSTATE=#{cstate}
+    </select>
+    <select id="queryCurrentPageCultivateByCstate" resultMap="cultivateMap">
+        SELECT * from (SELECT BUG_CULTIVATE.*,rownum rn FROM BUG_CULTIVATE WHERE CSTATE=#{0}) s
+        where rn between #{1} and #{2}
+    </select>
+    <select id="getCultivateByCid" resultMap="cultivateMap">
+        SELECT * FROM BUG_CULTIVATE WHERE CID=#{cid}
+    </select>
+    <select id="getMinutesByCid" resultType="java.lang.Double">
+        SELECT ((sysdate-CISSUETIME)*24*60) minutes FROM BUG_CULTIVATE WHERE CID=#{cid}
+    </select>
+    <select id="getCultivateBySid" resultMap="cultivateMap">
+        SELECT * from (SELECT C.*,rownum rn FROM BUG_CULTIVATE C,BUG_SC SC
+        WHERE C.CID=SC.CID
+        AND SC.SID=#{0}) s
+        where rn between #{1} and #{2}
+    </select>
+    <select id="getCountBySid" resultType="java.lang.Integer">
+        SELECT count(*) FROM BUG_CULTIVATE C,BUG_SC SC
+        WHERE C.CID=SC.CID
+        AND SC.SID=#{sid}
+    </select>
+    <resultMap id="cultivateMap" type="com.w.model.Cultivate">
+        <id property="cid" column="CID"/>
+        <result property="ctheme" column="CTHEME"/>
+        <result property="ccontent" column="CCONTENT"/>
+        <result property="cbegintime" column="CBEGINTIME"/>
+        <result property="cendtime" column="CENDTIME"/>
+        <result property="caddress" column="CADDRESS"/>
+        <result property="cstate" column="CSTATE"/>
+        <result property="cissuetime" column="CISSUETIME"/>
+    </resultMap>
+</mapper>

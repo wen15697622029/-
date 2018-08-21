@@ -2,266 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dde6fd1f-9efc-4878-9210-016891f41f82" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/66.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/controller/AdminController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/controller/StaffController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/dao/AdminMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/dao/AttendanceMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/dao/CultivateMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/dao/DepartmentMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/dao/InterviewMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/dao/JobMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/dao/PayMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/dao/RapMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/dao/RecruitMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/dao/StaffMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/service/AdminService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/service/AttendanceService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/service/CultivateService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/service/DepartmentService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/service/InterviewService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/service/JobService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/service/PayService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/service/RapService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/service/RecruitService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/service/StaffService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/service/impl/AdminServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/service/impl/AttendanceServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/service/impl/CultivateServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/service/impl/DepartmentServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/service/impl/InterviewServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/service/impl/JobServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/service/impl/PayServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/service/impl/RapServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/service/impl/RecruitServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/service/impl/StaffServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/controller/AdminController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/controller/StaffController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/AdminMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/AttendanceMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/CultivateMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/DepartmentMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/InterviewMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/JobMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/PayMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/RapMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/RecruitMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/StaffMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/service/AdminService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/service/AttendanceService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/service/CultivateService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/service/DepartmentService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/service/InterviewService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/service/JobService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/service/PayService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/service/RapService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/service/RecruitService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/service/StaffService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/service/impl/AdminServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/service/impl/AttendanceServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/service/impl/CultivateServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/service/impl/DepartmentServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/service/impl/InterviewServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/service/impl/JobServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/service/impl/PayServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/service/impl/RapServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/service/impl/RecruitServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/service/impl/StaffServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/controller/AdminController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/controller/StaffController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/dao/AdminMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/dao/AdminMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/dao/AttendanceMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/dao/AttendanceMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/dao/CultivateMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/dao/CultivateMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/dao/DepartmentMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/dao/DepartmentMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/dao/InterviewMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/dao/InterviewMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/dao/JobMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/dao/JobMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/dao/PayMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/dao/PayMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/dao/RapMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/dao/RapMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/dao/RecruitMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/dao/RecruitMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/dao/StaffMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/dao/StaffMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/service/AdminService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/service/AttendanceService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/service/CultivateService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/service/DepartmentService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/service/InterviewService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/service/JobService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/service/PayService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/service/RapService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/service/RecruitService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/service/StaffService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/service/impl/AdminServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/service/impl/AttendanceServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/service/impl/CultivateServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/service/impl/DepartmentServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/service/impl/InterviewServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/service/impl/JobServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/service/impl/PayServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/service/impl/RapServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/service/impl/RecruitServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/w/service/impl/StaffServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addCultivate.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/alter.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/attendanceInformation.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/attendanceMessage.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/check.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/cultivate.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/cultivateMessage.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/interview.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/interviewManage.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/myInterview.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/organizationalManagement.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/pay.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/payMessage.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/r.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/rap.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/rapMessage.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/ri.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/staff.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/staffAttendance.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/staffCultivate.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/staffDetail.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/staffInformation.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/staffPay.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/updateDetail.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/check.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/myInterview.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/myResume.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/rapMessage.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/staff.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/dao/AdminMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/dao/AttendanceMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/dao/CultivateMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/dao/DepartmentMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/dao/InterviewMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/dao/JobMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/dao/PayMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/dao/RapMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/dao/RecruitMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/w/dao/StaffMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/AdminMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/AttendanceMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/CultivateMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/DepartmentMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/InterviewMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/JobMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/PayMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/RapMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/RecruitMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/StaffMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/pages/admin.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/pages/alter.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/pages/check.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/pages/interview.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/pages/interviewManage.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/pages/myInterview.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/pages/organizationalManagement.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/pages/r.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/pages/ri.jsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addResume.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/tingtingde/WEB-INF/pages/addResume.jsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/85810bac-7e7e-4bca-a5c3-f839371fe837/_metadata_/metadata" afterPath="$PROJECT_DIR$/.idea/dataSources/85810bac-7e7e-4bca-a5c3-f839371fe837/_metadata_/metadata" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/85810bac-7e7e-4bca-a5c3-f839371fe837/_metadata_/metadata.values.at" afterPath="$PROJECT_DIR$/.idea/dataSources/85810bac-7e7e-4bca-a5c3-f839371fe837/_metadata_/metadata.values.at" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/w/controller/UserController.class" afterPath="$PROJECT_DIR$/target/classes/com/w/controller/UserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/w/dao/Recruit_InformationMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/w/dao/Recruit_InformationMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/w/model/Attendance.class" afterPath="$PROJECT_DIR$/target/classes/com/w/model/Attendance.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/w/model/Cultivate.class" afterPath="$PROJECT_DIR$/target/classes/com/w/model/Cultivate.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/w/model/Department.class" afterPath="$PROJECT_DIR$/target/classes/com/w/model/Department.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/w/model/Interview.class" afterPath="$PROJECT_DIR$/target/classes/com/w/model/Interview.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/w/model/Job.class" afterPath="$PROJECT_DIR$/target/classes/com/w/model/Job.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/w/model/Pay.class" afterPath="$PROJECT_DIR$/target/classes/com/w/model/Pay.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/w/model/Rap.class" afterPath="$PROJECT_DIR$/target/classes/com/w/model/Rap.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/w/model/Recruit.class" afterPath="$PROJECT_DIR$/target/classes/com/w/model/Recruit.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/w/model/Recruit_Information.class" afterPath="$PROJECT_DIR$/target/classes/com/w/model/Recruit_Information.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/w/model/Resume.class" afterPath="$PROJECT_DIR$/target/classes/com/w/model/Resume.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/w/model/Staff.class" afterPath="$PROJECT_DIR$/target/classes/com/w/model/Staff.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/w/service/Recruit_InformationService.class" afterPath="$PROJECT_DIR$/target/classes/com/w/service/Recruit_InformationService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/w/service/impl/Recruit_InformationServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/w/service/impl/Recruit_InformationServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/w/util/DateAndString.class" afterPath="$PROJECT_DIR$/target/classes/com/w/util/DateAndString.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde.war" afterPath="$PROJECT_DIR$/target/tingtingde.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/controller/UserController.class" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/controller/UserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/Recruit_InformationMapper.class" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/Recruit_InformationMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/model/Attendance.class" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/model/Attendance.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/model/Cultivate.class" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/model/Cultivate.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/model/Department.class" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/model/Department.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/model/Interview.class" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/model/Interview.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/model/Job.class" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/model/Job.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/model/Pay.class" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/model/Pay.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/model/Rap.class" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/model/Rap.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/model/Recruit.class" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/model/Recruit.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/model/Recruit_Information.class" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/model/Recruit_Information.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/model/Resume.class" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/model/Resume.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/model/Staff.class" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/model/Staff.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/service/Recruit_InformationService.class" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/service/Recruit_InformationService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/service/impl/Recruit_InformationServiceImpl.class" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/service/impl/Recruit_InformationServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/util/DateAndString.class" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/util/DateAndString.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/85810bac-7e7e-4bca-a5c3-f839371fe837.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/85810bac-7e7e-4bca-a5c3-f839371fe837.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/w/controller/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/w/controller/UserController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/w/dao/Recruit_InformationMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/w/dao/Recruit_InformationMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/w/dao/Recruit_InformationMapper.xml" afterPath="$PROJECT_DIR$/src/main/java/com/w/dao/Recruit_InformationMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/w/dao/ResumeMapper.xml" afterPath="$PROJECT_DIR$/src/main/java/com/w/dao/ResumeMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/w/dao/UserMapper.xml" afterPath="$PROJECT_DIR$/src/main/java/com/w/dao/UserMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/w/model/Attendance.java" afterPath="$PROJECT_DIR$/src/main/java/com/w/model/Attendance.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/w/model/Cultivate.java" afterPath="$PROJECT_DIR$/src/main/java/com/w/model/Cultivate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/w/model/Department.java" afterPath="$PROJECT_DIR$/src/main/java/com/w/model/Department.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/w/model/Interview.java" afterPath="$PROJECT_DIR$/src/main/java/com/w/model/Interview.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/w/model/Job.java" afterPath="$PROJECT_DIR$/src/main/java/com/w/model/Job.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/w/model/Pay.java" afterPath="$PROJECT_DIR$/src/main/java/com/w/model/Pay.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/w/model/Rap.java" afterPath="$PROJECT_DIR$/src/main/java/com/w/model/Rap.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/w/model/Recruit.java" afterPath="$PROJECT_DIR$/src/main/java/com/w/model/Recruit.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/w/model/Recruit_Information.java" afterPath="$PROJECT_DIR$/src/main/java/com/w/model/Recruit_Information.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/w/model/Resume.java" afterPath="$PROJECT_DIR$/src/main/java/com/w/model/Resume.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/w/model/Staff.java" afterPath="$PROJECT_DIR$/src/main/java/com/w/model/Staff.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/w/service/Recruit_InformationService.java" afterPath="$PROJECT_DIR$/src/main/java/com/w/service/Recruit_InformationService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/w/service/impl/Recruit_InformationServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/w/service/impl/Recruit_InformationServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/w/util/DateAndString.java" afterPath="$PROJECT_DIR$/src/main/java/com/w/util/DateAndString.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/myResume.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/myResume.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/updateResume.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/updateResume.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/user.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/user.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/w/dao/DepartmentMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/w/dao/DepartmentMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/w/dao/DepartmentMapper.xml" afterPath="$PROJECT_DIR$/src/main/java/com/w/dao/DepartmentMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/adminLogin.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/adminLogin.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/register.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/register.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/admin.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/admin.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/index.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/login.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/login.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/register.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/register.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/user.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/user.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/staffLogin.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/staffLogin.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/w/dao/Recruit_InformationMapper.xml" afterPath="$PROJECT_DIR$/target/classes/com/w/dao/Recruit_InformationMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/w/dao/ResumeMapper.xml" afterPath="$PROJECT_DIR$/target/classes/com/w/dao/ResumeMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/w/dao/UserMapper.xml" afterPath="$PROJECT_DIR$/target/classes/com/w/dao/UserMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/Recruit_InformationMapper.xml" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/Recruit_InformationMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/ResumeMapper.xml" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/ResumeMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/UserMapper.xml" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/UserMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/WEB-INF/pages/myResume.jsp" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/pages/myResume.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/WEB-INF/pages/updateResume.jsp" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/pages/updateResume.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/WEB-INF/pages/user.jsp" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/pages/user.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/w/dao/DepartmentMapper.xml" afterPath="$PROJECT_DIR$/target/classes/com/w/dao/DepartmentMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/DepartmentMapper.xml" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/classes/com/w/dao/DepartmentMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/tingtingde/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/adminLogin.jsp" afterPath="$PROJECT_DIR$/target/tingtingde/adminLogin.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/login.jsp" afterPath="$PROJECT_DIR$/target/tingtingde/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/register.jsp" afterPath="$PROJECT_DIR$/target/tingtingde/register.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/resources/css/admin.css" afterPath="$PROJECT_DIR$/target/tingtingde/resources/css/admin.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/resources/css/index.css" afterPath="$PROJECT_DIR$/target/tingtingde/resources/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/resources/css/login.css" afterPath="$PROJECT_DIR$/target/tingtingde/resources/css/login.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/resources/css/register.css" afterPath="$PROJECT_DIR$/target/tingtingde/resources/css/register.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/resources/css/user.css" afterPath="$PROJECT_DIR$/target/tingtingde/resources/css/user.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tingtingde/staffLogin.jsp" afterPath="$PROJECT_DIR$/target/tingtingde/staffLogin.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tingtingde.iml" afterPath="$PROJECT_DIR$/tingtingde.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -348,126 +97,120 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="StaffService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/w/service/StaffService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="34" column="16" lean-forward="false" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StaffServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/w/service/impl/StaffServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="75" column="36" lean-forward="false" selection-start-line="75" selection-start-column="36" selection-end-line="75" selection-end-column="36" />
-              <folding>
-                <element signature="e#1887#1888#0" expanded="true" />
-                <element signature="e#1948#1949#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StaffMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/w/dao/StaffMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="34" column="16" lean-forward="false" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StaffMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/w/dao/StaffMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-851">
-              <caret line="147" column="44" lean-forward="true" selection-start-line="147" selection-start-column="44" selection-end-line="147" selection-end-column="44" />
-              <folding>
-                <marker date="1535791080949" expanded="true" signature="276:757" ph="INSERT INTO BUG_STAFF... " />
-                <marker date="1535791080949" expanded="true" signature="811:865" ph="INSERT INTO BUG_SC... " />
-                <marker date="1535791080949" expanded="true" signature="918:2736" ph="UPDATE BUG_S... " />
-                <marker date="1535791080949" expanded="true" signature="2793:2828" ph="DELETE FROM " />
-                <marker date="1535791080949" expanded="true" signature="3328:3828" ph="SELECT * FRO... *" />
-                <marker date="1535791080949" expanded="true" signature="4303:4348" ph="SELECT count... BUG_STAFF" />
-                <marker date="1535791080949" expanded="true" signature="4436:4481" ph="SELECT count... BUG_STAFF" />
-                <marker date="1535791080949" expanded="true" signature="4558:4596" ph="SELECT * fro... BUG_STAFF" />
-                <marker date="1535791080949" expanded="true" signature="4683:4761" ph="select month... BUG_STAFF" />
-                <marker date="1535791080949" expanded="true" signature="4834:4857" ph="SELECT * FRO... BUG_STAFF" />
-                <marker date="1535791080949" expanded="true" signature="4938:5008" ph="SELECT * FRO... BUG_STAFF" />
-                <marker date="1535791080949" expanded="true" signature="4938:5091" ph="SELECT * FRO... BUG_STAFF" />
-                <marker date="1535791080949" expanded="true" signature="5169:5209" ph="SELECT * FRO... BUG_STAFF" />
-                <marker date="1535791080949" expanded="true" signature="5292:5477" ph="SELECT * FRO... BUG_STAFF" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RapMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/w/dao/RapMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="8" column="38" lean-forward="false" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
-              <folding>
-                <marker date="1535791886556" expanded="true" signature="239:336" ph="INSERT INTO BUG_RAP... " />
-                <marker date="1535791886556" expanded="true" signature="427:675" ph="SELECT count... BUG_RAP" />
-                <marker date="1535791886556" expanded="true" signature="757:1077" ph="SELECT * FRO... *" />
-                <marker date="1535791886556" expanded="true" signature="772:1031" ph="SELECT BUG_R... BUG_RAP" />
-                <marker date="1535791886556" expanded="true" signature="1784:1902" ph="SELECT * FRO... BUG_RAP" />
-                <marker date="1535791886556" expanded="true" signature="2005:2726" ph="SELECT * FRO... *" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pay.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/pay.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="84" column="39" lean-forward="false" selection-start-line="84" selection-start-column="25" selection-end-line="84" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="AdminController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/w/controller/AdminController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="635" column="0" lean-forward="false" selection-start-line="635" selection-start-column="0" selection-end-line="635" selection-end-column="0" />
+            <state relative-caret-position="13260">
+              <caret line="459" column="44" lean-forward="false" selection-start-line="459" selection-start-column="44" selection-end-line="459" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DepartmentServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/w/service/impl/DepartmentServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#484#485#0" expanded="false" />
+                <element signature="e#539#540#0" expanded="false" />
+                <element signature="e#720#721#0" expanded="false" />
+                <element signature="e#782#783#0" expanded="false" />
+                <element signature="e#854#855#0" expanded="false" />
+                <element signature="e#924#925#0" expanded="false" />
+                <element signature="e#986#987#0" expanded="false" />
+                <element signature="e#1050#1051#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DepartmentMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/w/dao/DepartmentMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="458">
+              <caret line="19" column="14" lean-forward="false" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BUG.BUG_PAY" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/82cfe38c/85810bac-7e7e-4bca-a5c3-f839371fe837/BUG.BUG_PAY">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
+      <file leaf-file-name="DepartmentMapper.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/w/dao/DepartmentMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="16" column="36" lean-forward="true" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+              <folding>
+                <marker date="1534815280024" expanded="true" signature="252:327" ph="INSERT INTO BUG_DEPARTMENT... " />
+                <marker date="1534815280024" expanded="true" signature="386:437" ph="UPDATE BUG_D... " />
+                <marker date="1534815280024" expanded="true" signature="495:538" ph="DELETE FROM " />
+                <marker date="1534815280024" expanded="true" signature="620:648" ph="SELECT * FRO... BUG_DEPARTMENT" />
+              </folding>
             </state>
           </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </entry>
+      </file>
+      <file leaf-file-name="StaffController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/w/controller/StaffController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-237">
+              <caret line="131" column="0" lean-forward="false" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BUG.BUG_ATTENDANCE" pinned="false" current-in-tab="true">
-        <entry file="dbDummy://dbtable:/82cfe38c/85810bac-7e7e-4bca-a5c3-f839371fe837/BUG.BUG_ATTENDANCE">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/w/controller/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2171">
+              <caret line="136" column="24" lean-forward="false" selection-start-line="136" selection-start-column="24" selection-end-line="136" selection-end-column="24" />
+              <folding>
+                <marker date="1533871587581" expanded="true" signature="9226:9235" ph="{...}" />
+              </folding>
             </state>
           </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </entry>
+      </file>
+      <file leaf-file-name="JobMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/w/dao/JobMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InterviewMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/w/dao/InterviewMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/w/dao/AdminMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AttendanceMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/w/dao/AttendanceMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-154">
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -513,10 +256,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/w/dao/RapMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/w/service/RapService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/w/service/impl/RapServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/w/util/DateAndString.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/w/model/Job.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/w/model/Pay.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/w/model/Rap.java" />
@@ -550,20 +289,24 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/attendanceInformation.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/alter.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addCultivate.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/w/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/w/dao/InterviewMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/myInterview.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/interviewManage.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/staffLogin.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/w/dao/CultivateMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/w/controller/StaffController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/attendanceMessage.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/w/dao/AttendanceMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/w/controller/AdminController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/w/dao/StaffMapper.xml" />
         <option value="dbsequence:/82cfe38c/85810bac-7e7e-4bca-a5c3-f839371fe837/BUG.RAP_SEQ" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/85810bac-7e7e-4bca-a5c3-f839371fe837/console.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/w/dao/RapMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/w/controller/AdminController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/w/service/impl/DepartmentServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/w/controller/StaffController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/w/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/w/dao/DepartmentMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/w/dao/DepartmentMapper.xml" />
       </list>
     </option>
   </component>
@@ -590,10 +333,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1060" />
+    <option name="x" value="527" />
+    <option name="y" value="54" />
+    <option name="width" value="1539" />
+    <option name="height" value="940" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -622,6 +365,16 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tingtingde" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="tingtingde" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -710,11 +463,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -733,10 +482,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -762,187 +507,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tingtingde" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tingtingde" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tingtingde" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tingtingde" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tingtingde" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tingtingde" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="w" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tingtingde" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tingtingde" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="w" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tingtingde" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tingtingde" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="w" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="impl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tingtingde" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tingtingde" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="w" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1013,12 +582,12 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="database.main" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Oracle" />
     <property name="last_opened_file_path" value="D:/KuGou/000/HRM/HRM" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -1611,6 +1180,9 @@
       <workItem from="1533862958884" duration="11627000" />
       <workItem from="1533884782359" duration="198000" />
       <workItem from="1533885359068" duration="7021000" />
+      <workItem from="1534485772375" duration="4521000" />
+      <workItem from="1534757651744" duration="706000" />
+      <workItem from="1534815060348" duration="275000" />
     </task>
     <task id="LOCAL-00001" summary="111">
       <created>1532503896019</created>
@@ -1623,7 +1195,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="173803000" />
+    <option name="totallyTimeSpent" value="179305000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1635,7 +1207,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1060" extended-state="1" />
+    <frame x="527" y="54" width="1539" height="940" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1645,7 +1218,7 @@
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2247854" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.06894198" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1657,11 +1230,10 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295964" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.132287" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24551569" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5777202" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3285528" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295964" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295964" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24195279" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.156314" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1670,6 +1242,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295964" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32735425" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1724,25 +1297,13 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/w/controller/StaffController.java</url>
-          <line>131</line>
-          <properties />
-          <option name="timeStamp" value="98" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/w/controller/StaffController.java</url>
-          <line>114</line>
-          <properties />
-          <option name="timeStamp" value="100" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/w/controller/AdminController.java</url>
           <line>635</line>
           <properties />
           <option name="timeStamp" value="101" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="102" />
+      <option name="time" value="103" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1751,118 +1312,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/rap.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="57" column="7" lean-forward="false" selection-start-line="57" selection-start-column="7" selection-end-line="57" selection-end-column="7" />
-          <folding>
-            <marker date="1533870582867" expanded="false" signature="1984:2010" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/r.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="36" column="8" lean-forward="false" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
-          <folding>
-            <marker date="1533870583022" expanded="false" signature="1173:1199" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/payMessage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="70" column="17" lean-forward="true" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/organizationalManagement.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="241" column="8" lean-forward="false" selection-start-line="241" selection-start-column="12" selection-end-line="241" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/myResume.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="36" column="6" lean-forward="false" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/cultivateMessage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="37" column="8" lean-forward="false" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/cultivate.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="72" column="3" lean-forward="false" selection-start-line="72" selection-start-column="3" selection-end-line="72" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/check.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="35" column="6" lean-forward="false" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/attendanceInformation.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="54" column="5" lean-forward="false" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/alter.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="78" column="2" lean-forward="false" selection-start-line="78" selection-start-column="2" selection-end-line="78" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2670">
-          <caret line="20" column="50" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addCultivate.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="51" column="2" lean-forward="false" selection-start-line="51" selection-start-column="2" selection-end-line="51" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="136" column="24" lean-forward="false" selection-start-line="136" selection-start-column="24" selection-end-line="136" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/interview.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="71" column="30" lean-forward="false" selection-start-line="71" selection-start-column="30" selection-end-line="71" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1877,13 +1330,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="316">
           <caret line="20" column="35" lean-forward="false" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/dao/InterviewMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -1960,7 +1406,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1140">
           <caret line="38" column="7" lean-forward="false" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="81" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1976,7 +1421,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3240">
           <caret line="108" column="59" lean-forward="false" selection-start-line="108" selection-start-column="59" selection-end-line="108" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1984,17 +1428,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1590">
           <caret line="53" column="60" lean-forward="false" selection-start-line="53" selection-start-column="60" selection-end-line="53" selection-end-column="60" />
-          <folding>
-            <marker date="1533884251808" expanded="true" signature="621:1357" ph="UPDATE BUG_C... " />
-            <marker date="1533884251808" expanded="true" signature="1451:1508" ph="SELECT COUNT... BUG_CULTIVATE" />
-            <marker date="1533884251808" expanded="true" signature="1608:1734" ph="SELECT * fro... *" />
-            <marker date="1533884251808" expanded="true" signature="1623:1692" ph="SELECT BUG_C... BUG_CULTIVATE" />
-            <marker date="1533884251808" expanded="true" signature="1818:1862" ph="SELECT * FRO... BUG_CULTIVATE" />
-            <marker date="1533884251808" expanded="true" signature="1949:2028" ph="SELECT ((sys... BUG_CULTIVATE" />
-            <marker date="1533884251808" expanded="true" signature="2112:2271" ph="SELECT * fro... *" />
-            <marker date="1533884251808" expanded="true" signature="2127:2229" ph="SELECT C.*,r... BUG_CULTIVATE" />
-            <marker date="1533884251808" expanded="true" signature="2357:2456" ph="SELECT count... BUG_CULTIVATE" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2002,7 +1435,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2015,7 +1447,6 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2023,7 +1454,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2031,7 +1461,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="65" column="30" lean-forward="false" selection-start-line="65" selection-start-column="30" selection-end-line="65" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2044,7 +1473,6 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2052,10 +1480,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
           <caret line="32" column="40" lean-forward="true" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
-          <folding>
-            <element signature="e#776#777#0" expanded="false" />
-            <element signature="e#848#849#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2063,7 +1487,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
           <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2071,7 +1494,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2079,31 +1501,138 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="84" column="30" lean-forward="false" selection-start-line="84" selection-start-column="30" selection-end-line="84" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/dao/RapMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/pay.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2520">
+          <caret line="84" column="39" lean-forward="false" selection-start-line="84" selection-start-column="25" selection-end-line="84" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/service/StaffService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="34" column="16" lean-forward="false" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/service/impl/StaffServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1560">
+          <caret line="75" column="36" lean-forward="false" selection-start-line="75" selection-start-column="36" selection-end-line="75" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/dao/StaffMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="34" column="16" lean-forward="false" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/dao/StaffMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4410">
+          <caret line="147" column="44" lean-forward="false" selection-start-line="147" selection-start-column="44" selection-end-line="147" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/82cfe38c/85810bac-7e7e-4bca-a5c3-f839371fe837/BUG.BUG_PAY">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbsequence:/82cfe38c/85810bac-7e7e-4bca-a5c3-f839371fe837/BUG.RAP_SEQ">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/85810bac-7e7e-4bca-a5c3-f839371fe837/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="1" column="69" lean-forward="false" selection-start-line="1" selection-start-column="69" selection-end-line="1" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/dao/RapMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" column="38" lean-forward="false" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/82cfe38c/85810bac-7e7e-4bca-a5c3-f839371fe837/BUG.BUG_ATTENDANCE">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="13" column="20" lean-forward="false" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/controller/StaffController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="114" column="0" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/dao/AdminMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1533864404527" expanded="true" signature="274:349" ph="SELECT * FRO... BUG_ADMIN" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/dao/AttendanceMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/w/dao/AttendanceMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-240">
+        <state relative-caret-position="3270">
           <caret line="109" column="31" lean-forward="false" selection-start-line="109" selection-start-column="31" selection-end-line="109" selection-end-column="31" />
           <folding>
             <marker date="1535790498956" expanded="true" signature="252:354" ph="INSERT INTO BUG_ATTENDANCE... " />
@@ -2124,134 +1653,120 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/dao/RapMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/dao/CultivateMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/pay.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="84" column="39" lean-forward="false" selection-start-line="84" selection-start-column="25" selection-end-line="84" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/service/StaffService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="34" column="16" lean-forward="false" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/service/impl/StaffServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="75" column="36" lean-forward="false" selection-start-line="75" selection-start-column="36" selection-end-line="75" selection-end-column="36" />
+        <state relative-caret-position="450">
+          <caret line="17" column="41" lean-forward="false" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
           <folding>
-            <element signature="e#1887#1888#0" expanded="true" />
-            <element signature="e#1948#1949#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/dao/StaffMapper.java">
+    <entry file="file://$PROJECT_DIR$/tingtingde.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="34" column="16" lean-forward="false" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+        <state relative-caret-position="1500">
+          <caret line="50" column="63" lean-forward="false" selection-start-line="50" selection-start-column="63" selection-end-line="50" selection-end-column="63" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/dao/StaffMapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/service/impl/DepartmentServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-851">
-          <caret line="147" column="44" lean-forward="true" selection-start-line="147" selection-start-column="44" selection-end-line="147" selection-end-column="44" />
+        <state relative-caret-position="450">
+          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
           <folding>
-            <marker date="1535791080949" expanded="true" signature="276:757" ph="INSERT INTO BUG_STAFF... " />
-            <marker date="1535791080949" expanded="true" signature="811:865" ph="INSERT INTO BUG_SC... " />
-            <marker date="1535791080949" expanded="true" signature="918:2736" ph="UPDATE BUG_S... " />
-            <marker date="1535791080949" expanded="true" signature="2793:2828" ph="DELETE FROM " />
-            <marker date="1535791080949" expanded="true" signature="3328:3828" ph="SELECT * FRO... *" />
-            <marker date="1535791080949" expanded="true" signature="4303:4348" ph="SELECT count... BUG_STAFF" />
-            <marker date="1535791080949" expanded="true" signature="4436:4481" ph="SELECT count... BUG_STAFF" />
-            <marker date="1535791080949" expanded="true" signature="4558:4596" ph="SELECT * fro... BUG_STAFF" />
-            <marker date="1535791080949" expanded="true" signature="4683:4761" ph="select month... BUG_STAFF" />
-            <marker date="1535791080949" expanded="true" signature="4834:4857" ph="SELECT * FRO... BUG_STAFF" />
-            <marker date="1535791080949" expanded="true" signature="4938:5008" ph="SELECT * FRO... BUG_STAFF" />
-            <marker date="1535791080949" expanded="true" signature="4938:5091" ph="SELECT * FRO... BUG_STAFF" />
-            <marker date="1535791080949" expanded="true" signature="5169:5209" ph="SELECT * FRO... BUG_STAFF" />
-            <marker date="1535791080949" expanded="true" signature="5292:5477" ph="SELECT * FRO... BUG_STAFF" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#484#485#0" expanded="false" />
+            <element signature="e#539#540#0" expanded="false" />
+            <element signature="e#720#721#0" expanded="false" />
+            <element signature="e#782#783#0" expanded="false" />
+            <element signature="e#854#855#0" expanded="false" />
+            <element signature="e#924#925#0" expanded="false" />
+            <element signature="e#986#987#0" expanded="false" />
+            <element signature="e#1050#1051#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/w/controller/AdminController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="635" column="0" lean-forward="false" selection-start-line="635" selection-start-column="0" selection-end-line="635" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/82cfe38c/85810bac-7e7e-4bca-a5c3-f839371fe837/BUG.BUG_PAY">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbsequence:/82cfe38c/85810bac-7e7e-4bca-a5c3-f839371fe837/BUG.RAP_SEQ">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/85810bac-7e7e-4bca-a5c3-f839371fe837/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="1" column="69" lean-forward="false" selection-start-line="1" selection-start-column="69" selection-end-line="1" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/dao/RapMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="8" column="38" lean-forward="false" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+        <state relative-caret-position="13260">
+          <caret line="459" column="44" lean-forward="false" selection-start-line="459" selection-start-column="44" selection-end-line="459" selection-end-column="44" />
           <folding>
-            <marker date="1535791886556" expanded="true" signature="239:336" ph="INSERT INTO BUG_RAP... " />
-            <marker date="1535791886556" expanded="true" signature="427:675" ph="SELECT count... BUG_RAP" />
-            <marker date="1535791886556" expanded="true" signature="757:1077" ph="SELECT * FRO... *" />
-            <marker date="1535791886556" expanded="true" signature="772:1031" ph="SELECT BUG_R... BUG_RAP" />
-            <marker date="1535791886556" expanded="true" signature="1784:1902" ph="SELECT * FRO... BUG_RAP" />
-            <marker date="1535791886556" expanded="true" signature="2005:2726" ph="SELECT * FRO... *" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/82cfe38c/85810bac-7e7e-4bca-a5c3-f839371fe837/BUG.BUG_ATTENDANCE">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/dao/AdminMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/dao/AttendanceMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-154">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/controller/StaffController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-237">
+          <caret line="131" column="0" lean-forward="false" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2171">
+          <caret line="136" column="24" lean-forward="false" selection-start-line="136" selection-start-column="24" selection-end-line="136" selection-end-column="24" />
+          <folding>
+            <marker date="1533871587581" expanded="true" signature="9226:9235" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/dao/JobMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/dao/InterviewMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/dao/DepartmentMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="19" column="14" lean-forward="false" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/w/dao/DepartmentMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="16" column="36" lean-forward="true" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+          <folding>
+            <marker date="1534815280024" expanded="true" signature="252:327" ph="INSERT INTO BUG_DEPARTMENT... " />
+            <marker date="1534815280024" expanded="true" signature="386:437" ph="UPDATE BUG_D... " />
+            <marker date="1534815280024" expanded="true" signature="495:538" ph="DELETE FROM " />
+            <marker date="1534815280024" expanded="true" signature="620:648" ph="SELECT * FRO... BUG_DEPARTMENT" />
+          </folding>
         </state>
       </provider>
     </entry>

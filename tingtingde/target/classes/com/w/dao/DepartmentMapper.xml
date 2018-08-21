@@ -4,22 +4,19 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.w.dao.DepartmentMapper" >
     <insert id="addDepartment">
-        INSERT  INTO  BUG_DEPARTMENT VALUES (DEPARTMENT_SEQ.nextval,
-        #{dname},sysdate)
+        INSERT INTO BUG_DEPARTMENT VALUES (DEPARTMENT_SEQ.nextval,#{dname},sysdate)
     </insert>
     <update id="updateDepartment">
-        UPDATE BUG_DEPARTMENT SET DNAME=#{1} WHERE DID=#{0}
+         UPDATE BUG_DEPARTMENT SET DNAME=#{1} where DID=#{0}
     </update>
     <delete id="deleteDepartment">
-        DELETE FROM BUG_DEPARTMENT WHERE DID=#{did}
+        DELETE FROM BUG_DEPARTMENT where DID=#{did}
     </delete>
 
     <select id="getDepartment" resultMap="departmentMap">
         SELECT * FROM BUG_DEPARTMENT
     </select>
-    <select id="getCountByDname" resultType="java.lang.Integer">
-        SELECT count(*) FROM BUG_DEPARTMENT where DNAME=#{dname}
-    </select>
+    <select id="getCountByDname" resultType="java.lang.Integer"></select>
     <resultMap id="departmentMap" type="com.w.model.Department">
         <id property="did" column="DID"/>
         <result property="dname" column="DNAME"/>

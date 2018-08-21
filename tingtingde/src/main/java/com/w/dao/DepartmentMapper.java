@@ -11,11 +11,11 @@ import java.util.List;
 public interface DepartmentMapper {
 
     List<Department> getDepartment();
-
     int deleteDepartment(int did);
 
     int addDepartment(String dname);
 
-    int updateDepartment(int did,String dname);
+    int updateDepartment(int did, String dname);
+
     int getCountByDname(String dname);
 }

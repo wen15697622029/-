@@ -35,9 +35,9 @@ public class UserController {
         response.setContentType("text/html;charset=utf-8");
         User user1 = userService.getUserByName(user);
         if (user1==null){
-            request.setAttribute("error","¿ÉÒÔ×¢²á");
+            request.setAttribute("error","å¯ä»¥æ³¨å†Œ");
         }else{
-            response.getWriter().print("¸ÃÓÃ»§ÒÑ´æÔÚ");
+            response.getWriter().print("è¯¥ç”¨æˆ·å·²å­˜åœ¨");
         }
     }
     @RequestMapping("/register")
@@ -47,7 +47,7 @@ public class UserController {
             userService.addUser(user);
             return "../../login";
         }
-        model.addAttribute("str","¸ÃÓÃ»§ÃûÒÑ´æÔÚ");
+        model.addAttribute("str","è¯¥ç”¨æˆ·åå·²å­˜åœ¨");
         return "../../register";
     }
     @RequestMapping("/login")
@@ -55,9 +55,9 @@ public class UserController {
         User user1 = userService.getUserByNamePass(user);
         if (null!=user1){
             session.setAttribute("user",user1);
-           return "redirect:user";
+            return "redirect:user";
         }
-        model.addAttribute("str","ÓÃ»§Ãû»òÃÜÂë´íÎó");
+        model.addAttribute("str","ç”¨æˆ·åæˆ–å¯†ç é”™è¯¯");
         return "../../login";
     }
     @RequestMapping("/")
@@ -157,13 +157,13 @@ public class UserController {
     public void sendResume(int riid,int reid,HttpSession session,HttpServletResponse response) throws Exception{
         response.setContentType("text/html;charset=utf-8");
         User user = (User) session.getAttribute("user");
-        Recruit recruit=recruitService.getRecruitByUserRe(user.getUid(),riid);//²é¿´µ±Ç°ÓÃ»§¶Ô¸ÃÌõÕĞÆ¸ĞÅÏ¢ÊÇ·ñÍ¶µİ¹ı¼òÀú
+        Recruit recruit=recruitService.getRecruitByUserRe(user.getUid(),riid);//æŸ¥çœ‹å½“å‰ç”¨æˆ·å¯¹è¯¥æ¡æ‹›è˜ä¿¡æ¯æ˜¯å¦æŠ•é€’è¿‡ç®€å†
         if (recruit!=null){
-            response.getWriter().print("¸ÃÖ°Î»ÄãÒÑ¾­Í¶µİ¼òÀú");
+            response.getWriter().print("è¯¥èŒä½ä½ å·²ç»æŠ•é€’ç®€å†");
         }else {
             recruit=new Recruit(new Recruit_Information(riid),new Resume(reid),0);
             recruitService.addRecruit(recruit);
-            response.getWriter().print("Í¶µİ¼òÀú³É¹¦");
+            response.getWriter().print("æŠ•é€’ç®€å†æˆåŠŸ");
         }
     }
     @RequestMapping("/myInterview")
@@ -187,7 +187,7 @@ public class UserController {
         Interview interview = interviewService.getInterviewByIid(iid);
         interview.setIstate(1);
         interviewService.updateInterview(interview);
-        response.getWriter().print("ÒÑ²Î¼Ó´Ë´ÎÃæÊÔ£¬Çë×öºÃ×¼±¸");
+        response.getWriter().print("å·²å‚åŠ æ­¤æ¬¡é¢è¯•ï¼Œè¯·åšå¥½å‡†å¤‡");
     }
     @RequestMapping("/refuseInterview")
     public void refuseInterview(int iid,HttpServletResponse response) throws Exception{
@@ -195,7 +195,7 @@ public class UserController {
         Interview interview = interviewService.getInterviewByIid(iid);
         interview.setIstate(2);
         interviewService.updateInterview(interview);
-        response.getWriter().print("ÒÑ¾Ü¾ø´Ë´ÎÃæÊÔ£¬ÇëÕäÏ§Ã¿Ò»´ÎÃæÊÔ»ú»á");
+        response.getWriter().print("å·²æ‹’ç»æ­¤æ¬¡é¢è¯•ï¼Œè¯·çæƒœæ¯ä¸€æ¬¡é¢è¯•æœºä¼š");
     }
 
 

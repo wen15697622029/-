@@ -58,7 +58,7 @@ public class AdminController {
             session.setAttribute("admin",admin);
             return "redirect:admin";
         }
-        model.addAttribute("str","ÓÃ»§Ãû»òÃÜÂë´íÎó");
+        model.addAttribute("str","ç”¨æˆ·åæˆ–å¯†ç é”™è¯¯");
         return "../../adminLogin";
     }
     @RequestMapping("/admin")
@@ -109,7 +109,7 @@ public class AdminController {
         recruitInformation.setRistate(0);
         recruitInformation.setRidate(null);
         recruit_informationService.updateRecruit_Information(recruitInformation);
-        response.getWriter().print("³·»Ø³É¹¦");
+        response.getWriter().print("æ’¤å›æˆåŠŸ");
     }
     @RequestMapping("/issue")
     public void issue(@RequestParam(value = "riid",defaultValue = "0")int riid, HttpServletResponse response) throws Exception{
@@ -117,13 +117,13 @@ public class AdminController {
         Recruit_Information recruitInformation = recruit_informationService.getRecruit_InformationByRiid(riid);
         recruitInformation.setRistate(1);
         recruit_informationService.updateRecruit_Information(recruitInformation);
-        response.getWriter().print("·¢²¼³É¹¦");
+        response.getWriter().print("å‘å¸ƒæˆåŠŸ");
     }
     @RequestMapping("/delete")
     public void delete(@RequestParam(value = "riid",defaultValue = "0")int riid, HttpServletResponse response) throws Exception{
         response.setContentType("text/html;charset=utf-8");
         recruit_informationService.deleteRecruit_Information(riid);
-        response.getWriter().print("É¾³ı³É¹¦");
+        response.getWriter().print("åˆ é™¤æˆåŠŸ");
     }
     @RequestMapping("/alter")
     public String alter(@RequestParam(value = "riid",defaultValue = "0")int riid, HttpServletRequest request) throws Exception{
@@ -170,7 +170,7 @@ public class AdminController {
     public String check(@RequestParam(value = "riid",defaultValue = "0")int riid,
                         @RequestParam(value = "rstate",defaultValue = "0")int rstate,
                         @RequestParam(value = "currentPage",defaultValue = "1")
-                                    int currentPage, HttpServletRequest request) throws Exception{
+                                int currentPage, HttpServletRequest request) throws Exception{
         int pageSize = 1;
         int totalRows=recruitService.getRecruitByRiidRstate(riid,rstate);
         int totalPages = DoPage.getTotalPages(totalRows,pageSize);
@@ -180,7 +180,7 @@ public class AdminController {
         if (!recruits.isEmpty()){
             Recruit recruit = recruits.get(0);
             if (recruit.getRstate()==0){
-                recruit.setRstate(1);//È¡³öµÄ±ê¼ÇÎªÒÑ¶Á
+                recruit.setRstate(1);//å–å‡ºçš„æ ‡è®°ä¸ºå·²è¯»
                 recruitService.updateRecruit(recruit);
             }
         }
@@ -214,10 +214,10 @@ public class AdminController {
         Date idate= DateAndString.dateToStringTime(midate);
         Recruit recruit = recruitService.getRecruitByRid(rid);
         recruit.setRstate(2);
-        recruitService.updateRecruit(recruit);//¸üĞÂÎªÃæÊÔ
+        recruitService.updateRecruit(recruit);//æ›´æ–°ä¸ºé¢è¯•
         interview.setIdate(idate);
-        interview.setUser(recruit.getResume().getUser());//ÉèÖÃÓÃ»§
-        interview.setRecruit_information(recruit.getRecruitInformation());//ÕĞÆ¸ĞÅÏ¢
+        interview.setUser(recruit.getResume().getUser());//è®¾ç½®ç”¨æˆ·
+        interview.setRecruit_information(recruit.getRecruitInformation());//æ‹›è˜ä¿¡æ¯
         interviewService.addInterview(interview);
         int riid = recruit.getRecruitInformation().getRiid();
         return "redirect:check?riid="+riid;
@@ -254,7 +254,7 @@ public class AdminController {
         staffService.addStaff(staff);
         interview.setIstate(3);
         interviewService.updateInterview(interview);
-        response.getWriter().print("Â¼ÓÃ³É¹¦");
+        response.getWriter().print("å½•ç”¨æˆåŠŸ");
     }
     @RequestMapping("/loadJob")
     @ResponseBody
@@ -277,49 +277,49 @@ public class AdminController {
     @RequestMapping("/deld")
     public void deld(int did,HttpServletResponse response) throws Exception{
         response.setContentType("text/html;charset=utf-8");
-        int count=staffService.countStaffByDid(did);//»ñÈ¡¸Ã²¿ÃÅÈËÊı
-        if (count==0){//Ã»ÓĞÈËÉ¾³ı
-            jobService.deleteJobByDid(did);//É¾³ı¸Ã²¿ÃÅÏÂÖ°Î»
-            departmentService.deleteDepartment(did);//É¾³ı¸Ã²¿ÃÅ
-            response.getWriter().print("²¿ÃÅÉ¾³ı³É¹¦");
+        int count=staffService.countStaffByDid(did);//è·å–è¯¥éƒ¨é—¨äººæ•°
+        if (count==0){//æ²¡æœ‰äººåˆ é™¤
+            jobService.deleteJobByDid(did);//åˆ é™¤è¯¥éƒ¨é—¨ä¸‹èŒä½
+            departmentService.deleteDepartment(did);//åˆ é™¤è¯¥éƒ¨é—¨
+            response.getWriter().print("éƒ¨é—¨åˆ é™¤æˆåŠŸ");
         }else{
-            response.getWriter().print("¸Ã²¿ÃÅ»¹ÓĞÔ±¹¤£¬²»ÄÜÉ¾³ı");
+            response.getWriter().print("è¯¥éƒ¨é—¨è¿˜æœ‰å‘˜å·¥ï¼Œä¸èƒ½åˆ é™¤");
         }
     }
     @RequestMapping("/delj")
     public void delj(int jid,HttpServletResponse response) throws Exception{
         response.setContentType("text/html;charset=utf-8");
-        int count=staffService.countStaffByJid(jid);//»ñÈ¡¸ÃÖ°Î»ÈËÊı
-        if (count==0){//Ã»ÓĞÈËÉ¾³ı
-            jobService.deleteJobByJid(jid);//É¾³ı¸ÃÖ°Î»
-            response.getWriter().print("Ö°Î»É¾³ı³É¹¦");
+        int count=staffService.countStaffByJid(jid);//è·å–è¯¥èŒä½äººæ•°
+        if (count==0){//æ²¡æœ‰äººåˆ é™¤
+            jobService.deleteJobByJid(jid);//åˆ é™¤è¯¥èŒä½
+            response.getWriter().print("èŒä½åˆ é™¤æˆåŠŸ");
         }else{
-            response.getWriter().print("¸ÃÖ°Î»»¹ÓĞÔ±¹¤£¬²»ÄÜÉ¾³ı");
+            response.getWriter().print("è¯¥èŒä½è¿˜æœ‰å‘˜å·¥ï¼Œä¸èƒ½åˆ é™¤");
         }
     }
     @RequestMapping("/addd")
     public void addd(String dname,HttpServletResponse response) throws Exception{
         response.setContentType("text/html;charset=utf-8");
         departmentService.addDepartment(dname);
-        response.getWriter().print("Ìí¼Ó²¿ÃÅ³É¹¦");
+        response.getWriter().print("æ·»åŠ éƒ¨é—¨æˆåŠŸ");
     }
     @RequestMapping("/updated")
     public void updated(int did,String dname,HttpServletResponse response) throws Exception{
         response.setContentType("text/html;charset=utf-8");
         departmentService.updateDepartment(did,dname);
-        response.getWriter().print("ĞŞ¸Ä²¿ÃÅ³É¹¦");
+        response.getWriter().print("ä¿®æ”¹éƒ¨é—¨æˆåŠŸ");
     }
     @RequestMapping("/addj")
     public void addj(int did,double jsalary,String jname,HttpServletResponse response) throws Exception{
         response.setContentType("text/html;charset=utf-8");
         jobService.addJob(did,jname,jsalary);
-        response.getWriter().print("Ìí¼ÓÖ°Î»³É¹¦");
+        response.getWriter().print("æ·»åŠ èŒä½æˆåŠŸ");
     }
     @RequestMapping("/updatej")
     public void updatej(int jid,double jsalary,String jname,HttpServletResponse response) throws Exception{
         response.setContentType("text/html;charset=utf-8");
         jobService.updateJob(jid,jname,jsalary);
-        response.getWriter().print("ĞŞ¸ÄÖ°Î»³É¹¦");
+        response.getWriter().print("ä¿®æ”¹èŒä½æˆåŠŸ");
     }
     @RequestMapping("/dimission")
     public void dimission(int sid,String sintro,HttpServletResponse response) throws Exception{
@@ -330,7 +330,7 @@ public class AdminController {
         staff.setSintro(sintro);
         staff.setSstate(2);
         staffService.updateStaff(staff);
-        response.getWriter().print("ÀëÖ°°ìÀí³É¹¦");
+        response.getWriter().print("ç¦»èŒåŠç†æˆåŠŸ");
     }
     @RequestMapping("/positive")
     public void positive(int sid,String sintro,HttpServletResponse response) throws Exception{
@@ -341,9 +341,9 @@ public class AdminController {
             staff.setSintro(sintro);
             staff.setSstate(1);
             staffService.updateStaff(staff);
-            response.getWriter().print("×ªÕı°ìÀí³É¹¦");
+            response.getWriter().print("è½¬æ­£åŠç†æˆåŠŸ");
         }else{
-            response.getWriter().print("ÊÔÓÃÆÚ²»×ãÒ»¸öÔÂ²»ÄÜ×ªÕı");
+            response.getWriter().print("è¯•ç”¨æœŸä¸è¶³ä¸€ä¸ªæœˆä¸èƒ½è½¬æ­£");
         }
     }
     @RequestMapping("/change")
@@ -353,7 +353,7 @@ public class AdminController {
         staff.getDepartment().setDid(did);
         staff.getJob().setJid(jid);
         staffService.updateStaff(staff);
-        response.getWriter().print("×ª¸Ú°ìÀí³É¹¦");
+        response.getWriter().print("è½¬å²—åŠç†æˆåŠŸ");
     }
     @RequestMapping("/cultivate")
     public String cultivate(@RequestParam(value = "cstate",defaultValue = "1")int cstate,@RequestParam(value = "currentPage",defaultValue = "1")int currentPage, HttpServletRequest request) throws Exception{
@@ -401,7 +401,7 @@ public class AdminController {
             Calendar calendar=Calendar.getInstance();
             int day=calendar.get(calendar.DAY_OF_MONTH);
             if (day!=1){
-                response.getWriter().print("Ã¿ÔÂ1ºÅ²Å¿ÉÒÔ·¢²¼ĞÂÈËÅàÑµ");
+                response.getWriter().print("æ¯æœˆ1å·æ‰å¯ä»¥å‘å¸ƒæ–°äººåŸ¹è®­");
                 return;
             }
             List<Staff> staffs = staffService.getStaffBySstate(0);
@@ -421,21 +421,21 @@ public class AdminController {
         cultivate.setCstate(1);
         cultivate.setCissuetime(new Date());
         cultivateService.updateCultivate(cultivate);
-        response.getWriter().print("ÅàÑµ·¢²¼³É¹¦");
+        response.getWriter().print("åŸ¹è®­å‘å¸ƒæˆåŠŸ");
     }
     @RequestMapping("/recallCultivate")
     public void recallCultivate(int cid,HttpServletRequest request,HttpServletResponse response) throws Exception{
         response.setContentType("text/html;charset=utf-8");
         double minutes = cultivateService.getMinutesByCid(cid);
         if(minutes>10){
-            response.getWriter().print("ÒÑ·¢²¼10·ÖÖÓ£¬²»ÄÜ³·»Ø");
+            response.getWriter().print("å·²å‘å¸ƒ10åˆ†é’Ÿï¼Œä¸èƒ½æ’¤å›");
         }else {
             staffService.deleteCultivate(cid);
             Cultivate cultivate = new Cultivate();
             cultivate.setCstate(0);
             cultivate.setCid(cid);
             cultivateService.updateCultivate(cultivate);
-            response.getWriter().print("ÅàÑµ³·»Ø³É¹¦");
+            response.getWriter().print("åŸ¹è®­æ’¤å›æˆåŠŸ");
         }
     }
     @RequestMapping("/updateCultivate1")
@@ -551,110 +551,110 @@ public class AdminController {
         request.setAttribute("totalPages",totalPages);
         return "pay";
     }
-    @RequestMapping("/payCalculation")//¹¤×Ê½áËã
+    @RequestMapping("/payCalculation")//å·¥èµ„ç»“ç®—
     public void payCalculation(HttpServletResponse response) throws Exception{
         response.setContentType("text/html;charset=utf-8");
         Calendar calendar=Calendar.getInstance();
         int day=calendar.get(calendar.DAY_OF_MONTH);
         if (day!=1){
-            response.getWriter().print("Ã¿ÔÂ1ºÅ²Å¿ÉÒÔ½áËãÉÏ¸öÔÂ¹¤×Ê");
+            response.getWriter().print("æ¯æœˆ1å·æ‰å¯ä»¥ç»“ç®—ä¸Šä¸ªæœˆå·¥èµ„");
             return;
         }
         int count = payService.getCountMonthPay();
         if (count!=0){
-            response.getWriter().print("¸ÃÔÂÒÑ¾­½áËãÉÏ¸öÔÂ¹¤×Ê");
+            response.getWriter().print("è¯¥æœˆå·²ç»ç»“ç®—ä¸Šä¸ªæœˆå·¥èµ„");
             return;
         }
-        List<Staff> staffs = staffService.getStaffBySstate(0);//½áËãÊÔÓÃÆÚ¹¤×Ê
+        List<Staff> staffs = staffService.getStaffBySstate(0);//ç»“ç®—è¯•ç”¨æœŸå·¥èµ„
         for (Staff staff:staffs) {
-            double pbase = 0.0;//ÊÔÓÃÆÚ8ÕÛ
-            double pperformance = staff.getJob().getJsalary()*0.3;//¼¨Ğ§¹¤×Ê*0.3
-            double povertime = 0.0;//¼Ó°à·Ñ
-            double overtime = 0.0;//¼Ó°à·Ñ
-            double prap = 0.0;//½±³Í
-            double pss = staff.getJob().getJsalary()*(-0.25);//Éç±£¿Û0.25
+            double pbase = 0.0;//è¯•ç”¨æœŸ8æŠ˜
+            double pperformance = staff.getJob().getJsalary()*0.3;//ç»©æ•ˆå·¥èµ„*0.3
+            double povertime = 0.0;//åŠ ç­è´¹
+            double overtime = 0.0;//åŠ ç­è´¹
+            double prap = 0.0;//å¥–æƒ©
+            double pss = staff.getJob().getJsalary()*(-0.25);//ç¤¾ä¿æ‰£0.25
             double ppay = 0.0;//
-            int count1 = attendanceService.getCountLastMonthBySid(staff.getSid());//Õı³£ÉÏ°à1£¬¼Ó°à2£¬ÔçÍË3£¬³Ùµ½4 £¬³Ùµ½¼Ó°à5£¬³Ùµ½ÔçÍË 6¶¼ËãÕı³£ÉÏ°àÌìÊı
+            int count1 = attendanceService.getCountLastMonthBySid(staff.getSid());//æ­£å¸¸ä¸Šç­1ï¼ŒåŠ ç­2ï¼Œæ—©é€€3ï¼Œè¿Ÿåˆ°4 ï¼Œè¿Ÿåˆ°åŠ ç­5ï¼Œè¿Ÿåˆ°æ—©é€€ 6éƒ½ç®—æ­£å¸¸ä¸Šç­å¤©æ•°
             if(count1<22){
-                pbase=(staff.getJob().getJsalary()*0.8)/22*count1;//°´Êµ¼Ê°´ÌìÊıËã¹¤×Ê
+                pbase=(staff.getJob().getJsalary()*0.8)/22*count1;//æŒ‰å®é™…æŒ‰å¤©æ•°ç®—å·¥èµ„
             }else if (count1==22){
-                pbase=staff.getJob().getJsalary()*0.8;//¹¤×Ê8ÕÛ
+                pbase=staff.getJob().getJsalary()*0.8;//å·¥èµ„8æŠ˜
             }else{
-                pbase=staff.getJob().getJsalary()*0.8;//¹¤×Ê8ÕÛ
-                overtime=8*60*(count1-22);//¶à³öÉÏ°àÌìÊıËã¼Ó°àÃ¿Ìì8Ğ¡Ê±
+                pbase=staff.getJob().getJsalary()*0.8;//å·¥èµ„8æŠ˜
+                overtime=8*60*(count1-22);//å¤šå‡ºä¸Šç­å¤©æ•°ç®—åŠ ç­æ¯å¤©8å°æ—¶
             }
-            List<Attendance> attendances = attendanceService.getAttendanceLastMonthBySid(staff.getSid());//»ñÈ¡ÉÏ¸öÔÂ¼Ó°àµÄ¿¼ÇÚ ¼Ó°à2£¬³Ùµ½¼Ó°à5£¬¿õ¹¤¼Ó°à8
+            List<Attendance> attendances = attendanceService.getAttendanceLastMonthBySid(staff.getSid());//è·å–ä¸Šä¸ªæœˆåŠ ç­çš„è€ƒå‹¤ åŠ ç­2ï¼Œè¿Ÿåˆ°åŠ ç­5ï¼Œæ—·å·¥åŠ ç­8
             for (Attendance attendance:attendances) {
-                double offMinutes = attendanceService.getOffMinutesByAid(attendance.getAid());//Ã¿Ò»Ìõ¼Ó°à¼ÇÂ¼µÄ¼Ó°àÊ±¼ä
+                double offMinutes = attendanceService.getOffMinutesByAid(attendance.getAid());//æ¯ä¸€æ¡åŠ ç­è®°å½•çš„åŠ ç­æ—¶é—´
                 if (offMinutes>0){
-                    overtime+=offMinutes;//¼ÓÉÏÃ¿Ò»Ìõ¼Ó°à¼ÇÂ¼µÄ¼Ó°àÊ±¼ä
+                    overtime+=offMinutes;//åŠ ä¸Šæ¯ä¸€æ¡åŠ ç­è®°å½•çš„åŠ ç­æ—¶é—´
                 }
             }
-            povertime=overtime/60*50;//¼Ó°à·ÑÃ¿Ğ¡Ê±50
+            povertime=overtime/60*50;//åŠ ç­è´¹æ¯å°æ—¶50
             List<Rap> raps = rapService.getRapLastMonthBySid(staff.getSid());
             for (Rap rap:raps) {
-                prap+=rap.getRamoney();//¼ÓÉÏÃ¿Ò»Ìõ½±³Í¼ÇÂ¼
+                prap+=rap.getRamoney();//åŠ ä¸Šæ¯ä¸€æ¡å¥–æƒ©è®°å½•
             }
             ppay=pbase+pperformance+povertime+prap+pss;
             Pay pay = new Pay(staff,pbase,pperformance,povertime,prap,pss,ppay,0);
             payService.addPay(pay);
         }
-        List<Staff> staffs1 = staffService.getStaffBySstate(1);//½áËãÕıÊ½Ô±¹¤¹¤×Ê
+        List<Staff> staffs1 = staffService.getStaffBySstate(1);//ç»“ç®—æ­£å¼å‘˜å·¥å·¥èµ„
         for (Staff staff:staffs1) {
             double pbase = 0.0;//
-            double pperformance = staff.getJob().getJsalary()*0.3;//¼¨Ğ§¹¤×Ê*0.3
-            double povertime = 0.0;//¼Ó°à·Ñ
-            double overtime = 0.0;//¼Ó°àÊ±¼ä
-            double prap = 0.0;//½±³Í
-            double pss = staff.getJob().getJsalary()*(-0.25);//Éç±£¿Û0.25
+            double pperformance = staff.getJob().getJsalary()*0.3;//ç»©æ•ˆå·¥èµ„*0.3
+            double povertime = 0.0;//åŠ ç­è´¹
+            double overtime = 0.0;//åŠ ç­æ—¶é—´
+            double prap = 0.0;//å¥–æƒ©
+            double pss = staff.getJob().getJsalary()*(-0.25);//ç¤¾ä¿æ‰£0.25
             double ppay = 0.0;//
-            int count1 = attendanceService.getCountLastMonthBySid(staff.getSid());//Õı³£ÉÏ°à1£¬¼Ó°à2£¬ÔçÍË3£¬³Ùµ½4 £¬³Ùµ½¼Ó°à5£¬³Ùµ½ÔçÍË 6¶¼ËãÕı³£ÉÏ°àÌìÊı
+            int count1 = attendanceService.getCountLastMonthBySid(staff.getSid());//æ­£å¸¸ä¸Šç­1ï¼ŒåŠ ç­2ï¼Œæ—©é€€3ï¼Œè¿Ÿåˆ°4 ï¼Œè¿Ÿåˆ°åŠ ç­5ï¼Œè¿Ÿåˆ°æ—©é€€ 6éƒ½ç®—æ­£å¸¸ä¸Šç­å¤©æ•°
             if(count1<22){
-                pbase=staff.getJob().getJsalary()/22*count1;//°´Êµ¼Ê°´ÌìÊıËã¹¤×Ê
+                pbase=staff.getJob().getJsalary()/22*count1;//æŒ‰å®é™…æŒ‰å¤©æ•°ç®—å·¥èµ„
             }else if (count1==22){
-                pbase=staff.getJob().getJsalary();//¹¤×Ê8ÕÛ
+                pbase=staff.getJob().getJsalary();//å·¥èµ„8æŠ˜
             }else{
-                pbase=staff.getJob().getJsalary();//¹¤×Ê8ÕÛ
-                overtime=8*60*(count1-22);//¶à³öÉÏ°àÌìÊıËã¼Ó°àÃ¿Ìì8Ğ¡Ê±
+                pbase=staff.getJob().getJsalary();//å·¥èµ„8æŠ˜
+                overtime=8*60*(count1-22);//å¤šå‡ºä¸Šç­å¤©æ•°ç®—åŠ ç­æ¯å¤©8å°æ—¶
             }
-            List<Attendance> attendances = attendanceService.getAttendanceLastMonthBySid(staff.getSid());//»ñÈ¡ÉÏ¸öÔÂ¼Ó°àµÄ¿¼ÇÚ ¼Ó°à2£¬³Ùµ½¼Ó°à5£¬¿õ¹¤¼Ó°à8
+            List<Attendance> attendances = attendanceService.getAttendanceLastMonthBySid(staff.getSid());//è·å–ä¸Šä¸ªæœˆåŠ ç­çš„è€ƒå‹¤ åŠ ç­2ï¼Œè¿Ÿåˆ°åŠ ç­5ï¼Œæ—·å·¥åŠ ç­8
             for (Attendance attendance:attendances) {
-                double offMinutes = attendanceService.getOffMinutesByAid(attendance.getAid());//Ã¿Ò»Ìõ¼Ó°à¼ÇÂ¼µÄ¼Ó°àÊ±¼ä
+                double offMinutes = attendanceService.getOffMinutesByAid(attendance.getAid());//æ¯ä¸€æ¡åŠ ç­è®°å½•çš„åŠ ç­æ—¶é—´
                 if (offMinutes>0){
-                    overtime+=offMinutes;//¼ÓÉÏÃ¿Ò»Ìõ¼Ó°à¼ÇÂ¼µÄ¼Ó°àÊ±¼ä
+                    overtime+=offMinutes;//åŠ ä¸Šæ¯ä¸€æ¡åŠ ç­è®°å½•çš„åŠ ç­æ—¶é—´
                 }
             }
-            povertime=overtime/60*50;//¼Ó°à·ÑÃ¿Ğ¡Ê±50
+            povertime=overtime/60*50;//åŠ ç­è´¹æ¯å°æ—¶50
             List<Rap> raps = rapService.getRapLastMonthBySid(staff.getSid());
             for (Rap rap:raps) {
-                prap+=rap.getRamoney();//¼ÓÉÏÃ¿Ò»Ìõ½±³Í¼ÇÂ¼
+                prap+=rap.getRamoney();//åŠ ä¸Šæ¯ä¸€æ¡å¥–æƒ©è®°å½•
             }
             ppay=pbase+pperformance+povertime+prap+pss;
             Pay pay = new Pay(staff,pbase,pperformance,povertime,prap,pss,ppay,0);
             payService.addPay(pay);
         }
-        response.getWriter().print("½áËãÉÏÔÂĞ½×Ê³É¹¦");
+        response.getWriter().print("ç»“ç®—ä¸Šæœˆè–ªèµ„æˆåŠŸ");
     }
     @RequestMapping("/right")
     public void right(int pid,HttpSession session,HttpServletResponse response) throws Exception{
         response.setContentType("text/html;charset=utf-8");
         payService.updatePayPstate(pid,1);
-        response.getWriter().print("Ğ½×Ê¸´ÒéÎŞÎó");
+        response.getWriter().print("è–ªèµ„å¤è®®æ— è¯¯");
     }
     @RequestMapping("/dispose")
     public void dispose(int pid,int sid,double ramoney,HttpSession session,HttpServletResponse response) throws Exception{
         response.setContentType("text/html;charset=utf-8");
         payService.updatePayPstate(pid,1);
-        Rap rap = new Rap(ramoney,new Staff(sid),"Ğ½×Ê¸´Òé½á¹û");
+        Rap rap = new Rap(ramoney,new Staff(sid),"è–ªèµ„å¤è®®ç»“æœ");
         rapService.addRap(rap);
-        response.getWriter().print("Ğ½×Ê¸´Òé´¦ÀíÍê±Ï");
+        response.getWriter().print("è–ªèµ„å¤è®®å¤„ç†å®Œæ¯•");
     }
     @RequestMapping("/checkDname")
     public void checkDname(String dname,HttpServletResponse response) throws Exception{
         response.setContentType("text/html;charset=utf-8");
         int count = departmentService.getCountByDname(dname);
         if (count!=0){
-            response.getWriter().print("ÖØÃû");
+            response.getWriter().print("é‡å");
         }
     }
     @RequestMapping("/checkJname")
@@ -662,7 +662,7 @@ public class AdminController {
         response.setContentType("text/html;charset=utf-8");
         int count = jobService.getCountByJname(jname);
         if (count!=0){
-            response.getWriter().print("ÖØÃû");
+            response.getWriter().print("é‡å");
         }
     }
     @RequestMapping("/staffPay")

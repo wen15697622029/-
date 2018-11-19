@@ -50,7 +50,7 @@ public class StaffController {
             session.setAttribute("staff",staff);
             return "redirect:staff";
         }
-        model.addAttribute("str","ÓÃ»§Ãû»òÃÜÂë´íÎó");
+        model.addAttribute("str","ç”¨æˆ·åæˆ–å¯†ç é”™è¯¯");
         return "../../staffLogin";
     }
     @RequestMapping("/staff")
@@ -126,10 +126,10 @@ public class StaffController {
         attendance.setStaff(staff);
         int count = attendanceService.getCountDayBySid(staff.getSid());
         if (count!=0){
-            response.getWriter().print("¸ÃÌìÒÑ´òÉÏ°à¿¨");
+            response.getWriter().print("è¯¥å¤©å·²æ‰“ä¸Šç­å¡");
         }else{
             attendanceService.addAttendance(attendance);
-            response.getWriter().print("´òÉÏ°à¿¨³É¹¦");
+            response.getWriter().print("æ‰“ä¸Šç­å¡æˆåŠŸ");
         }
     }
     @RequestMapping("/off")
@@ -140,136 +140,136 @@ public class StaffController {
         attendance.setStaff(staff);
         int count = attendanceService.getCountDayBySid(staff.getSid());
         if (count==0){
-            response.getWriter().print("¸ÃÌìÎ´´òÉÏ°à¿¨£¬ÇëÁªÏµ¹ÜÀíÔ±");
+            response.getWriter().print("è¯¥å¤©æœªæ‰“ä¸Šç­å¡ï¼Œè¯·è”ç³»ç®¡ç†å‘˜");
             return;
         }else {
             attendance = attendanceService.getAttendanceBySid(staff.getSid());
-            if (attendance.getAstate() == 0) {//µÚÒ»´Î´òÏÂ°à¿¨
-                attendanceService.off(attendance.getAid());//´òÏÂ°à¿¨
-                attendance = attendanceService.getAttendanceBySid(staff.getSid());//»ñÈ¡´ò¿¨¼ÇÂ¼
-                double onMinutes = attendanceService.getOnMinutes(staff.getSid());//ÉÏ°à´ò¿¨
-                double offMinutes = attendanceService.getOffMinutes(staff.getSid());//ÏÂ°à´ò¿¨
-                if (onMinutes >= 0) {//ÉÏ°à´ò¿¨9:00Ö®Ç°
-                    if (offMinutes >= 0) {//ÏÂ°à´ò¿¨18:00Ö®ºó
-                        if (offMinutes <= 30) {//ÏÂ°à´ò¿¨18:30Ö®Ç°
-                            attendance.setAstate(1);//Õı³£ÉÏ°à´ò¿¨
+            if (attendance.getAstate() == 0) {//ç¬¬ä¸€æ¬¡æ‰“ä¸‹ç­å¡
+                attendanceService.off(attendance.getAid());//æ‰“ä¸‹ç­å¡
+                attendance = attendanceService.getAttendanceBySid(staff.getSid());//è·å–æ‰“å¡è®°å½•
+                double onMinutes = attendanceService.getOnMinutes(staff.getSid());//ä¸Šç­æ‰“å¡
+                double offMinutes = attendanceService.getOffMinutes(staff.getSid());//ä¸‹ç­æ‰“å¡
+                if (onMinutes >= 0) {//ä¸Šç­æ‰“å¡9:00ä¹‹å‰
+                    if (offMinutes >= 0) {//ä¸‹ç­æ‰“å¡18:00ä¹‹å
+                        if (offMinutes <= 30) {//ä¸‹ç­æ‰“å¡18:30ä¹‹å‰
+                            attendance.setAstate(1);//æ­£å¸¸ä¸Šç­æ‰“å¡
                             attendanceService.updateAttendance(attendance);
-                            response.getWriter().print("Õı³£ÏÂ°à´ò¿¨");
+                            response.getWriter().print("æ­£å¸¸ä¸‹ç­æ‰“å¡");
                             return;
-                        } else {//ÏÂ°à´ò¿¨18:30Ö®ºó ¼Ó°à
-                            attendance.setAstate(2);//Õı³£¼Ó°à´ò¿¨
+                        } else {//ä¸‹ç­æ‰“å¡18:30ä¹‹å åŠ ç­
+                            attendance.setAstate(2);//æ­£å¸¸åŠ ç­æ‰“å¡
                             attendanceService.updateAttendance(attendance);
-                            response.getWriter().print("Õı³£¼Ó°à´ò¿¨");
+                            response.getWriter().print("æ­£å¸¸åŠ ç­æ‰“å¡");
                             return;
                         }
-                    } else if (offMinutes > -180) {//ÏÂ°à´ò¿¨18:00Ö®Ç° 15:00Ö®ºó ÔçÍË
-                        attendance.setAstate(3);//ÔçÍË´ò¿¨
+                    } else if (offMinutes > -180) {//ä¸‹ç­æ‰“å¡18:00ä¹‹å‰ 15:00ä¹‹å æ—©é€€
+                        attendance.setAstate(3);//æ—©é€€æ‰“å¡
                         attendanceService.updateAttendance(attendance);
-                        Rap rap = new Rap(-100, staff, "ÔçÍË");
+                        Rap rap = new Rap(-100, staff, "æ—©é€€");
                         rapService.addRap(rap);
-                        response.getWriter().print("ÔçÍË´ò¿¨");
+                        response.getWriter().print("æ—©é€€æ‰“å¡");
                         return;
-                    } else {//ÏÂ°à´ò¿¨15:00Ö®Ç° ¿õ¹¤
-                        attendance.setAstate(7);//¿õ¹¤´ò¿¨
+                    } else {//ä¸‹ç­æ‰“å¡15:00ä¹‹å‰ æ—·å·¥
+                        attendance.setAstate(7);//æ—·å·¥æ‰“å¡
                         attendanceService.updateAttendance(attendance);
-                        response.getWriter().print("ÔçÍË³¬3Ğ¡Ê±¿õ¹¤´ò¿¨");
+                        response.getWriter().print("æ—©é€€è¶…3å°æ—¶æ—·å·¥æ‰“å¡");
                         return;
                     }
-                } else if (onMinutes > -180) {//ÉÏ°à´ò¿¨9:00Ö®ºó 12:00Ö®Ç° ³Ùµ½
-                    if (offMinutes >= 0) {//ÏÂ°à´ò¿¨18:00Ö®ºó
-                        if (offMinutes <= 30) {//ÏÂ°à´ò¿¨18:30Ö®Ç°
-                            attendance.setAstate(4);//³Ùµ½´ò¿¨
+                } else if (onMinutes > -180) {//ä¸Šç­æ‰“å¡9:00ä¹‹å 12:00ä¹‹å‰ è¿Ÿåˆ°
+                    if (offMinutes >= 0) {//ä¸‹ç­æ‰“å¡18:00ä¹‹å
+                        if (offMinutes <= 30) {//ä¸‹ç­æ‰“å¡18:30ä¹‹å‰
+                            attendance.setAstate(4);//è¿Ÿåˆ°æ‰“å¡
                             attendanceService.updateAttendance(attendance);
-                            Rap rap = new Rap(-100, staff, "³Ùµ½");
+                            Rap rap = new Rap(-100, staff, "è¿Ÿåˆ°");
                             rapService.addRap(rap);
-                            response.getWriter().print("³Ùµ½´ò¿¨");
+                            response.getWriter().print("è¿Ÿåˆ°æ‰“å¡");
                             return;
-                        } else {//ÏÂ°à´ò¿¨18:30Ö®ºó ¼Ó°à
-                            attendance.setAstate(5);//³Ùµ½¼Ó°à´ò¿¨
+                        } else {//ä¸‹ç­æ‰“å¡18:30ä¹‹å åŠ ç­
+                            attendance.setAstate(5);//è¿Ÿåˆ°åŠ ç­æ‰“å¡
                             attendanceService.updateAttendance(attendance);
-                            Rap rap = new Rap(-100, staff, "³Ùµ½");
+                            Rap rap = new Rap(-100, staff, "è¿Ÿåˆ°");
                             rapService.addRap(rap);
-                            response.getWriter().print("³Ùµ½¼Ó°à´ò¿¨");
+                            response.getWriter().print("è¿Ÿåˆ°åŠ ç­æ‰“å¡");
                             return;
                         }
-                    } else if (offMinutes > -180) {//ÏÂ°à´ò¿¨18:00Ö®Ç° 15:00Ö®Ç° ÔçÍË
+                    } else if (offMinutes > -180) {//ä¸‹ç­æ‰“å¡18:00ä¹‹å‰ 15:00ä¹‹å‰ æ—©é€€
                         if ((onMinutes + offMinutes) <= -180) {
-                            attendance.setAstate(7);//³Ùµ½ÔçÍË¿õ¹¤´ò¿¨
+                            attendance.setAstate(7);//è¿Ÿåˆ°æ—©é€€æ—·å·¥æ‰“å¡
                             attendanceService.updateAttendance(attendance);
-                            response.getWriter().print("³Ùµ½ÔçÍË³¬3Ğ¡Ê±¿õ¹¤´ò¿¨");
+                            response.getWriter().print("è¿Ÿåˆ°æ—©é€€è¶…3å°æ—¶æ—·å·¥æ‰“å¡");
                             return;
                         } else {
-                            attendance.setAstate(6);//³Ùµ½¼ÓÔçÍË´ò¿¨
+                            attendance.setAstate(6);//è¿Ÿåˆ°åŠ æ—©é€€æ‰“å¡
                             attendanceService.updateAttendance(attendance);
-                            Rap rap = new Rap(-100, staff, "³Ùµ½");
-                            Rap rap1 = new Rap(-100, staff, "ÔçÍË");
+                            Rap rap = new Rap(-100, staff, "è¿Ÿåˆ°");
+                            Rap rap1 = new Rap(-100, staff, "æ—©é€€");
                             rapService.addRap(rap);
                             rapService.addRap(rap1);
-                            response.getWriter().print("³Ùµ½¼ÓÔçÍË´ò¿¨");
+                            response.getWriter().print("è¿Ÿåˆ°åŠ æ—©é€€æ‰“å¡");
                             return;
                         }
-                    } else {//ÏÂ°à´ò¿¨15:00Ö®Ç° ¿õ¹¤
-                        attendance.setAstate(7);//ÔçÍË³¬3Ğ¡Ê±¿õ¹¤´ò¿¨
+                    } else {//ä¸‹ç­æ‰“å¡15:00ä¹‹å‰ æ—·å·¥
+                        attendance.setAstate(7);//æ—©é€€è¶…3å°æ—¶æ—·å·¥æ‰“å¡
                         attendanceService.updateAttendance(attendance);
-                        response.getWriter().print("ÔçÍË³¬3Ğ¡Ê±¿õ¹¤´ò¿¨");
+                        response.getWriter().print("æ—©é€€è¶…3å°æ—¶æ—·å·¥æ‰“å¡");
                         return;
                     }
                 } else if(offMinutes>30){
-                    attendance.setAstate(8);//³Ùµ½³¬3Ğ¡Ê±¿õ¹¤¼Ó°à´ò¿¨
+                    attendance.setAstate(8);//è¿Ÿåˆ°è¶…3å°æ—¶æ—·å·¥åŠ ç­æ‰“å¡
                     attendanceService.updateAttendance(attendance);
-                    response.getWriter().print("³Ùµ½³¬3Ğ¡Ê±¿õ¹¤¼Ó°à´ò¿¨");
+                    response.getWriter().print("è¿Ÿåˆ°è¶…3å°æ—¶æ—·å·¥åŠ ç­æ‰“å¡");
                     return;
-                }else{//ÉÏ°à´ò¿¨12:00Ö®ºó ¿õ¹¤
-                    attendance.setAstate(7);//³Ùµ½³¬3Ğ¡Ê±¿õ¹¤¿õ¹¤´ò¿¨
+                }else{//ä¸Šç­æ‰“å¡12:00ä¹‹å æ—·å·¥
+                    attendance.setAstate(7);//è¿Ÿåˆ°è¶…3å°æ—¶æ—·å·¥æ—·å·¥æ‰“å¡
                     attendanceService.updateAttendance(attendance);
-                    response.getWriter().print("³Ùµ½³¬3Ğ¡Ê±¿õ¹¤´ò¿¨");
+                    response.getWriter().print("è¿Ÿåˆ°è¶…3å°æ—¶æ—·å·¥æ‰“å¡");
                     return;
                 }
             } else if (attendance.getAstate() == 1) {
-                attendance.setAstate(2);//±ä³É¼Ó°à´ò¿¨
+                attendance.setAstate(2);//å˜æˆåŠ ç­æ‰“å¡
                 attendanceService.updateAttendance(attendance);
-                attendanceService.off(attendance.getAid());//´ò¼Ó°à¿¨
-                response.getWriter().print("Õı³£¼Ó°à´ò¿¨");
+                attendanceService.off(attendance.getAid());//æ‰“åŠ ç­å¡
+                response.getWriter().print("æ­£å¸¸åŠ ç­æ‰“å¡");
                 return;
             } else if (attendance.getAstate() == 2) {
-                attendanceService.off(attendance.getAid());//´ò¼Ó°à¿¨
-                response.getWriter().print("Õı³£¼Ó°àÊ±¼ä¸üĞÂ³É¹¦");
+                attendanceService.off(attendance.getAid());//æ‰“åŠ ç­å¡
+                response.getWriter().print("æ­£å¸¸åŠ ç­æ—¶é—´æ›´æ–°æˆåŠŸ");
                 return;
             } else if (attendance.getAstate() == 4) {
-                double offMinutes = attendanceService.getOffMinutes(staff.getSid());//ÏÂ°à´ò¿¨
+                double offMinutes = attendanceService.getOffMinutes(staff.getSid());//ä¸‹ç­æ‰“å¡
                 if (offMinutes>30) {
-                    attendance.setAstate(5);//³Ùµ½±ä³Ùµ½¼Ó°à
+                    attendance.setAstate(5);//è¿Ÿåˆ°å˜è¿Ÿåˆ°åŠ ç­
                     attendanceService.updateAttendance(attendance);
-                    attendanceService.off(attendance.getAid());//´ò¼Ó°à¿¨
-                    response.getWriter().print("³Ùµ½¼Ó°à´ò¿¨");
+                    attendanceService.off(attendance.getAid());//æ‰“åŠ ç­å¡
+                    response.getWriter().print("è¿Ÿåˆ°åŠ ç­æ‰“å¡");
                     return;
                 }else{
-                    response.getWriter().print("Î´µ½¼Ó°àÊ±¼ä");
+                    response.getWriter().print("æœªåˆ°åŠ ç­æ—¶é—´");
                     return;
                 }
 
             } else if (attendance.getAstate() == 5) {
-                attendanceService.off(attendance.getAid());//´ò¼Ó°à¿¨
-                response.getWriter().print("³Ùµ½¼Ó°àÊ±¼ä¸üĞÂ³É¹¦");
+                attendanceService.off(attendance.getAid());//æ‰“åŠ ç­å¡
+                response.getWriter().print("è¿Ÿåˆ°åŠ ç­æ—¶é—´æ›´æ–°æˆåŠŸ");
                 return;
             } else if (attendance.getAstate() == 7) {
-                double offMinutes = attendanceService.getOffMinutes(staff.getSid());//ÏÂ°à´ò¿¨
+                double offMinutes = attendanceService.getOffMinutes(staff.getSid());//ä¸‹ç­æ‰“å¡
                 if (offMinutes>30){
-                    attendance.setAstate(8);//¿õ¹¤±ä¿õ¹¤¼Ó°à
+                    attendance.setAstate(8);//æ—·å·¥å˜æ—·å·¥åŠ ç­
                     attendanceService.updateAttendance(attendance);
-                    attendanceService.off(attendance.getAid());//´ò¼Ó°à¿¨
-                    response.getWriter().print("¿õ¹¤¼Ó°à´ò¿¨");
+                    attendanceService.off(attendance.getAid());//æ‰“åŠ ç­å¡
+                    response.getWriter().print("æ—·å·¥åŠ ç­æ‰“å¡");
                     return;
                 }else{
-                    response.getWriter().print("ÔçÍË¿õ¹¤²»ÄÜ¼Ó°à");
+                    response.getWriter().print("æ—©é€€æ—·å·¥ä¸èƒ½åŠ ç­");
                     return;
                 }
             }else if (attendance.getAstate() == 8) {
-                attendanceService.off(attendance.getAid());//´ò¼Ó°à¿¨
-                response.getWriter().print("¿õ¹¤¼Ó°àÊ±¼ä¸üĞÂ³É¹¦");
+                attendanceService.off(attendance.getAid());//æ‰“åŠ ç­å¡
+                response.getWriter().print("æ—·å·¥åŠ ç­æ—¶é—´æ›´æ–°æˆåŠŸ");
                 return;
             } else {
-                response.getWriter().print("´ò¿¨Òì³££¬ÇëÁªÏµ¹ÜÀíÔ±");
+                response.getWriter().print("æ‰“å¡å¼‚å¸¸ï¼Œè¯·è”ç³»ç®¡ç†å‘˜");
                 return;
             }
         }
@@ -314,13 +314,13 @@ public class StaffController {
     public void affirm(int pid,HttpSession session,HttpServletResponse response) throws Exception{
         response.setContentType("text/html;charset=utf-8");
         payService.updatePayPstate(pid,1);
-        response.getWriter().print("Ğ½×ÊÈ·ÈÏ³É¹¦");
+        response.getWriter().print("è–ªèµ„ç¡®è®¤æˆåŠŸ");
     }
     @RequestMapping("/reconsider")
     public void reconsider(int pid,HttpSession session,HttpServletResponse response) throws Exception{
         response.setContentType("text/html;charset=utf-8");
         payService.updatePayPstate(pid,2);
-        response.getWriter().print("Ğ½×Ê¸´ÒéÉêÇë³É¹¦");
+        response.getWriter().print("è–ªèµ„å¤è®®ç”³è¯·æˆåŠŸ");
     }
 }
 
